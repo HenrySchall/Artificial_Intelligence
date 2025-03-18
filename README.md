@@ -22,3 +22,4 @@
 - Neural Networks and Deep Learning: A Textbook, by Charu C Aggarwal
 - Perceptrons: An Introduction to Computational Geometry, by Marvin Minsky, Seymour A. Papert
 - Deep Learning (Adaptive Computation and Machine Learning series),by Ian Goodfellow (Author), Yoshua Bengio (Author), Aaron Courville
+- https://www.aifolks.org/ (The majority of images and mind maps)
