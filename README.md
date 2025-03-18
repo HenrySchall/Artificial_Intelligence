@@ -4,8 +4,9 @@
 
 > Artificial Intelligence (AI) is a field of computing that develops systems capable of performing tasks that would normally require human intelligence. This includes learning, reasoning, perception, pattern recognition, and decision-making. It uses mathematical models to analyze data and learn from it. The existing models are:
 
-* Machine Learning (ML) = Models that allow computers to learn from data and make predictions or decisions without being explicitly programmed to perform these tasks
-* Deep Learning (DL) = Models that use Neural Networks with multiple layers (models inspired by the structure and functioning of the human brain, to model and solve complex problems.
+* Machine Learning (ML) = Models that allow computers to learn from data and make predictions or decisions without being explicitly programmed to perform these tasks.
+* Neural Networks (NM) = Models inspired by the structure and functioning of the human brain.
+* Deep Learning (DL) = Models that use Neural Networks with multiple layers.
 * Generative AI = The intelligence, capable of creating new content, such as text, images, music and even videos, based on patterns learned from existing data.
 
 #### Types of Learning
@@ -15,8 +16,6 @@
   
 ### Mind Maps
 
-![IMG_2305](https://github.com/user-attachments/assets/dad35b2d-d52f-4f41-b2d2-3f9a41e1bde9)
+![ImageAI](https://github.com/user-attachments/assets/2505222b-2e81-40a7-9293-8f238a599180)
 
-![1000155394 1](https://github.com/user-attachments/assets/6f3edbf3-9316-41ea-bb76-7d5d3d3cc35f)
-
-![aifolksorg-20250318-0001](https://github.com/user-attachments/assets/2505222b-2e81-40a7-9293-8f238a599180)
+### Repository Bibliographic References:
