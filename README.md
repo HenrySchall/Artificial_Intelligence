@@ -1,4 +1,4 @@
-# Artificial_Intelligence
+# Artificial Intelligence
 
 ![420612680-0d6bd5e4-4577-4f4d-9102-a83de72e8b3b (1)](https://github.com/user-attachments/assets/1a147287-bbd1-4973-93ad-ec3d3be79ba3)
 
