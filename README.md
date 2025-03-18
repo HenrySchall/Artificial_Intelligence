@@ -16,10 +16,10 @@
   
 ### Mind Maps
 
-![ImageAI](https://github.com/user-attachments/assets/2505222b-2e81-40a7-9293-8f238a599180)
+![Imgs](https://github.com/user-attachments/assets/abeade2e-6950-4da2-a21f-61ef039030c8)
 
 ### Repository Bibliographic References:
+- Aifolks.org (Majority of images and mind maps)
 - Neural Networks and Deep Learning: A Textbook, by Charu C Aggarwal
 - Perceptrons: An Introduction to Computational Geometry, by Marvin Minsky, Seymour A. Papert
 - Deep Learning (Adaptive Computation and Machine Learning series),by Ian Goodfellow (Author), Yoshua Bengio (Author), Aaron Courville
-- Aifolks.org (Majority of images and mind maps)
