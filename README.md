@@ -1,8 +1,6 @@
-# Neural Network
+# Artificial_Intelligence
 
 ![420612680-0d6bd5e4-4577-4f4d-9102-a83de72e8b3b (1)](https://github.com/user-attachments/assets/1a147287-bbd1-4973-93ad-ec3d3be79ba3)
-
-![aifolksorg-20250318-0001](https://github.com/user-attachments/assets/2505222b-2e81-40a7-9293-8f238a599180)
 
 > Artificial Intelligence (AI) is a field of computing that develops systems capable of performing tasks that would normally require human intelligence. This includes learning, reasoning, perception, pattern recognition, and decision-making. It uses mathematical models to analyze data and learn from it. The existing models are:
 
@@ -20,3 +18,5 @@
 ![IMG_2305](https://github.com/user-attachments/assets/dad35b2d-d52f-4f41-b2d2-3f9a41e1bde9)
 
 ![1000155394 1](https://github.com/user-attachments/assets/6f3edbf3-9316-41ea-bb76-7d5d3d3cc35f)
+
+![aifolksorg-20250318-0001](https://github.com/user-attachments/assets/2505222b-2e81-40a7-9293-8f238a599180)
