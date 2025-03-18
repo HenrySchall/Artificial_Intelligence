@@ -1,6 +1,6 @@
 # Neural Network
 
-![Firefly](https://github.com/user-attachments/assets/536923f8-8b70-4a02-84ec-316de78f97e0)
+![Firefly](https://github.com/user-attachments/assets/26267540-aa22-40a5-8cf3-a9674c5f624d)
 
 ![aifolksorg-20250318-0001](https://github.com/user-attachments/assets/2505222b-2e81-40a7-9293-8f238a599180)
 
