@@ -1,4 +1,5 @@
 # Neural Network
+![1000167894](https://github.com/user-attachments/assets/9356703d-f94a-4c9a-89b8-d1af9614ba7e)
 
 ![aifolksorg-20250318-0001](https://github.com/user-attachments/assets/2505222b-2e81-40a7-9293-8f238a599180)
 
