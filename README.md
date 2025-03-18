@@ -14,7 +14,7 @@
 - Unsupervised = The model works with data that does not have labels. The goal is to discover hidden patterns or structures (classification) within the data without knowing in advance what the correct outputs are, that is, "no output"
 - Reinforcement Learning = In reinforcement learning, the model learns by trial and error, that is, it makes decisions in a dynamic environment, and learns from the feedback it receives, indicating errors, but not providing solutions
   
-### Mind Maps
+### Mind Map
 
 ![Imgs](https://github.com/user-attachments/assets/abeade2e-6950-4da2-a21f-61ef039030c8)
 
