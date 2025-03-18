@@ -1,6 +1,6 @@
 # Neural Network
 
-![userlmn_9f20086e8a1c6c70a7bff512f68d204a](https://github.com/user-attachments/assets/5bc54d37-652a-4c91-9b58-431267c9f4f4)
+![420612680-0d6bd5e4-4577-4f4d-9102-a83de72e8b3b (1)](https://github.com/user-attachments/assets/1a147287-bbd1-4973-93ad-ec3d3be79ba3)
 
 ![aifolksorg-20250318-0001](https://github.com/user-attachments/assets/2505222b-2e81-40a7-9293-8f238a599180)
 
