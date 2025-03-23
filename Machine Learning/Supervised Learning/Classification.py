@@ -102,12 +102,13 @@ X_credit[:,0].max()
 X_credit[:,1].max()
 X_credit[:,2].max()
 
-# from sklearn.preprocessing import LabelEncoder
-# label_encoder_workclass = LabelEncoder()
-# X_census[:,1] = label_encoder_workclass.fit_transform(X_census[:,1])
+# LabelEncoder (tranformar variaveis categorias em numericas x OnehotEncoder (variáveis dummy)
+# from sklearn.preprocessing import OneHotEncoder
+# from sklearn.compose import ColumnTransformer
 
-#X_census[0]
-#X_census
+# onehotencoder_census = ColumnTransformer(transformers=[('OneHot', OneHotEncoder(), [1,3,5,6,7,8,9,13])], remainder='passthrough')
+# X_census = onehotencoder_census.fit_transform(X_census).toarray()
+# X_census
 
 ###################
 ### Naïve Bayes ###
