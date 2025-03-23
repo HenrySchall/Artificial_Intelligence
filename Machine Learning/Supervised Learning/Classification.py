@@ -116,6 +116,30 @@ X_credit[:,2].max()
 ### Training and testing ###
 ############################
 
+X_credit.shape
+y_credit.shape
+
+X_credit_treinamento, X_credit_teste = train_test_split(X_credit, test_size = 0.25, random_state = 0)
+
+y_credit_treinamento, y_credit_teste = train_test_split(y_credit, test_size = 0.25, random_state = 0)
+
+# Records for Training
+X_credit_treinamento.shape #(1500 = number of records, "3" = three variables dependent)
+y_credit_treinamento.shape #(1500 = number of records, "" = one variables dependent)
+
+# Records for Test
+X_credit_teste.shape
+y_credit_teste.shape
+
+# Salvar
+import pickle
+
+with open('credit.pkl', mode = 'wb') as f:
+  pickle.dump([X_credit_treinamento, y_credit_treinamento, X_credit_teste, y_credit_teste], f)
+
+with open('census.pkl', mode = 'wb') as f:
+  pickle.dump([X_census_treinamento, y_census_treinamento, X_census_teste, y_census_teste], f)
+
 ###################
 ### Naïve Bayes ###
 ###################
