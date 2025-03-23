@@ -23,3 +23,6 @@ Transmissão de dados complexos: Se você precisa enviar ou armazenar objetos Py
 
 Considerações de segurança:
 Cuidado com a desserialização de dados não confiáveis: Não é seguro carregar objetos usando pickle de fontes não confiáveis, pois isso pode executar código malicioso durante o processo de desserialização.
+
+Padronizacao e indicada quando se tem mais outlier na base de dados, e normalizacao 
+Nao supervisionada descobre os padroes
