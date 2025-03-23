@@ -62,7 +62,7 @@ df.loc[df['age'] < 0]
 
 df.head(27)
 
-# Valores Faltantes 
+# Missing Values
 df.isnull().sum()
 
 df.loc[pd.isnull(df['age'])]
