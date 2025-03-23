@@ -6,6 +6,7 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 import plotly.express as px
+from sklearn.preprocessing import StandardScaler
 
 ####################
 ### Introduction ###
@@ -72,3 +73,14 @@ df.loc[pd.isnull(df['age'])]
 ############################
 ### Training and testing ###
 ############################
+
+type(df)
+
+# X = variáveis explicativas 
+# Y = variável dependente/explicada
+
+X_credit = df.iloc[:, 1:4].values
+X_credit
+
+y_credit = df.iloc[:, 4].values
+y_credit
