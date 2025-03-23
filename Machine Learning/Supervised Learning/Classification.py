@@ -18,8 +18,8 @@ df = pd.read_csv(dados)
 df
 df.describe()
 
-# pagou o empréstimo
-# Não pagou o empréstimo
+# paid the loan
+# didn't pay the loan
 
 max_val = df["income"].max()
 print(max_val)
@@ -41,9 +41,11 @@ plt.show()
 grafico = px.scatter_matrix(df, dimensions=['age', 'income', 'loan'], color = 'default')
 grafico.show()
 
-##################
-### Tratamento ###
-##################
+# The presence of negative ages is observed...
+
+#################
+### Treatment ###
+#################
 
 df.loc[df['age'] < 0]
 
