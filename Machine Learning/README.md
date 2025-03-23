@@ -6,3 +6,20 @@
 - Reinforcement Learning = In reinforcement learning, the model learns by trial and error, that is, it makes decisions in a dynamic environment, and learns from the feedback it receives, indicating errors, but not providing solutions
 
 ![IMG_2304](https://github.com/user-attachments/assets/2aec1048-2074-4bd4-a6ac-107a8783e1f8)
+
+O pickle é um módulo em Python usado para serializar e desserializar objetos Python, ou seja, converter objetos Python em uma sequência de bytes para que possam ser salvos em um arquivo ou transmitidos pela rede e, posteriormente, reconstruí-los de volta no formato original.
+
+O que o pickle faz:
+Serialização (Pickling): A conversão de um objeto Python (como listas, dicionários, classes, etc.) em uma sequência de bytes. Isso permite salvar o objeto em um arquivo ou em memória.
+
+Desserialização (Unpickling): O processo reverso, onde os bytes salvos são convertidos de volta ao objeto original, permitindo que você recupere e use o objeto salvo.
+
+Quando usar pickle:
+Salvar modelos de machine learning: Depois de treinar um modelo (como um modelo de regressão, classificação, etc.), você pode usar pickle para salvar o modelo em um arquivo e carregá-lo mais tarde sem precisar treinar novamente.
+
+Salvar o estado de um programa: Em aplicações que requerem salvar o estado atual de objetos Python para posterior recuperação.
+
+Transmissão de dados complexos: Se você precisa enviar ou armazenar objetos Python complexos, pickle pode ser uma forma eficiente de fazer isso.
+
+Considerações de segurança:
+Cuidado com a desserialização de dados não confiáveis: Não é seguro carregar objetos usando pickle de fontes não confiáveis, pois isso pode executar código malicioso durante o processo de desserialização.

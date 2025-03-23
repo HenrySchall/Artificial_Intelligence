@@ -131,14 +131,11 @@ y_credit_treinamento.shape #(1500 = number of records, "" = one variables depend
 X_credit_teste.shape
 y_credit_teste.shape
 
-# Salvar
+# Salvar Pickle
 import pickle
 
 with open('credit.pkl', mode = 'wb') as f:
   pickle.dump([X_credit_treinamento, y_credit_treinamento, X_credit_teste, y_credit_teste], f)
-
-with open('census.pkl', mode = 'wb') as f:
-  pickle.dump([X_census_treinamento, y_census_treinamento, X_census_teste, y_census_teste], f)
 
 ###################
 ### Naïve Bayes ###
