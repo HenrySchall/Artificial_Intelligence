@@ -7,6 +7,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import plotly.express as px
 from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import MinMaxScaler
 
 ####################
 ### Introduction ###
@@ -84,3 +85,30 @@ X_credit
 
 y_credit = df.iloc[:, 4].values
 y_credit
+
+# Standardisation Data (leaving on the same scale)
+scaler_credit = StandardScaler()
+X_credit = scaler_credit.fit_transform(X_credit)
+
+# Normalization Data (leaving on the same scale)
+scaler_credit = MinMaxScaler()
+X_credit = scaler_credit.fit_transform(X_credit)
+
+X_credit[:,0].min()
+X_credit[:,1].min()
+X_credit[:,2].min()
+
+X_credit[:,0].max()
+X_credit[:,1].max()
+X_credit[:,2].max()
+
+# from sklearn.preprocessing import LabelEncoder
+# label_encoder_workclass = LabelEncoder()
+# X_census[:,1] = label_encoder_workclass.fit_transform(X_census[:,1])
+
+#X_census[0]
+#X_census
+
+###################
+### Naïve Bayes ###
+###################
