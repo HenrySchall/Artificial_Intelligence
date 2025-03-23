@@ -11,15 +11,15 @@ import plotly.express as px
 ### Introduction ###
 ####################
 
-# Retiado de: https://www.kaggle.com/datasets/laotse/credit-risk-dataset
+# Taken from: https://www.kaggle.com/datasets/laotse/credit-risk-dataset
 dados = "https://drive.google.com/uc?export=download&id=1wMapByTvMFt16zz9Bd2643eTHJXtEhnX"
 df = pd.read_csv(dados)
 
 df
 df.describe()
 
-# paid the loan
-# didn't pay the loan
+# 1 = paid the loan
+# 0 = didn't pay the loan
 
 max_val = df["income"].max()
 print(max_val)
@@ -47,7 +47,28 @@ grafico.show()
 ### Treatment ###
 #################
 
+# Inconsistent Values
 df.loc[df['age'] < 0]
 
-base_credit2 = df.drop('age', axis = 1)
-base_credit2
+# Delete Specific Values
+df2 = df.drop(df[df['age'] < 0].index)
+df2.loc[df['age'] < 0]
+
+# Replace with average
+df.mean()
+df['age'][df['age'] > 0].mean()
+df.loc[df['age'] < 0, 'age'] = 40.92
+df.loc[df['age'] < 0]
+
+df.head(27)
+
+# Valores Faltantes 
+df.isnull().sum()
+
+df.loc[pd.isnull(df['age'])]
+df['age'].fillna(df['age'].mean(), inplace = True)
+df.loc[pd.isnull(df['age'])]
+
+############################
+### Training and testing ###
+############################
