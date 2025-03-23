@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 import plotly.express as px
 from sklearn.preprocessing import StandardScaler
 from sklearn.preprocessing import MinMaxScaler
+from sklearn.model_selection import train_test_split
 
 ####################
 ### Introduction ###
@@ -71,9 +72,18 @@ df.loc[pd.isnull(df['age'])]
 df['age'].fillna(df['age'].mean(), inplace = True)
 df.loc[pd.isnull(df['age'])]
 
-############################
-### Training and testing ###
-############################
+# LabelEncoder (tranformar variaveis categorias em numericas x OnehotEncoder (variáveis dummy)
+# from sklearn.preprocessing import OneHotEncoder
+# from sklearn.compose import ColumnTransformer
+
+# onehotencoder_census = ColumnTransformer(transformers=[('OneHot', OneHotEncoder(), [1,3,5,6,7,8,9,13])], remainder='passthrough')
+# X_census = onehotencoder_census.fit_transform(X_census).toarray()
+# X_census
+# X_census[0]
+
+#############################
+### Escalation Management ###
+#############################
 
 type(df)
 
@@ -102,13 +112,9 @@ X_credit[:,0].max()
 X_credit[:,1].max()
 X_credit[:,2].max()
 
-# LabelEncoder (tranformar variaveis categorias em numericas x OnehotEncoder (variáveis dummy)
-# from sklearn.preprocessing import OneHotEncoder
-# from sklearn.compose import ColumnTransformer
-
-# onehotencoder_census = ColumnTransformer(transformers=[('OneHot', OneHotEncoder(), [1,3,5,6,7,8,9,13])], remainder='passthrough')
-# X_census = onehotencoder_census.fit_transform(X_census).toarray()
-# X_census
+############################
+### Training and testing ###
+############################
 
 ###################
 ### Naïve Bayes ###
