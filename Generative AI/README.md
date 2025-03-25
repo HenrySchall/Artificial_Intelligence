@@ -45,4 +45,5 @@ Cghatllm
 Runaway
 ]resolve
 midjorney
+Shield ai
 
