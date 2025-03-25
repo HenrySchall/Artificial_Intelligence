@@ -33,6 +33,12 @@ https://www.blazesql.com/
 https://replit.com/
 https://www.cursor.com/
 relume.io sites
+Synthflow
+same.new
+https://nace.ai/
+https://www.solvearn.net/
+https://www.interviewscouter.com/
+https://www.lockedinai.com/
 https://replit.com/
 softgen
 https://bolt.new/
