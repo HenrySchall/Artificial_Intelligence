@@ -21,6 +21,7 @@ Looka
 Colossyan
 Bolt.new
 Gamma
+DeltaAI
 dimenxioner
 Guestlab
 My Group Metrics
