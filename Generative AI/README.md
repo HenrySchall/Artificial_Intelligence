@@ -5,6 +5,13 @@ AGI
 
 ASI
 
+Modelos Generative Adversarial networks (GANs)
+Variational autoencoders (VAEs)
+Auoregressive Models
+Transofmer models
+Deep convolutional Genreative Adversiral networks
+Recurrent neural networks (RNNs)
+
 Situational Awareness: the decade ahead, Leopold Aschenbrenner
 
 Some Micro SaaS/Vertical AI
