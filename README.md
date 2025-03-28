@@ -1,6 +1,6 @@
 # Artificial Intelligence
 
-![img10](https://github.com/user-attachments/assets/6fd1006c-3cc8-447c-986c-273f04342156)
+![img11](https://github.com/user-attachments/assets/2e05f5fe-aadc-4ec2-8e35-f23a2a64b533)
 
 > Artificial Intelligence (AI) is a field of computing that develops systems capable of performing tasks that would normally require human intelligence. This includes learning, reasoning, perception, pattern recognition, and decision-making. It uses mathematical models to analyze data and learn from it. The existing models are:
 
