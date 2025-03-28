@@ -1,4 +1,5 @@
 # Artificial Intelligence
+![img12](https://github.com/user-attachments/assets/a0943bc1-9a1e-44ad-b43f-a2c470e21f1d)
 
 ![img11](https://github.com/user-attachments/assets/2e05f5fe-aadc-4ec2-8e35-f23a2a64b533)
 
