@@ -19,6 +19,7 @@ Synthflow
 Hedra AI 
 Jenni
 Shipfast
+Jenni
 wonsulting AI
 James AI
 Ledgerbox
