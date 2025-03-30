@@ -36,6 +36,7 @@ https://geospy.ai/
 Notta
 flowiseAI
 RelevanceAI
+SpatialLM
 https://www.blazesql.com/
 https://replit.com/
 https://www.cursor.com/
