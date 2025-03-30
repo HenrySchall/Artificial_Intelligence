@@ -22,6 +22,7 @@ Shipfast
 Jenni
 wonsulting AI
 James AI
+https://automarticles.com/
 Ledgerbox
 https://v0.dev/chat/community
 Ledger Box
