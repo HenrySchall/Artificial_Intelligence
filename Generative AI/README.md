@@ -16,6 +16,7 @@ Situational Awareness: the decade ahead, Leopold Aschenbrenner
 
 Some Micro SaaS/Vertical AI
 Synthflow
+Hedra AI 
 Jenni
 Shipfast
 wonsulting AI
