@@ -20,6 +20,7 @@ Hedra AI
 Jenni
 Shipfast
 Jenni
+https://copycoder.ai/
 wonsulting AI
 James AI
 https://automarticles.com/
