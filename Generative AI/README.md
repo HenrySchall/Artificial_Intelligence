@@ -20,9 +20,25 @@ Hedra AI
 Jenni
 Shipfast
 Jenni
+windsurf
+lovable
+https://www.feedough.com/ai-prompt-generator/
+typefully
+kling
+grok
+galieo
+runway
+elevenlabs
+ai2sql
+amazon codewhisperer
+mintlify
+locofy
+talbeua gpt
+rows 2.0
 https://copycoder.ai/
 wonsulting AI
 James AI
+replit
 https://automarticles.com/
 Ledgerbox
 https://v0.dev/chat/community
