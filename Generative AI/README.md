@@ -20,6 +20,7 @@ Hedra AI
 Jenni
 Shipfast
 Jenni
+pinecode.ai
 windsurf
 lovable
 https://www.feedough.com/ai-prompt-generator/
