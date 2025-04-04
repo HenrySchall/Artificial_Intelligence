@@ -77,8 +77,8 @@ df.loc[pd.isnull(df['age'])]
 df['age'].fillna(df['age'].mean(), inplace = True)
 df.loc[pd.isnull(df['age'])]
 
-# LabelEncoder (tranformar variaveis categorias em numericas)
-# OnehotEncoder (variáveis dummy)
+# LabelEncoder -> tranformar variaveis categorias em númericas sequências (1,2,3,4...)
+# OnehotEncoder -> tranforma em variáveis dummy (1 ou 0)
 
 #############################
 ### Escalation Management ###
@@ -167,6 +167,13 @@ X_risco_credito_label[:,3] = label_encoder_renda.fit_transform(X_risco_credito_l
 
 X_risco_credito_label
 
+naive_risco_credito = GaussianNB()
+naive_risco_credito.fit(X_risco_credito_label, y_risco_credito_label)
+
+# história boa (0), dívida alta (0), garantias nenhuma (1), renda > 35 (2)
+# história ruim (2), dívida alta (0), garantias adequada (0), renda < 15 (0)
+previsao = naive_risco_credito.predict([[0,0,1,2], [2,0,0,0]])
+
 #####################
 ### OneHotEncoder ###
 #####################
@@ -181,10 +188,11 @@ X_risco_credito_onehot
 y_risco_credito_onehot = df2.iloc[:, 3].values
 y_risco_credito_onehot
 
-
 naive_risco_credito = GaussianNB()
-naive_risco_credito.fit(X_risco_credito, y_risco_credito)
+naive_risco_credito.fit(X_risco_credito_onehot, y_risco_credito_onehot)
 
 # história boa (0), dívida alta (0), garantias nenhuma (1), renda > 35 (2)
 # história ruim (2), dívida alta (0), garantias adequada (0), renda < 15 (0)
 previsao = naive_risco_credito.predict([[0,0,1,2], [2,0,0,0]])
+
+
