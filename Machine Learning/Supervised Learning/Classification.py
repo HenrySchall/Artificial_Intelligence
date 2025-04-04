@@ -99,7 +99,7 @@ y_credit
 scaler_credit = StandardScaler()
 X_credit = scaler_credit.fit_transform(X_credit)
 
-# Normalization Data (leaving on the same scale)
+# Normalization Data
 scaler_credit = MinMaxScaler()
 X_credit = scaler_credit.fit_transform(X_credit)
 
@@ -170,9 +170,11 @@ X_risco_credito_label
 naive_risco_credito = GaussianNB()
 naive_risco_credito.fit(X_risco_credito_label, y_risco_credito_label)
 
-# história boa (0), dívida alta (0), garantias nenhuma (1), renda > 35 (2)
-# história ruim (2), dívida alta (0), garantias adequada (0), renda < 15 (0)
-previsao = naive_risco_credito.predict([[0,0,1,2], [2,0,0,0]])
+# Modelo 1 -> história boa (0), dívida alta (0), garantias nenhuma (1), renda > 35 (2)
+# Modelo 2 -> história ruim (2), dívida alta (0), garantias adequada (0), renda < 15 (0)
+
+forecast = naive_risco_credito.predict([[0,0,1,2], [2,0,0,0]])
+forecast 
 
 #####################
 ### OneHotEncoder ###
