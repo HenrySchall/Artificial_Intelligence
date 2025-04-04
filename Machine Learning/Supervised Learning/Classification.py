@@ -9,12 +9,17 @@ import plotly.express as px
 from sklearn.preprocessing import StandardScaler
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import train_test_split
+from sklearn.naive_bayes import GaussianNB
+from sklearn.preprocessing import LabelEncoder
+from sklearn.preprocessing import OneHotEncoder
+from sklearn.compose import ColumnTransformer
 
 ####################
 ### Introduction ###
 ####################
 
 # Taken from: https://www.kaggle.com/datasets/laotse/credit-risk-dataset
+
 dados = "https://drive.google.com/uc?export=download&id=1wMapByTvMFt16zz9Bd2643eTHJXtEhnX"
 df = pd.read_csv(dados)
 
@@ -72,14 +77,8 @@ df.loc[pd.isnull(df['age'])]
 df['age'].fillna(df['age'].mean(), inplace = True)
 df.loc[pd.isnull(df['age'])]
 
-# LabelEncoder (tranformar variaveis categorias em numericas x OnehotEncoder (variáveis dummy)
-# from sklearn.preprocessing import OneHotEncoder
-# from sklearn.compose import ColumnTransformer
-
-# onehotencoder_census = ColumnTransformer(transformers=[('OneHot', OneHotEncoder(), [1,3,5,6,7,8,9,13])], remainder='passthrough')
-# X_census = onehotencoder_census.fit_transform(X_census).toarray()
-# X_census
-# X_census[0]
+# LabelEncoder (tranformar variaveis categorias em numericas)
+# OnehotEncoder (variáveis dummy)
 
 #############################
 ### Escalation Management ###
@@ -140,3 +139,52 @@ with open('credit.pkl', mode = 'wb') as f:
 ###################
 ### Naïve Bayes ###
 ###################
+
+credit = "https://drive.google.com/uc?export=download&id=1a1vV-zrje_wgN9ucN8yJ2DF_N0jGuWAI"
+df2 = pd.read_excel(credit)
+
+df2
+
+#####################
+### LabelEncoder ###
+#####################
+
+X_risco_credito_label = df2.iloc[:, 0:4].values
+X_risco_credito_label
+
+y_risco_credito_label = df2.iloc[:, 2].values
+y_risco_credito_label
+
+label_encoder_historia = LabelEncoder()
+label_encoder_divida = LabelEncoder()
+label_encoder_garantia = LabelEncoder()
+label_encoder_renda = LabelEncoder()
+
+X_risco_credito_label[:,0] = label_encoder_historia.fit_transform(X_risco_credito_label[:,0])
+X_risco_credito_label[:,1] = label_encoder_divida.fit_transform(X_risco_credito_label[:,1])
+X_risco_credito_label[:,2] = label_encoder_garantia.fit_transform(X_risco_credito_label[:,2])
+X_risco_credito_label[:,3] = label_encoder_renda.fit_transform(X_risco_credito_label[:,3])
+
+X_risco_credito_label
+
+#####################
+### OneHotEncoder ###
+#####################
+
+df3 = df2
+df3['debit'] = df3['debit'].replace({'alta': 1, 'baixa': 0})
+df3 
+
+X_risco_credito_onehot = df2.iloc[:, 3:7].values
+X_risco_credito_onehot
+
+y_risco_credito_onehot = df2.iloc[:, 3].values
+y_risco_credito_onehot
+
+
+naive_risco_credito = GaussianNB()
+naive_risco_credito.fit(X_risco_credito, y_risco_credito)
+
+# história boa (0), dívida alta (0), garantias nenhuma (1), renda > 35 (2)
+# história ruim (2), dívida alta (0), garantias adequada (0), renda < 15 (0)
+previsao = naive_risco_credito.predict([[0,0,1,2], [2,0,0,0]])
