@@ -20,8 +20,8 @@ from sklearn.compose import ColumnTransformer
 
 # Taken from: https://www.kaggle.com/datasets/laotse/credit-risk-dataset
 
-dados = "https://drive.google.com/uc?export=download&id=1wMapByTvMFt16zz9Bd2643eTHJXtEhnX"
-df = pd.read_csv(dados)
+data = "https://drive.google.com/uc?export=download&id=1wMapByTvMFt16zz9Bd2643eTHJXtEhnX"
+df = pd.read_csv(data)
 
 df
 df.describe()
@@ -140,9 +140,7 @@ with open('credit.pkl', mode = 'wb') as f:
 ### Naïve Bayes ###
 ###################
 
-credit = "https://drive.google.com/uc?export=download&id=1a1vV-zrje_wgN9ucN8yJ2DF_N0jGuWAI"
-df2 = pd.read_excel(credit)
-
+df2 = pd.read_excel("https://drive.google.com/uc?export=download&id=1a1vV-zrje_wgN9ucN8yJ2DF_N0jGuWAI")
 df2
 
 #####################
@@ -155,15 +153,15 @@ X_risco_credito_label
 y_risco_credito_label = df2.iloc[:, 2].values
 y_risco_credito_label
 
-label_encoder_historia = LabelEncoder()
-label_encoder_divida = LabelEncoder()
-label_encoder_garantia = LabelEncoder()
-label_encoder_renda = LabelEncoder()
+label_encoder_history = LabelEncoder()
+label_encoder_debit = LabelEncoder()
+label_encoder_guarantee= LabelEncoder()
+label_encoder_income = LabelEncoder()
 
-X_risco_credito_label[:,0] = label_encoder_historia.fit_transform(X_risco_credito_label[:,0])
-X_risco_credito_label[:,1] = label_encoder_divida.fit_transform(X_risco_credito_label[:,1])
-X_risco_credito_label[:,2] = label_encoder_garantia.fit_transform(X_risco_credito_label[:,2])
-X_risco_credito_label[:,3] = label_encoder_renda.fit_transform(X_risco_credito_label[:,3])
+X_risco_credito_label[:,0] = label_encoder_history.fit_transform(X_risco_credito_label[:,0])
+X_risco_credito_label[:,1] = label_encoder_debit.fit_transform(X_risco_credito_label[:,1])
+X_risco_credito_label[:,2] = label_encoder_guarantee.fit_transform(X_risco_credito_label[:,2])
+X_risco_credito_label[:,3] = label_encoder_income.fit_transform(X_risco_credito_label[:,3])
 
 X_risco_credito_label
 
@@ -193,8 +191,28 @@ y_risco_credito_onehot
 naive_risco_credito = GaussianNB()
 naive_risco_credito.fit(X_risco_credito_onehot, y_risco_credito_onehot)
 
-# história boa (0), dívida alta (0), garantias nenhuma (1), renda > 35 (2)
-# história ruim (2), dívida alta (0), garantias adequada (0), renda < 15 (0)
-previsao = naive_risco_credito.predict([[0,0,1,2], [2,0,0,0]])
+# Modelo 1 -> história boa (0), dívida alta (0), garantias nenhuma (1), renda > 35 (2)
+# Modelo 2 -> história ruim (2), dívida alta (0), garantias adequada (0), renda < 15 (0)
 
+#forecast = naive_risco_credito.predict([[0,0,1,2], [2,0,0,0]])
+#forecast 
 
+########################
+### Pratical Example ###
+########################
+
+# Taken from: https://www.kaggle.com/datasets/laotse/credit-risk-dataset
+
+import pickle
+with open('/content/census.pkl', 'rb') as f:
+  X_credit_treinamento, y_credit_treinamento, X_credit_teste, y_credit_teste = pickle.load(f)
+
+X_credit_treinamento.shape, y_credit_treinamento.shape
+
+X_credit_teste.shape, y_credit_teste.shape
+
+naive_credit_data = GaussianNB()
+naive_credit_data.fit(X_credit_treinamento, y_credit_treinamento)
+
+forecast = naive_credit_data.predict(X_credit_teste)
+forecast 
