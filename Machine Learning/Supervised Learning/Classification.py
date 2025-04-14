@@ -23,6 +23,8 @@ from sklearn.compose import ColumnTransformer
 data = "https://drive.google.com/uc?export=download&id=1wMapByTvMFt16zz9Bd2643eTHJXtEhnX"
 df = pd.read_csv(data)
 
+Traipubtos diferentes considera que nao ha correlacao entre as variaveis explicwtivaw 
+
 df
 df.describe()
 
