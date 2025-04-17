@@ -22,6 +22,7 @@ Shipfast
 Jenni
 pinecode.ai
 mistral AI
+Jungle AI
 windsurf
 lovable
 https://www.feedough.com/ai-prompt-generator/
