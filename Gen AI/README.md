@@ -15,6 +15,7 @@ Recurrent neural networks (RNNs)
 Situational Awareness: the decade ahead, Leopold Aschenbrenner
 
 Some Micro SaaS/Vertical AI
+https://www-promptingguide-ai.translate.goog/techniques/prompt_chaining?_x_tr_sl=auto&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=tc&_x_tr_hist=true
 Synthflow
 Boring Reality
 https://www.hunyuanvideo.org/pt/
