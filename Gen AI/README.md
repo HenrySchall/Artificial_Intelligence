@@ -16,54 +16,53 @@ Situational Awareness: the decade ahead, Leopold Aschenbrenner
 
 ### Vertical AI Guide
 
-- Hedra AI = Transformar imagens estáticas em vídeos animados 
+- Hedra AI = Transformar imagens estáticas em vídeos animados
+
+- Runway AI = Criação e edição de vídeos, imagens
+
 - Jenni AI = Auxiliar pesquisadores e profissionais na escrita acadêmica para a produção de conteúdo de alta qualidade
-- Relevance AI = Criação de Agents AI (No Code)
-- Locofy AI = É uma plataforma de desenvolvimento low-code que transforma designs criados em ferramentas como Figma e Adobe XD em código front-end pronto para produção
-- Runway AI = Plataforma especializada na criação e edição de vídeos, imagens
+  
+- Locofy AI = Desenvolvimento low-code que transforma designs criados em ferramentas como Figma e Adobe XD em código front-end pronto para produção
+  
 - Galileo AI = Plataforma voltada para o design de interfaces de usuário (UI)
-- Lovable = Plataforma para criação de aplicações web completas sem a necessidade de escrever código
--
+  
+- Lovable = Criação de aplicações web completas sem a necessidade de escrever código
 
+- Relevance AI = Criação de Agents AI (No Code)
 
+- Pinecode.ai = Automatizar a criação de estratégias de negociação e indicadores técnicos para as plataformas MetaTrader 5 (MT5) e TradingView
+
+- Wonsulting AI = Otimizar a busca por empregos
+
+- LedgerBox AI = Converter arquivos PDF em formatos estruturados, como Excel, CSV, JSON e QuickBooks
+
+- Gamma AI = Projetada para simplificar a criação de apresentações e documentos
+
+- WhiteBridge AI = Pesquisas de identidade digital 
 
 
 https://www-promptingguide-ai.translate.goog/techniques/prompt_chaining?_x_tr_sl=auto&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=tc&_x_tr_hist=true
 Synthflow
 Boring Reality
 https://www.hunyuanvideo.org/pt/
-
-
 Jenni
-pinecode.ai
 mistral AI
-Jungle AI
 windsurf
-
 https://www.feedough.com/ai-prompt-generator/
 typefully
 kling
-
-
-
 elevenlabs
 ai2sql
 amazon codewhisperer
 mintlify
-
-talbeua gpt
 rows 2.0
-
 https://copycoder.ai/
 wonsulting AI
-James AI
 replit
 https://automarticles.com/
-Ledgerbox
 https://v0.dev/chat/community
-Ledger Box
 Acquire.com
-Whitebrige
+
 Looka
 Colossyan
 Bolt.new
