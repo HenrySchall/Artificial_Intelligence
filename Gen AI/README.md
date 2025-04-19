@@ -28,6 +28,8 @@ Situational Awareness: the decade ahead, Leopold Aschenbrenner
   
 - Galileo AI = Plataforma voltada para o design de interfaces de usuário (UI)
 
+- CopyCoder.ai = Transforma imagens ee interfaces de usuário (UI) 
+
 - Bolt.new = Plataforma de desenvolvimento web full-stack
 
 - Relume = Construção de sites
@@ -68,6 +70,10 @@ Situational Awareness: the decade ahead, Leopold Aschenbrenner
 
 - Ai2sql = Converte descrições em linguagem natural em consultas SQL otimizadas
 
+- GeoSpy.ai = Geolocalização de imagens
+
+
+
 SWE BENCH VERIFIED
 
 https://www-promptingguide-ai.translate.goog/techniques/prompt_chaining?_x_tr_sl=auto&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=tc&_x_tr_hist=true
@@ -78,11 +84,8 @@ https://www.hunyuanvideo.org/pt/
 
 windsurf
 https://www.feedough.com/ai-prompt-generator/
-kling
 
 amazon codewhisperer
-https://copycoder.ai/
-
 https://automarticles.com/
 https://v0.dev/chat/communit
 My Group Metrics
@@ -115,6 +118,7 @@ Shipfast
 replit
 mistral AI
 DeltaAI
+SpatialLM 
 Acquire.com
 NeaPay
 
