@@ -36,20 +36,21 @@ https://www.feedough.com/ai-prompt-generator/
 - **Zero-shot**: Em um prompt zero-shot, você fornece uma instrução direta para o modelo, sem incluir exemplos. Isso é útil para tarefas simples e diretas, onde o modelo pode gerar uma resposta adequada sem a necessidade de exemplos adicionais.
   
 - **Estímulo Direcional:** Você pode colocar algumas “dicas” ou keywords para guiar o modelo melhor. Assim facilita a ter o resultado esperado com algumas poucas palavras.
-    - Referência: https://arxiv.org/abs/2302.11520
     
 - **Few-shot**: Few-shot prompting envolve fornecer alguns exemplos (geralmente entre 1 e 5) de entradas e saídas desejadas no prompt. Isso ajuda o modelo a entender melhor a tarefa e gerar respostas mais precisas e consistentes. Os exemplos devem ser escolhidos cuidadosamente para serem representativos da tarefa.
 
 - **Chain-of-Thought (CoT)**: A técnica Chain-of-Thought (Cadeia de Pensamento) envolve fazer com que o modelo explique seu raciocínio passo a passo antes de chegar à resposta final. Isso é especialmente útil para tarefas que exigem raciocínio lógico ou resolução de problemas. Ao fornecer exemplos de como o raciocínio deve ser explicado e solicitar que o modelo siga o mesmo processo, você pode melhorar a qualidade e a precisão das respostas.
-    - Referência: https://arxiv.org/abs/2201.11903
 
-- **elf-Consistency**: A técnica de Self-Consistency envolve gerar múltiplas cadeias de pensamento para a mesma tarefa e, em seguida, fazer com que o modelo escolha a resposta mais consistente. Isso ajuda a reduzir erros e melhorar a qualidade das respostas, aproveitando a capacidade do modelo de avaliar seu próprio raciocínio.
-    - Referência: Self-Consistency Improves Chain of Thought Reasoning in Language Models - https://arxiv.org/abs/2203.11171
+- **Self-Consistency**: A técnica de Self-Consistency envolve gerar múltiplas cadeias de pensamento para a mesma tarefa e, em seguida, fazer com que o modelo escolha a resposta mais consistente. Isso ajuda a reduzir erros e melhorar a qualidade das respostas, aproveitando a capacidade do modelo de avaliar seu próprio raciocínio.
+
 - **Tree-of-Thought (ToT)**: A técnica Tree-of-Thought expande a ideia da Chain-of-Thought, gerando múltiplos pensamentos e desenvolvendo uma árvore de raciocínio. O modelo explora diferentes caminhos de raciocínio e escolhe o mais promissor para chegar à resposta final. Isso é útil para problemas complexos que podem ter várias abordagens possíveis.
-    - Referências:
-        - Tree of Thoughts: Deliberate Problem Solving with Large Language Models - https://arxiv.org/abs/2305.10601
-        - Generative Agents: Interactive Simulacra of Human Behavior - https://arxiv.org/abs/2305.08291
+
+
+
+
+
     - Exemplo prático: No vídeo, é demonstrado um exemplo usando personas (copywriter, prospecto, gerente) no ChatHub com ChatGPT e Claude para gerar títulos. As diferentes personas interagem entre si, fornecendo sugestões, feedback e refinamentos para chegar a títulos mais eficazes.
+
 - **Skeleton-of-Thought (SoT)**: A técnica Skeleton-of-Thought envolve gerar um esqueleto ou índice de tópicos antes de desenvolver o conteúdo completo. Isso ajuda a estruturar a resposta e garantir que todos os pontos-chave sejam abordados. O modelo primeiro gera o esqueleto e, em seguida, preenche cada tópico com detalhes.
     - Referência: Skeleton of Thought: Augmenting Language Models with Variable-Depth Reasoning Ability - https://arxiv.org/abs/2307.15337
 
@@ -57,10 +58,13 @@ https://www.feedough.com/ai-prompt-generator/
 - **Generated Knowledge Prompting**: Essa técnica envolve usar o modelo de linguagem para gerar conhecimento contextual adicional que pode ser usado para melhorar a qualidade das respostas. O modelo gera informações relevantes com base no contexto fornecido, que são então incorporadas ao prompt para ajudar a gerar respostas mais precisas e informativas.
     - Referência: Generated Knowledge Prompting for Commonsense Reasoning - https://arxiv.org/abs/2110.08387
     - Exemplo prático: No vídeo, é demonstrado um exemplo de geração de um perfil detalhado de cliente usando o modelo de linguagem. Esse perfil gerado é então usado para melhorar a geração de um título persuasivo.
+
 - **Prompt Maiêutico:** A técnica do Prompt Maiêutico envolve pedir ao modelo para justificar suas respostas, explicando o raciocínio por trás delas. Isso pode ajudar a melhorar a qualidade das respostas, incentivando o modelo a fornecer explicações mais detalhadas e lógicas.
-    - Referência: Maieutic Prompting: Logically Consistent Reasoning with Recursive Explanations - https://arxiv.org/abs/2205.11822
+    - Referência: - https://arxiv.org/abs/2205.11822
+
 - **Retrieval Augmented Generation (RAG)**: A técnica RAG combina modelos de linguagem com bases de conhecimento externas para gerar respostas mais precisas e informativas. O modelo recupera informações relevantes da base de conhecimento e as utiliza para complementar seu próprio conhecimento ao gerar a resposta.
     - Referência: Retrieval Augmented Generation for Knowledge-Intensive NLP Tasks - https://aclanthology.org/2020.findings-emnlp.76/
+
 - **PAL (Program-Aided Language Models)**: A técnica PAL envolve usar conceitos e estruturas de linguagens de programação, como variáveis e funções, dentro dos prompts. Isso pode ajudar a tornar os prompts mais modulares, reutilizáveis e fáceis de adaptar para diferentes casos de uso.
 - Referência: PAL: Program-Aided Language Models - https://arxiv.org/abs/2211.10435
 - Exemplo prático: No vídeo, é mostrado um exemplo de criação de variáveis dentro do prompt para preencher templates de anúncios. As variáveis, como "[público-alvo]" e "[promessa principal]", são definidas no início do prompt e depois usadas no template para gerar anúncios personalizados.
@@ -68,14 +72,33 @@ https://www.feedough.com/ai-prompt-generator/
     - Referência: ReAct: Synergizing Reasoning and Acting in Language Models - https://arxiv.org/abs/2210.03629
     - Exemplo prático: No vídeo, é demonstrado um exemplo de um editor de e-mails usando a técnica ReAct no modelo Claude. O modelo analisa o e-mail, sugere melhorias e edita iterativamente o e-mail com base no feedback do usuário.
 
-
 ### Repository Bibliographic References:
-- Guiding Large Language Models via Directional Stimulus Prompting, by Zekun Li, Baolin Peng, Pengcheng He, Michel Galley, Jianfeng Gao, Xifeng Yan
-- Chain-of-Thought Prompting Elicits Reasoning in Large Language Models, by Zekun Li, Baolin Peng, Pengcheng He, Michel Galley, Jianfeng Gao, Xifeng Yan
+- Large Language Models are Zero-short Reasoners Contrastive Chin of Thought prompting, by Takeshi Kojima, Shixiang Shane Gu, Machel Reid, Yutaka Matsuo, Yusuke Iwasawa. https://arxiv.org/abs/2205.11916
+
+- Guiding Large Language Models via Directional Stimulus Prompting, by Zekun Li, Baolin Peng, Pengcheng He, Michel Galley, Jianfeng Gao, Xifeng Yan. https://arxiv.org/abs/2302.11520
+
+- Chain-of-Thought Prompting Elicits Reasoning in Large Language Models, by Zekun Li, Baolin Peng, Pengcheng He, Michel Galley, Jianfeng Gao, Xifeng Yan. https://arxiv.org/abs/2201.11903
+
+- Self-Consistency Improves Chain of Thought Reasoning in Language Models, by Xuezhi Wang, Jason Wei, Dale Schuurmans, Quoc Le, Ed Chi, Sharan Narang, Aakanksha Chowdhery, Denny Zhou. https://arxiv.org/abs/2203.11171
+
+- Deliberate Problem Solving with Large Language Models, by Shunyu Yao, Dian Yu, Jeffrey Zhao, Izhak Shafran, Thomas L. Griffiths, Yuan Cao, Karthik Narasimhan. https://arxiv.org/abs/2305.10601
+
+- Generative Agents: Interactive Simulacra of Human Behavior, by Joon Sung Park, Joseph C. O'Brien, Carrie J. Cai, Meredith Ringel Morris, Percy Liang, Michael S. Bernstein. https://arxiv.org/abs/2304.03442
+
+- Large Language Model Guided Tree-of-Thought, by Jieyi Long. https://arxiv.org/abs/2305.08291
+
+- Maieutic Prompting: Logically Consistent Reasoning with Recursive Explanations, by Jaehun Jung, Lianhui Qin, Sean Welleck, Faeze Brahman, Chandra Bhagavatula, Ronan Le Bras, Yejin Choi. https://arxiv.org/abs/2205.11822
+
+- PAL: Program-aided Language Models. by Luyu Gao, Aman Madaan, Shuyan Zhou, Uri Alon, Pengfei Liu, Yiming Yang, Jamie Callan, Graham Neubig. https://arxiv.org/abs/2211.10435
 
 
 
-CDP Zerp Short
+
+
+
+
+
+CDP Zero Short
 text: Large Language Models are Zero-short Reasoners
 Contrastive Chin of Thought prompting
 
