@@ -1,5 +1,9 @@
 # Prompt Engineering
 
+https://www-promptingguide-ai.translate.goog/techniques/prompt_chaining?_x_tr_sl=auto&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=tc&_x_tr_hist=true
+
+https://chathub.gg/pt
+
 > A engenharia de prompt é a ciência empírica de planejar, criar e testar prompts para gerar melhores respostas em grandes modelos de linguagem.
 
 ## Estrutura básica de prompt (P.R.O.M.P.T.)
@@ -11,7 +15,6 @@
 - **Panorama**: Forneça informações contextuais relevantes para ajudar o modelo a gerar uma resposta mais precisa e específica.
 - **Transformar**: Esteja preparado para refinar e iterar o prompt com base nos resultados obtidos, fornecendo feedback e exemplos adicionais se necessário.
 
-https://chathub.gg/pt
 ## Evitando alucinações
 
 - Permitir que o modelo diga que não sabe a resposta: Ao dar permissão explícita para o modelo admitir quando não tem conhecimento suficiente para responder uma pergunta, você pode reduzir a quantidade de informações fabricadas ou imprecisas nas respostas.
