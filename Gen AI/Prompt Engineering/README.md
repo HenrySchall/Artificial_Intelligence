@@ -1,12 +1,9 @@
 # Prompt Engineering
 
-https://www-promptingguide-ai.translate.goog/techniques/prompt_chaining?_x_tr_sl=auto&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=tc&_x_tr_hist=true
+https://www.promptingguide.ai/introduction
 
-https://chathub.gg/pt
-
-https://app.chathub.gg/?utm_source=chathub.gg
-
-https://www.feedough.com/ai-prompt-generator/
+- Testar Prompts = https://app.chathub.gg/?utm_source=chathub.gg
+- Gerador de Prompts https://www.feedough.com/ai-prompt-generator/
 
 > A engenharia de prompt é a ciência empírica de planejar, criar e testar prompts para gerar melhores respostas em grandes modelos de linguagem.
 
@@ -45,32 +42,17 @@ https://www.feedough.com/ai-prompt-generator/
 
 - **Tree-of-Thought (ToT)**: A técnica Tree-of-Thought expande a ideia da Chain-of-Thought, gerando múltiplos pensamentos e desenvolvendo uma árvore de raciocínio. O modelo explora diferentes caminhos de raciocínio e escolhe o mais promissor para chegar à resposta final. Isso é útil para problemas complexos que podem ter várias abordagens possíveis.
 
-
-
-
-
-    - Exemplo prático: No vídeo, é demonstrado um exemplo usando personas (copywriter, prospecto, gerente) no ChatHub com ChatGPT e Claude para gerar títulos. As diferentes personas interagem entre si, fornecendo sugestões, feedback e refinamentos para chegar a títulos mais eficazes.
-
 - **Skeleton-of-Thought (SoT)**: A técnica Skeleton-of-Thought envolve gerar um esqueleto ou índice de tópicos antes de desenvolver o conteúdo completo. Isso ajuda a estruturar a resposta e garantir que todos os pontos-chave sejam abordados. O modelo primeiro gera o esqueleto e, em seguida, preenche cada tópico com detalhes.
-    - Referência: Skeleton of Thought: Augmenting Language Models with Variable-Depth Reasoning Ability - https://arxiv.org/abs/2307.15337
-
-- Exemplo prático: No vídeo, é mostrado um exemplo de geração de uma "causa surpreendente principal" para copy usando a técnica SoT. O modelo gera uma lista de possíveis causas e depois é solicitado a elaborar sobre a causa selecionada.
+    
 - **Generated Knowledge Prompting**: Essa técnica envolve usar o modelo de linguagem para gerar conhecimento contextual adicional que pode ser usado para melhorar a qualidade das respostas. O modelo gera informações relevantes com base no contexto fornecido, que são então incorporadas ao prompt para ajudar a gerar respostas mais precisas e informativas.
-    - Referência: Generated Knowledge Prompting for Commonsense Reasoning - https://arxiv.org/abs/2110.08387
-    - Exemplo prático: No vídeo, é demonstrado um exemplo de geração de um perfil detalhado de cliente usando o modelo de linguagem. Esse perfil gerado é então usado para melhorar a geração de um título persuasivo.
 
 - **Prompt Maiêutico:** A técnica do Prompt Maiêutico envolve pedir ao modelo para justificar suas respostas, explicando o raciocínio por trás delas. Isso pode ajudar a melhorar a qualidade das respostas, incentivando o modelo a fornecer explicações mais detalhadas e lógicas.
-    - Referência: - https://arxiv.org/abs/2205.11822
 
 - **Retrieval Augmented Generation (RAG)**: A técnica RAG combina modelos de linguagem com bases de conhecimento externas para gerar respostas mais precisas e informativas. O modelo recupera informações relevantes da base de conhecimento e as utiliza para complementar seu próprio conhecimento ao gerar a resposta.
-    - Referência: Retrieval Augmented Generation for Knowledge-Intensive NLP Tasks - https://aclanthology.org/2020.findings-emnlp.76/
 
 - **PAL (Program-Aided Language Models)**: A técnica PAL envolve usar conceitos e estruturas de linguagens de programação, como variáveis e funções, dentro dos prompts. Isso pode ajudar a tornar os prompts mais modulares, reutilizáveis e fáceis de adaptar para diferentes casos de uso.
-- Referência: PAL: Program-Aided Language Models - https://arxiv.org/abs/2211.10435
-- Exemplo prático: No vídeo, é mostrado um exemplo de criação de variáveis dentro do prompt para preencher templates de anúncios. As variáveis, como "[público-alvo]" e "[promessa principal]", são definidas no início do prompt e depois usadas no template para gerar anúncios personalizados.
+
 - **ReAct (Reason + Act)**: A técnica ReAct divide tarefas complexas em etapas de raciocínio e ação. O modelo primeiro raciocina sobre a tarefa, decidindo qual ação tomar, e depois executa essa ação. Esse processo é repetido até que a tarefa seja concluída. Isso é especialmente útil para tarefas que exigem várias etapas ou interação com ferramentas externas.
-    - Referência: ReAct: Synergizing Reasoning and Acting in Language Models - https://arxiv.org/abs/2210.03629
-    - Exemplo prático: No vídeo, é demonstrado um exemplo de um editor de e-mails usando a técnica ReAct no modelo Claude. O modelo analisa o e-mail, sugere melhorias e edita iterativamente o e-mail com base no feedback do usuário.
 
 ### Repository Bibliographic References:
 - Large Language Models are Zero-short Reasoners Contrastive Chin of Thought prompting, by Takeshi Kojima, Shixiang Shane Gu, Machel Reid, Yutaka Matsuo, Yusuke Iwasawa. Available: https://arxiv.org/abs/2205.11916
@@ -87,42 +69,14 @@ https://www.feedough.com/ai-prompt-generator/
 
 - Large Language Model Guided Tree-of-Thought, by Jieyi Long. Available: https://arxiv.org/abs/2305.08291
 
+- Skeleton of Thought: Augmenting Language Models with Variable-Depth Reasoning Ability, by Xuefei Ning, Zinan Lin, Zixuan Zhou, Zifu Wang, Huazhong Yang, Yu Wang. Available: https://arxiv.org/abs/2307.15337
+
+-  Generated Knowledge Prompting for Commonsense Reasoning, by Jiacheng Liu, Alisa Liu, Ximing Lu, Sean Welleck, Peter West, Ronan Le Bras, Yejin Choi, Hannaneh Hajishirzi. Available: https://arxiv.org/abs/2110.08387
+
 - Maieutic Prompting: Logically Consistent Reasoning with Recursive Explanations, by Jaehun Jung, Lianhui Qin, Sean Welleck, Faeze Brahman, Chandra Bhagavatula, Ronan Le Bras, Yejin Choi. Available: https://arxiv.org/abs/2205.11822
+
+- Retrieval Augmented Generation for Knowledge-Intensive NLP Tasks, by Katja Filippova. Available: https://aclanthology.org/2020.findings-emnlp.76/
 
 - PAL: Program-aided Language Models. by Luyu Gao, Aman Madaan, Shuyan Zhou, Uri Alon, Pengfei Liu, Yiming Yang, Jamie Callan, Graham Neubig. Available: https://arxiv.org/abs/2211.10435
 
-
-
-
-
-
-
-
-CDP Zero Short
-text: Large Language Models are Zero-short Reasoners
-Contrastive Chin of Thought prompting
-
-Consist~encia Própria
-Self-Consistency Improves Chain of Thought Reasoning in Language Models
-
-Arvores de pensamento
-Tree of thoughts: Deliberate problem solving with language models
-Large LÇanguage Model Guided Tree of Thought
-https://github.com/dave1010/tree-of-thought-prompting
-
-Chathub
-
-Esqueleto de Pensamento
-Skeleton of Thought prompting LLMs for efficiente parallel generation
-
-
-linguagem programatica assistida
-
-PAL Program aided langiage models
-
-promt maieutico 
-maieutic prompitng logically consistent reasong wih recursie expolanations
-
-Geração de conhecimentyo
-Generatesd konwledge prompting for coommonsense reasoning
-react synerginzing reasoning and acting in languagem models 
+- Synergizing Reasoning and Acting in Language Models, by Shunyu Yao, Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik Narasimhan, Yuan Cao. Available: https://arxiv.org/abs/2210.03629
