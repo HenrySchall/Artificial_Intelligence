@@ -25,12 +25,16 @@ Situational Awareness: the decade ahead, Leopold Aschenbrenner
 - Locofy AI = Desenvolvimento low-code que transforma designs criados em ferramentas como Figma e Adobe XD em código front-end pronto para produção
   
 - Galileo AI = Plataforma voltada para o design de interfaces de usuário (UI)
+
+- Bolt.new = Plataforma de desenvolvimento web full-stack
   
 - Lovable = Criação de aplicações web completas sem a necessidade de escrever código
 
 - Relevance AI = Criação de Agents AI (No Code)
 
-- Pinecode.ai = Automatizar a criação de estratégias de negociação e indicadores técnicos para as plataformas MetaTrader 5 (MT5) e TradingView
+- Synthflow AI = Criar assistentes de voz para automatizar chamadas telefônicas de forma natural e eficiente, sem necessidade de programação
+
+- Pinecode.ai = Automatizar a criação de estratégias de negociação e indicadores técnicos para TradingView
 
 - Wonsulting AI = Otimizar a busca por empregos
 
@@ -39,6 +43,21 @@ Situational Awareness: the decade ahead, Leopold Aschenbrenner
 - Gamma AI = Projetada para simplificar a criação de apresentações e documentos
 
 - WhiteBridge AI = Pesquisas de identidade digital 
+
+- Looka AI = Criar logotipos e identidades visuais
+
+- Colossyan = Transforma textos em vídeos com apresentadores virtuais realistas
+
+- ElevenLabs = Síntese e clonagem de voz, permitindo transformar texto em áudio realista e natural
+
+- Notta AI = Transcrever, resumir e traduzir áudios e vídeos
+
+- DimenXioner = Transforma imagens 2D em modelos 3D realistas
+
+- Typefully = Gerenciamento de mídias sociais
+
+
+
 
 
 https://www-promptingguide-ai.translate.goog/techniques/prompt_chaining?_x_tr_sl=auto&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=tc&_x_tr_hist=true
@@ -49,37 +68,21 @@ Jenni
 mistral AI
 windsurf
 https://www.feedough.com/ai-prompt-generator/
-typefully
 kling
-elevenlabs
 ai2sql
 amazon codewhisperer
 mintlify
 rows 2.0
 https://copycoder.ai/
 wonsulting AI
-replit
 https://automarticles.com/
-https://v0.dev/chat/community
-Acquire.com
-
-Looka
-Colossyan
-Bolt.new
-Gamma
-DeltaAI
-dimenxioner
-Guestlab
+https://v0.dev/chat/communit
 My Group Metrics
 https://geospy.ai/
-Notta
 flowiseAI
 SpatialLM
 https://www.blazesql.com/
-https://replit.com/
-https://www.cursor.com/
 relume.io sites
-Synthflow
 same.new
 https://nace.ai/
 https://www.solvearn.net/
@@ -88,7 +91,7 @@ https://www.lockedinai.com/
 https://replit.com/
 softgen
 https://bolt.new/
-NeaPay
+
 Meta ai
 Le chat
 Perplexity
@@ -98,8 +101,14 @@ Cghatllm
 Runaway
 
 
-Shipfast
+
 ]resolve
 midjorney
-Shield ai
+
+
+Shipfast
+replit
+DeltaAI
+Acquire.com
+NeaPay
 
