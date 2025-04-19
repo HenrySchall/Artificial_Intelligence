@@ -40,6 +40,8 @@ Situational Awareness: the decade ahead, Leopold Aschenbrenner
 
 - v0.dev = Criar interfaces e aplicações
 
+- Same.new = Permite criar, clonar e iterar aplicações web completas
+
 - Relevance AI = Criação de Agents AI (No Code)
 
 - Synthflow AI = Criar assistentes de voz para automatizar chamadas telefônicas de forma natural e eficiente, sem necessidade de programação
@@ -61,6 +63,8 @@ Situational Awareness: the decade ahead, Leopold Aschenbrenner
 - Midjourney = Geração de imagens
 
 - Kling AI = Geração de vídeos realistas a partir de comandos de texto ou imagens
+
+- HunyuanVideo = Geração de vídeos
 
 - Colossyan = Transforma textos em vídeos com apresentadores virtuais realistas
 
@@ -97,19 +101,17 @@ Situational Awareness: the decade ahead, Leopold Aschenbrenner
 SWE BENCH VERIFIED
 https://www-promptingguide-ai.translate.goog/techniques/prompt_chaining?_x_tr_sl=auto&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=tc&_x_tr_hist=true
 Boring Reality
-https://www.hunyuanvideo.org/pt/
+
 https://www.feedough.com/ai-prompt-generator/
-amazon codewhisperer
-same.new
 https://www.solvearn.net/
-Meta ai
 Perplexity
 My Group Metrics
+
 Shipfast
-replit
+Replit
 DeltaAI
 SpatialLM
 flowiseAI
-Acquire.com
+Acquire
 NeaPay
 
