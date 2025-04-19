@@ -18,6 +18,8 @@ Situational Awareness: the decade ahead, Leopold Aschenbrenner
 
 - Hedra AI = Transformar imagens estáticas em vídeos animados
 
+- Rows 2.0 = Integra inteligência artificial (IA) para transformar a maneira como você analisa, automatiza e compartilha planilhas
+
 - Runway AI = Criação e edição de vídeos, imagens
 
 - Jenni AI = Auxiliar pesquisadores e profissionais na escrita acadêmica para a produção de conteúdo de alta qualidade
@@ -58,7 +60,7 @@ Situational Awareness: the decade ahead, Leopold Aschenbrenner
 
 
 
-
+SWE BENCH VERIFIED
 
 https://www-promptingguide-ai.translate.goog/techniques/prompt_chaining?_x_tr_sl=auto&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=tc&_x_tr_hist=true
 Synthflow
@@ -72,7 +74,6 @@ kling
 ai2sql
 amazon codewhisperer
 mintlify
-rows 2.0
 https://copycoder.ai/
 wonsulting AI
 https://automarticles.com/
