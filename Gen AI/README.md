@@ -29,8 +29,12 @@ Situational Awareness: the decade ahead, Leopold Aschenbrenner
 - Galileo AI = Plataforma voltada para o design de interfaces de usuário (UI)
 
 - Bolt.new = Plataforma de desenvolvimento web full-stack
+
+- Relume = Construção de sites
   
 - Lovable = Criação de aplicações web completas sem a necessidade de escrever código
+
+- Softgen = Desenvolvimento de aplicações web full-stack
 
 - Relevance AI = Criação de Agents AI (No Code)
 
@@ -70,12 +74,12 @@ https://www-promptingguide-ai.translate.goog/techniques/prompt_chaining?_x_tr_sl
 Synthflow
 Boring Reality
 https://www.hunyuanvideo.org/pt/
-Jenni
-mistral AI
+
+
 windsurf
 https://www.feedough.com/ai-prompt-generator/
 kling
-ai2sql
+
 amazon codewhisperer
 https://copycoder.ai/
 
@@ -86,15 +90,12 @@ https://geospy.ai/
 flowiseAI
 SpatialLM
 https://www.blazesql.com/
-relume.io sites
 same.new
 https://nace.ai/
 https://www.solvearn.net/
 https://www.interviewscouter.com/
 https://www.lockedinai.com/
-https://replit.com/
-softgen
-https://bolt.new/
+
 
 Meta ai
 Le chat
@@ -112,6 +113,7 @@ midjorney
 
 Shipfast
 replit
+mistral AI
 DeltaAI
 Acquire.com
 NeaPay
