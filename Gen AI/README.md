@@ -74,6 +74,8 @@ Situational Awareness: the decade ahead, Leopold Aschenbrenner
 
 - Mintlify = Ajudar equipes de desenvolvimento de produto/suporte a criar e otimizar documentações
 
+- Abacus.AI = Plataforma projetada para empresas e profissionais que desejam criar, automatizar e escalar sistemas de IA personalizados
+
 - Resolve AI = Automatiza tarefas operacionais em ambientes de software de produção
 
 - Nace.AI = Desenvolvimento de soluções corporativas
@@ -84,6 +86,9 @@ Situational Awareness: the decade ahead, Leopold Aschenbrenner
 
 - GeoSpy.ai = Geolocalização de imagens
 
+- Blackbox AI = Auxiliar desenvolvedores na otimização de código
+
+- 
 
 
 
