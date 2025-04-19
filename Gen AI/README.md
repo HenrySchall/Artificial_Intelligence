@@ -1,18 +1,14 @@
 # Generative AI
-ANI
 
-AGI
-
-ASI
-
+ANI – Artificial Narrow Intelligence
+AGI – Artificial General Intelligence
+SI – Artificial Superintelligence
 - Modelos Generative Adversarial networks (GANs)
 - Variational autoencoders (VAEs)
 - Auoregressive Models
 - Transofmer models
 - Deep convolutional Genreative Adversiral networks
 Recurrent neural networks (RNNs)
-
-Situational Awareness: the decade ahead, Leopold Aschenbrenner
 
 ### Vertical AI Guide
 
@@ -32,9 +28,13 @@ Situational Awareness: the decade ahead, Leopold Aschenbrenner
 
 - Bolt.new = Plataforma de desenvolvimento web full-stack
 
-- Relume = Construção de sites
+- Shipfast = Desenvolvimento rápido de aplicações web, especialmente SaaS (Software as a Service).
+
+- Relume = Construção de websites
   
 - Lovable = Criação de aplicações web completas sem a necessidade de escrever código
+
+- Replit = Criação de aplicações and websites
 
 - Softgen = Desenvolvimento de aplicações web full-stack
 
@@ -92,26 +92,8 @@ Situational Awareness: the decade ahead, Leopold Aschenbrenner
 
 - Blackbox AI = Auxiliar desenvolvedores na otimização de código
 
-- 
+- Perplexity AI = Mecanismo de busca que combina a busca tradicional com respostas geradas por IA
 
-
-
-
-
-SWE BENCH VERIFIED
-https://www-promptingguide-ai.translate.goog/techniques/prompt_chaining?_x_tr_sl=auto&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=tc&_x_tr_hist=true
-Boring Reality
-
-https://www.feedough.com/ai-prompt-generator/
-https://www.solvearn.net/
-Perplexity
-My Group Metrics
-
-Shipfast
-Replit
-DeltaAI
-SpatialLM
-flowiseAI
-Acquire
-NeaPay
+### Repository Bibliographic References:
+- Situational Awareness: The Decade Ahead
 
