@@ -15,8 +15,4 @@
 
 ### Repository Bibliographic References:
 - Aifolks.org (Majority of images and mind maps)
-- Introduction to Machine Learning (Adaptive Computation and Machine Learning), Ethem Alpaydin
-- Foundations of Machine Learning, Mehryar Mohri, Afshin Rostamizadeh, Ameet Talwalkar 
-- Neural Networks and Deep Learning: A Textbook, by Charu C Aggarwal
 - Perceptrons: An Introduction to Computational Geometry, by Marvin Minsky, Seymour A. Papert
-- Deep Learning (Adaptive Computation and Machine Learning series),by Ian Goodfellow (Author), Yoshua Bengio (Author), Aaron Courville
