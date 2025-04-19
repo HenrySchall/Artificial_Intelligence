@@ -18,9 +18,9 @@ Situational Awareness: the decade ahead, Leopold Aschenbrenner
 
 - Hedra AI = Transformar imagens estáticas em vídeos animados
 
-- Rows 2.0 = Integra inteligência artificial (IA) para transformar a maneira como você analisa, automatiza e compartilha planilhas
+- LockedIn AI = Plataforma projetada para auxiliar profissionais em entrevistas de emprego e reuniões
 
-- Runway AI = Criação e edição de vídeos, imagens
+- Rows 2.0 = Integra inteligência artificial (IA) para transformar a maneira como você analisa, automatiza e compartilha planilhas
 
 - Jenni AI = Auxiliar pesquisadores e profissionais na escrita acadêmica para a produção de conteúdo de alta qualidade
   
@@ -38,6 +38,8 @@ Situational Awareness: the decade ahead, Leopold Aschenbrenner
 
 - Softgen = Desenvolvimento de aplicações web full-stack
 
+- v0.dev = Criar interfaces e aplicações
+
 - Relevance AI = Criação de Agents AI (No Code)
 
 - Synthflow AI = Criar assistentes de voz para automatizar chamadas telefônicas de forma natural e eficiente, sem necessidade de programação
@@ -54,6 +56,10 @@ Situational Awareness: the decade ahead, Leopold Aschenbrenner
 
 - Looka AI = Criar logotipos e identidades visuais
 
+- Runaway AI = Criação e edição de vídeos, imagens
+
+- Midjourney = Geração de imagens
+
 - Kling AI = Geração de vídeos realistas a partir de comandos de texto ou imagens
 
 - Colossyan = Transforma textos em vídeos com apresentadores virtuais realistas
@@ -68,57 +74,37 @@ Situational Awareness: the decade ahead, Leopold Aschenbrenner
 
 - Mintlify = Ajudar equipes de desenvolvimento de produto/suporte a criar e otimizar documentações
 
+- Resolve AI = Automatiza tarefas operacionais em ambientes de software de produção
+
+- Nace.AI = Desenvolvimento de soluções corporativas
+
 - Ai2sql = Converte descrições em linguagem natural em consultas SQL otimizadas
+
+- BlazeSQL = Plataforma projetada para facilitar a interação com bancos de dados SQL
 
 - GeoSpy.ai = Geolocalização de imagens
 
 
 
-SWE BENCH VERIFIED
 
+
+
+SWE BENCH VERIFIED
 https://www-promptingguide-ai.translate.goog/techniques/prompt_chaining?_x_tr_sl=auto&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=tc&_x_tr_hist=true
-Synthflow
 Boring Reality
 https://www.hunyuanvideo.org/pt/
-
-
-windsurf
 https://www.feedough.com/ai-prompt-generator/
-
 amazon codewhisperer
-https://automarticles.com/
-https://v0.dev/chat/communit
-My Group Metrics
-https://geospy.ai/
-flowiseAI
-SpatialLM
-https://www.blazesql.com/
 same.new
-https://nace.ai/
 https://www.solvearn.net/
-https://www.interviewscouter.com/
-https://www.lockedinai.com/
-
-
 Meta ai
-Le chat
 Perplexity
-Kimi
-Qwen
-Cghatllm
-Runaway
-
-
-
-]resolve
-midjorney
-
-
+My Group Metrics
 Shipfast
 replit
-mistral AI
 DeltaAI
-SpatialLM 
+SpatialLM
+flowiseAI
 Acquire.com
 NeaPay
 
