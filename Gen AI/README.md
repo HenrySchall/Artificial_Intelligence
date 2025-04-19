@@ -48,6 +48,8 @@ Situational Awareness: the decade ahead, Leopold Aschenbrenner
 
 - Looka AI = Criar logotipos e identidades visuais
 
+- Kling AI = Geração de vídeos realistas a partir de comandos de texto ou imagens
+
 - Colossyan = Transforma textos em vídeos com apresentadores virtuais realistas
 
 - ElevenLabs = Síntese e clonagem de voz, permitindo transformar texto em áudio realista e natural
@@ -58,7 +60,9 @@ Situational Awareness: the decade ahead, Leopold Aschenbrenner
 
 - Typefully = Gerenciamento de mídias sociais
 
+- Mintlify = Ajudar equipes de desenvolvimento de produto/suporte a criar e otimizar documentações
 
+- Ai2sql = Converte descrições em linguagem natural em consultas SQL otimizadas
 
 SWE BENCH VERIFIED
 
@@ -73,9 +77,8 @@ https://www.feedough.com/ai-prompt-generator/
 kling
 ai2sql
 amazon codewhisperer
-mintlify
 https://copycoder.ai/
-wonsulting AI
+
 https://automarticles.com/
 https://v0.dev/chat/communit
 My Group Metrics
