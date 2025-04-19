@@ -7,6 +7,12 @@
 
 ![IMG_2304](https://github.com/user-attachments/assets/2aec1048-2074-4bd4-a6ac-107a8783e1f8)
 
+
+### Repository Bibliographic References:
+- Introduction to Machine Learning (Adaptive Computation and Machine Learning), Ethem Alpaydin
+- Foundations of Machine Learning, Mehryar Mohri, Afshin Rostamizadeh, Ameet Talwalkar
+
+
 O pickle é um módulo em Python usado para serializar e desserializar objetos Python, ou seja, converter objetos Python em uma sequência de bytes para que possam ser salvos em um arquivo ou transmitidos pela rede e, posteriormente, reconstruí-los de volta no formato original.
 
 O que o pickle faz:
