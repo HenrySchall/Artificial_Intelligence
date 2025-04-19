@@ -4,6 +4,8 @@ https://www-promptingguide-ai.translate.goog/techniques/prompt_chaining?_x_tr_sl
 
 https://chathub.gg/pt
 
+https://www.feedough.com/ai-prompt-generator/
+
 > A engenharia de prompt é a ciência empírica de planejar, criar e testar prompts para gerar melhores respostas em grandes modelos de linguagem.
 
 ## Estrutura básica de prompt (P.R.O.M.P.T.)
