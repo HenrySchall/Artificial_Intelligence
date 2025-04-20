@@ -60,6 +60,8 @@ Recurrent neural networks (RNNs)
 
 - Runaway AI = Criação e edição de vídeos, imagens
 
+- Leonardo AI = Criação de vídeos e imagens
+
 - Midjourney = Geração de imagens
 
 - Kling AI = Geração de vídeos realistas a partir de comandos de texto ou imagens
