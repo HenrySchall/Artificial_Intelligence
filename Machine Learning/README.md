@@ -5,12 +5,17 @@
 - Unsupervised = The model works with data that does not have labels. The goal is to discover hidden patterns or structures (classification) within the data without knowing in advance what the correct outputs are, that is, "no output"
 - Reinforcement Learning = In reinforcement learning, the model learns by trial and error, that is, it makes decisions in a dynamic environment, and learns from the feedback it receives, indicating errors, but not providing solutions
 
-![IMG_2304](https://github.com/user-attachments/assets/2aec1048-2074-4bd4-a6ac-107a8783e1f8)
+### Mind Map
 
+![IMG_2305](https://github.com/user-attachments/assets/a5293786-1ab6-4893-8e7d-9de964db1d37)
 
 ### Repository Bibliographic References:
 - Introduction to Machine Learning (Adaptive Computation and Machine Learning), Ethem Alpaydin
 - Foundations of Machine Learning, Mehryar Mohri, Afshin Rostamizadeh, Ameet Talwalkar
+
+
+
+
 
 
 O pickle é um módulo em Python usado para serializar e desserializar objetos Python, ou seja, converter objetos Python em uma sequência de bytes para que possam ser salvos em um arquivo ou transmitidos pela rede e, posteriormente, reconstruí-los de volta no formato original.
