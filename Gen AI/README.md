@@ -18,6 +18,8 @@ Recurrent neural networks (RNNs)
 
 - Mapify = Cria mapas mentais
 
+- MyMap = Cria mapas mentais
+
 - Jenni AI = Auxiliar pesquisadores e profissionais na escrita acadêmica para a produção de conteúdo de alta qualidade
   
 - Locofy AI = Desenvolvimento low-code que transforma designs criados em ferramentas como Figma e Adobe XD em código front-end pronto para produção
