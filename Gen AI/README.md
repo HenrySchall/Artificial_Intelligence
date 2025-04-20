@@ -12,11 +12,11 @@ Recurrent neural networks (RNNs)
 
 ### Vertical AI Guide
 
-- Hedra AI = Transformar imagens estáticas em vídeos animados
-
 - LockedIn AI = Plataforma projetada para auxiliar profissionais em entrevistas de emprego e reuniões
 
 - Rows 2.0 = Integra inteligência artificial (IA) para transformar a maneira como você analisa, automatiza e compartilha planilhas
+
+- Mapify = Cria mapas mentais
 
 - Jenni AI = Auxiliar pesquisadores e profissionais na escrita acadêmica para a produção de conteúdo de alta qualidade
   
@@ -57,6 +57,8 @@ Recurrent neural networks (RNNs)
 - WhiteBridge AI = Pesquisas de identidade digital 
 
 - Looka AI = Criar logotipos e identidades visuais
+
+- Hedra AI = Transformar imagens estáticas em vídeos animados
 
 - Runaway AI = Criação e edição de vídeos, imagens
 
