@@ -78,6 +78,10 @@ Recurrent neural networks (RNNs)
 
 - Notta AI = Transcrever, resumir e traduzir áudios e vídeos
 
+- Eskritor = Axuliar na criação de textos
+
+- Mystylus = Companheiro de IA para Redação de Documentos Eficiente
+
 - DimenXioner = Transforma imagens 2D em modelos 3D realistas
 
 - Typefully = Gerenciamento de mídias sociais
