@@ -3,6 +3,8 @@
 https://www.promptingguide.ai/introduction
 
 - Testar Prompts = https://app.chathub.gg/?utm_source=chathub.gg
+- https://lmarena.ai/
+- https://huggingface.co/spaces/lmarena-ai/chatbot-arena-leaderboard
 - Gerador de Prompts https://www.feedough.com/ai-prompt-generator/
 
 > A engenharia de prompt é a ciência empírica de planejar, criar e testar prompts para gerar melhores respostas em grandes modelos de linguagem.
