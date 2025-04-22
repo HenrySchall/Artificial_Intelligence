@@ -6,6 +6,8 @@ https://smithery.ai/
 
 https://glama.ai/chat
 
+https://www.wonsulting.com/networkai
+
 ANI – Artificial Narrow Intelligence
 AGI – Artificial General Intelligence
 SI – Artificial Superintelligence
