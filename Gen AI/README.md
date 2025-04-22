@@ -10,6 +10,13 @@ https://glama.ai/chat
 
 https://www.wonsulting.com/networkai
 
+Visualmind
+https://www.freepik.com/ai/image-generator
+Argil AI
+
+smoothspeak
+
+
 ANI – Artificial Narrow Intelligence
 AGI – Artificial General Intelligence
 SI – Artificial Superintelligence
