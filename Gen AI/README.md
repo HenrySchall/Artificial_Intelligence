@@ -34,6 +34,10 @@ Recurrent neural networks (RNNs)
 
 - Shipfast = Desenvolvimento rápido de aplicações web, especialmente SaaS (Software as a Service).
 
+https://admyral.ai/
+
+https://www.finalroundai.com/
+
 - Relume = Construção de websites
   
 - Lovable = Criação de aplicações web completas sem a necessidade de escrever código
