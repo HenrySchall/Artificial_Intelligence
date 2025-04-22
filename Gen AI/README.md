@@ -1,6 +1,7 @@
 # Generative AI
 
 Langflow
+https://smithery.ai/
 
 ANI – Artificial Narrow Intelligence
 AGI – Artificial General Intelligence
