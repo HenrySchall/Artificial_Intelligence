@@ -1,5 +1,7 @@
 # Generative AI
 
+Langflow
+
 ANI – Artificial Narrow Intelligence
 AGI – Artificial General Intelligence
 SI – Artificial Superintelligence
