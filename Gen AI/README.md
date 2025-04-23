@@ -8,6 +8,8 @@ https://smithery.ai/
 
 https://glama.ai/chat
 
+https://momoai.co/
+
 https://www.wonsulting.com/networkai
 
 Visualmind
@@ -16,6 +18,9 @@ Argil AI
 
 smoothspeak
 
+https://auraai.app/
+
+https://www.financialdatasets.ai/
 
 ANI – Artificial Narrow Intelligence
 AGI – Artificial General Intelligence
