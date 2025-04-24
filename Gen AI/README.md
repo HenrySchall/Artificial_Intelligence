@@ -10,6 +10,10 @@ https://glama.ai/chat
 
 https://www.spaceship.com/
 
+https://www.doubletick.ai/
+
+https://julius.ai/
+
 https://getdex.com/
 
 https://momoai.co/
