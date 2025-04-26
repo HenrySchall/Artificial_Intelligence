@@ -1,8 +1,7 @@
 # Prompt Engineering
 
-https://www.promptingguide.ai/introduction
-
 - Testar Prompts = https://app.chathub.gg/?utm_source=chathub.gg
+- https://www.promptingguide.ai/introduction
 - https://lmarena.ai/
 - https://huggingface.co/spaces/lmarena-ai/chatbot-arena-leaderboard
 - Gerador de Prompts https://www.feedough.com/ai-prompt-generator/
