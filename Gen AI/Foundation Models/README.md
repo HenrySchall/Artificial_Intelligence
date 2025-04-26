@@ -1,17 +1,27 @@
 # Large Language Models (LLM's)
 
-> As LLM's são modelos de AI, baseados em técnicas de Machine Learning de aprendizado não-supervisionado, ou seja, são modelos alimentados por um conjunto de dados (centenas de palavras e frases) os quais são extraidos informações desses dados para se criar conexões e "aprender" sem qualquer instrução humana, como resultado ele captura as relações complexas entre palavras e frases dando origem ao processo de Natural Language Processing (NLP). As LLM's requerem recursos computacionais significativos para processar dados, por isso utilizam unidades de processamento gráfico (GPUs), para acelerar o treinasmento e a opoeração dos transformers.
-
+> Foundation Models são modelos de inteligência artificial (AI) de grande escala, baseados em técnicas de Deep Learning (Redes Neurais Profundas) de aprendizado não-supervisionado, 
+> ou seja, sem qualquer instrução humana. Eles são utilizados em enormes volumes de dados para criar conexões e captura as relações complexas entre os dados, para depois podem ser 
+> adaptados para tarefas específicas. O termo foundation foi popularizado pela Universidade de Stanford em 2021, devido ao fato que eles funcionam como base para construção de outras 
+> aplicações, em vez de treinarem um modelo do zero para cada tipo problema. Os Large Language Models (LLM's) são uma classe dos Foundation Models, especificos para linguagem, portando 
+> focam em tarefas relacionadas a texto, nesse contexto que surge os conceitos de Prompt Engineering (prática de criar instruções (prompts) inteligentes para controlar e guiar o comportamento 
+> de modelos de linguagem) e Natural Language Processing (NLP) (prática de ensinar computadores a entender, interpretar, gerar e interagir usando à linguagem humana). OS LLM's requerem recursos 
+> computacionais significativos para processar dados, por isso utilizam unidades de processamento gráfico (GPUs), para acelerar o treinasmento e a opoeração dos chamados transformers.
+>
 ![userlmn_61d38ca6d280b8867ccc36047a493b56](https://github.com/user-attachments/assets/e3447078-f291-4ded-8621-2165489ca052)
 
 Source: Nvidia
 
-> Trnasformers são uma arquitetura de Deep Learning (redes neurais profundas) que transformam ou alteram uma sequência de entra em uma sequência de saída, foi apresentada pelo paper "Attention is All you Need". Sua arquitetura melhora a acapacidade dos modelos de Machine Learning ao capturar dependências contextuais em sequências de dados, como palavras em uma frase. As arquiteturas anteriores como RNN e LSTM perdiam detalhes em sequências longas, por se basearem em codificado e decodificado, a solução dos transformers introduzem mecanismo de atenção que capturam as relações contextuais entre todas as partes de um sequencia simultanemante ou seja em vez de processa sequências passo a passo (um elemento da sequência por vez). entendem não processam sequencialmente — olham toda a sequência de uma vez. entenem o contexto Porta	Função
-Forget gate	Decide o que esquecer do estado de célula anterior.
-Input gate	Decide o que adicionar de novo à memória.
+### Transformers
+Transformers são uma arquitetura que transformam ou alteram uma sequência de entra em uma sequência de saída de forma contínua, foi apresentada pelo paper "Attention is All you Need". Sua arquitetura melhora a capacidade dos modelos de Deep Learning ao capturar dependências contextuais em sequências de dados, como palavras em uma frase. As arquiteturas anteriores Recurrent Neural Network (RNN) e Long short-term memory (LSTM) perdiam detalhes em sequências longas, pois processavam a sequência passo a passo, ou seja, um elemento de cada vez. Os Transformers introduzem o mecanismo de Self-Attention, que olha todos os elementos da sequência de uma vez, ou seja, capturam as relações contextuais entre todas as partes de um sequência simultanemante (contexto). Por exemplo, no prompt de entrada "Qual é a cor do céu?", o modelo indentifica a relação entre "cor", "céu" e "azul" para gerar o prompt de saída "O céu é azul".
 
-Os LLMs são uma classe dos chamados Foundation Models (Termo popularizado plea Universidade de Stanford em 2021. Enquanto LLMs são modelos especificos para lingiagem portando focam em tarefas relacionadas a texto (Prompt Engineering) os foudation Models tem um escopo mais amplo podendo ser apliucados a ddifversa finalidades como aplicacoes envolveno aimgfe audio video e etc
 
->
->São modelos de Inteligência Aritificial (AI) que utilizam técnicas de Machine Learning para entender e gerar linguagem humana, utilizando Processamento de Linguagem NAtural (PLN) para interarigr com a linguagem humana
+### Embeddings
+São representações numéricas de dados textuais, usados para transformar palavras ou sentenças em vetores númericos que o modelo possa entender e processar, permitindo que capturar o significado semâtico do texto. O modelo aprende a separar e agrupar esses extos com base em suas similaridades. Então por exemplo, quando o modelo recebe uma palavra nova, como "maça", ele sabe exatamente onde colocar, muito provavalmente em um bloco onde estão outras frutas.
 
+### Tokens > São unidades menores de texto criadas através do processo de tokenização, que converter texto em números
+
+Hugging Face
+Langchain
+MCP
+RAG
