@@ -10,7 +10,7 @@ Source: Nvidia
 Forget gate	Decide o que esquecer do estado de célula anterior.
 Input gate	Decide o que adicionar de novo à memória.
 
-
+Os LLMs são uma classe dos chamados Foundation Models (Termo popularizado plea Universidade de Stanford em 2021. Enquanto LLMs são modelos especificos para lingiagem portando focam em tarefas relacionadas a texto (Prompt Engineering) os foudation Models tem um escopo mais amplo podendo ser apliucados a ddifversa finalidades como aplicacoes envolveno aimgfe audio video e etc
 
 
 >
@@ -99,4 +99,6 @@ https://www.promptingguide.ai/introduction
 - PAL: Program-aided Language Models. by Luyu Gao, Aman Madaan, Shuyan Zhou, Uri Alon, Pengfei Liu, Yiming Yang, Jamie Callan, Graham Neubig. Available: https://arxiv.org/abs/2211.10435
 
 - Synergizing Reasoning and Acting in Language Models, by Shunyu Yao, Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik Narasimhan, Yuan Cao. Available: https://arxiv.org/abs/2210.03629
+
+https://arxiv.org/abs/1706.03762
 
