@@ -31,3 +31,7 @@
 
 - Attention Is All You Need, by Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, Illia Polosukhin
 
+- https://brains.dev/2024/embeddings-medidas-de-distancia-e-similaridade/
+
+- https://developer.nvidia.com/blog/getting-started-with-large-language-models-for-enterprise-solutions/
+
