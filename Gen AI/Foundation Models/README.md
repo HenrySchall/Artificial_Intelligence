@@ -36,6 +36,8 @@ Os Embeddings são representações vetoriais numéricas de dados textuais, usad
   <img src="https://github.com/user-attachments/assets/efba8ea9-338a-4ff0-89e8-f8e90cb5a213"/>
 </p>
 
+https://platform.openai.com/tokenizer
+
 ## Hugging Face
 ## Langchain
 ## MCP
