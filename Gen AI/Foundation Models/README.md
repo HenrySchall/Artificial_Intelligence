@@ -1,6 +1,6 @@
-# Foundation Models Large Language Models (LLM's)
+# Foundation Models
 
-> Os Large Language Models (LLM's) são modelos de AI, baseados em técnicas de Machine Learning de aprendizado não-supervisionado, ou seja, são modelos alimentados por um conjunto de dados (centenas de palavras e frases) os quais são extraidos informações desses dados para se criar conexões e "aprender" sem qualquer instrução humana, como resultado ele captura as relações complexas entre palavras e frases dando origem ao processo de Natural Language Processing (NLP). As LLM's requerem recursos computacionais significativos para processar dados, por isso utilizam unidades de processamento gráfico (GPUs), para acelerar o treinasmento e a opoeração dos transformers.
+> Foundation Models são modelos de inteligência artificial (AI) de grande escala, baseados em técnicas de Deep Learning (Redes Neurais Profundas) de aprendizado não-supervisionado, ou seja, sem qualquer instrução humana. Eles são utilizados em enormes volumes de dados para criar conexões e captura as relações complexas entre os dados, para depois podem ser adaptados para tarefas específicas. O termo foundation foi popularizado pela Universidade de Stanford em 2021, devido ao fato que eles funcionam como base para construção de outras aplicações, em vez de treinarem um modelo do zero para cada tipo problema. Os Large Language Models (LLM's) são uma classe dos Foundation Models, especificos para linguagem, portando focam em tarefas relacionadas a texto, nesse contexto que surge os conceitos de Prompt Engineering (prática de criar instruções (prompts) inteligentes para controlar e guiar o comportamento de modelos de linguagem) e Natural Language Processing (NLP) (prática de ensinar computadores a entender, interpretar, gerar e interagir usando à linguagem humana). OS LLM's requerem recursos computacionais significativos para processar dados, por isso utilizam unidades de processamento gráfico (GPUs), para acelerar o treinasmento e a opoeração dos chamados transformers.
 
 ![userlmn_61d38ca6d280b8867ccc36047a493b56](https://github.com/user-attachments/assets/e3447078-f291-4ded-8621-2165489ca052)
 
@@ -10,7 +10,7 @@ Source: Nvidia
 Forget gate	Decide o que esquecer do estado de célula anterior.
 Input gate	Decide o que adicionar de novo à memória.
 
-Os LLMs são uma classe dos chamados Foundation Models (Termo popularizado plea Universidade de Stanford em 2021. Enquanto LLMs são modelos especificos para lingiagem portando focam em tarefas relacionadas a texto (Prompt Engineering) os foudation Models tem um escopo mais amplo podendo ser apliucados a ddifversa finalidades como aplicacoes envolveno aimgfe audio video e etc
+ Enquanto LLMs são modelos especificos para lingiagem portando focam em tarefas relacionadas a texto (Prompt Engineering) os foudation Models tem um escopo mais amplo podendo ser apliucados a ddifversa finalidades como aplicacoes envolveno aimgfe audio video e etc
 
 >
 >São modelos de Inteligência Aritificial (AI) que utilizam técnicas de Machine Learning para entender e gerar linguagem humana, utilizando Processamento de Linguagem NAtural (PLN) para interarigr com a linguagem humana
