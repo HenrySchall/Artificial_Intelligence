@@ -20,12 +20,13 @@ Source: Nvidia
 <p align="center">
   <img src="https://github.com/user-attachments/assets/6c2d910e-d27c-45e8-a4f7-84af189887b8"/>
 </p>
+### Tokens
+> São unidades menores de texto criadas através do processo de tokenização, que converter texto em números
 
 ### Prompt Engineering
 
-https://www.promptingguide.ai/introduction
-
 - Testar Prompts = https://app.chathub.gg/?utm_source=chathub.gg
+- https://www.promptingguide.ai/introduction
 - https://lmarena.ai/
 - https://huggingface.co/spaces/lmarena-ai/chatbot-arena-leaderboard
 - Gerador de Prompts https://www.feedough.com/ai-prompt-generator/
