@@ -35,8 +35,19 @@ https://platform.openai.com/tokenizer
 proprietarios (closed source) ou de códgiosd aberttos (open Source)
 SLM -> Small Languagew Models = feito em ambientes locais
 
-
 ## Hugging Face
+
+Tipos de LLM's 
+
+base models -. passam apenas pelo pré-trainamento e completam textos com palavras prova´veis (bons para prever palavras subsequentes entao se geramos um pergunta ele retorna com uma perguibnta (projetado para completaer frases prevendo as palavras mais provaveis com base no texto anterior
+
+Modelos instruct-tuned -> modelos ajustados para instrulçoes passam por umaetapa adicional de ajuste parea instruções melhorand a capacidade de seguir comandos especificos (ESPERAM ser solicitados a fazer algo
+
+Modelos de Chat -> foram ajustados para dfuncionar em chatbots, poretanto podem sewermais apropriados para conversas.
+Esperando o envolvimentos em uma conversa
+
+modelos nao ajusrados para instruções simplesmente geram uma saide que continua a parti do prompt
+
 ## Langchain
 ## MCP
 ## RAG
