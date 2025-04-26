@@ -3,6 +3,11 @@
 ### Repository Bibliographic References:
 - Neural Networks and Deep Learning: A Textbook, by Charu C Aggarwal
 
+https://medium.com/@hassaanidrees7/rnn-vs-lstm-vs-gru-a-comprehensive-guide-to-sequential-data-modeling-03aab16647bb
+
+https://medium.com/@mervebdurna/nlp-with-deep-learning-neural-networks-rnns-lstms-and-gru-3de7289bb4f8
+
+
 A/B Testing
 Stable diffusion
 Imagem Generation
