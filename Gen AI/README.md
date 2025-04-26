@@ -1,5 +1,35 @@
 # Generative AI
 
+![Screenshot_20250412_185130_Gallery](https://github.com/user-attachments/assets/29109437-1275-4124-8b15-2957a2c2f958)
+
+Langflow
+
+https://smithery.ai/
+
+https://glama.ai/chat
+
+https://www.spaceship.com/
+
+https://www.doubletick.ai/
+
+https://julius.ai/
+
+https://getdex.com/
+
+https://momoai.co/
+
+https://www.wonsulting.com/networkai
+
+Visualmind
+https://www.freepik.com/ai/image-generator
+Argil AI
+
+smoothspeak
+
+https://auraai.app/
+
+https://www.financialdatasets.ai/
+
 ANI – Artificial Narrow Intelligence
 AGI – Artificial General Intelligence
 SI – Artificial Superintelligence
@@ -31,6 +61,10 @@ Recurrent neural networks (RNNs)
 - Bolt.new = Plataforma de desenvolvimento web full-stack
 
 - Shipfast = Desenvolvimento rápido de aplicações web, especialmente SaaS (Software as a Service).
+
+https://admyral.ai/
+
+https://www.finalroundai.com/
 
 - Relume = Construção de websites
   
@@ -77,6 +111,10 @@ Recurrent neural networks (RNNs)
 - ElevenLabs = Síntese e clonagem de voz, permitindo transformar texto em áudio realista e natural
 
 - Notta AI = Transcrever, resumir e traduzir áudios e vídeos
+
+- Eskritor = Axuliar na criação de textos
+
+- Mystylus = Companheiro de IA para Redação de Documentos Eficiente
 
 - DimenXioner = Transforma imagens 2D em modelos 3D realistas
 
