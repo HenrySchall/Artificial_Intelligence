@@ -12,7 +12,6 @@ Input gate	Decide o que adicionar de novo à memória.
 
 Os LLMs são uma classe dos chamados Foundation Models (Termo popularizado plea Universidade de Stanford em 2021. Enquanto LLMs são modelos especificos para lingiagem portando focam em tarefas relacionadas a texto (Prompt Engineering) os foudation Models tem um escopo mais amplo podendo ser apliucados a ddifversa finalidades como aplicacoes envolveno aimgfe audio video e etc
 
-
 >
 >São modelos de Inteligência Aritificial (AI) que utilizam técnicas de Machine Learning para entender e gerar linguagem humana, utilizando Processamento de Linguagem NAtural (PLN) para interarigr com a linguagem humana
 ## Prompt Engineering
