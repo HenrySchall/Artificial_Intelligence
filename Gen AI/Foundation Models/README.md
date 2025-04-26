@@ -6,7 +6,7 @@
   <img src="https://github.com/user-attachments/assets/e3447078-f291-4ded-8621-2165489ca052"/>
 </p>
 
- Source: Nvidia 
+Source: Nvidia 
 
 > Transformers são uma arquitetura que transformam ou alteram uma sequência de entra em uma sequência de saída de forma contínua, foi apresentada pelo paper "Attention is All you Need". Sua arquitetura melhora a capacidade dos modelos de Deep Learning ao capturar dependências contextuais em sequências de dados, como palavras em uma frase. As arquiteturas anteriores Recurrent Neural Network (RNN) e Long short-term memory (LSTM) perdiam detalhes em sequências longas, pois processavam a sequência passo a passo, ou seja, um elemento de cada vez. Os Transformers introduzem o mecanismo de Self-Attention, que olha todos os elementos da sequência de uma vez, ou seja, capturam as relações contextuais entre todas as partes de um sequência simultanemante (contexto). Por exemplo, no prompt de entrada "Qual é a cor do céu?", o modelo indentifica a relação entre "cor", "céu" e "azul" para gerar o prompt de saída "O céu é azul".
 
@@ -14,10 +14,14 @@
   <img src="https://github.com/user-attachments/assets/ce0dd06f-c221-4ed8-ba49-72acc13f7bb5"/>
 </p>
 
- 
+### Embeddings
+> São representações numéricas de dados textuais, usados para transformar palavras ou sentenças em vetores númericos que o modelo possa entender e processar, permitindo que capturar o significado semâtico do texto. O modelo aprende a separar e agrupar esses extos com base em suas similaridades. Então por exemplo, quando o modelo recebe uma palavra nova, como "maça", ele sabe exatamente onde colocar, muito provavalmente em um bloco onde estão outras frutas.
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6c2d910e-d27c-45e8-a4f7-84af189887b8"/>
+</p>
 
-## Prompt Engineering
+### Prompt Engineering
 
 https://www.promptingguide.ai/introduction
 
@@ -75,8 +79,10 @@ https://www.promptingguide.ai/introduction
 
 - **ReAct (Reason + Act)**: A técnica ReAct divide tarefas complexas em etapas de raciocínio e ação. O modelo primeiro raciocina sobre a tarefa, decidindo qual ação tomar, e depois executa essa ação. Esse processo é repetido até que a tarefa seja concluída. Isso é especialmente útil para tarefas que exigem várias etapas ou interação com ferramentas externas.
 
+### Hugging Face
 
-https://medium.com/@hassaanidrees7/rnn-vs-lstm-vs-gru-a-comprehensive-guide-to-sequential-data-modeling-03aab16647bb
+### Langchain
 
-https://medium.com/@mervebdurna/nlp-with-deep-learning-neural-networks-rnns-lstms-and-gru-3de7289bb4f8
+### MCP
 
+### RAG 
