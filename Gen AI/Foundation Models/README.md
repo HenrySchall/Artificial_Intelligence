@@ -2,18 +2,21 @@
 
 > Foundation Models são modelos de inteligência artificial (AI) de grande escala, baseados em técnicas de Deep Learning (Redes Neurais Profundas) de aprendizado não-supervisionado, ou seja, sem qualquer instrução humana. Eles são utilizados em enormes volumes de dados para criar conexões e captura as relações complexas entre os dados, para depois podem ser adaptados para tarefas específicas. O termo foundation foi popularizado pela Universidade de Stanford em 2021, devido ao fato que eles funcionam como base para construção de outras aplicações, em vez de treinarem um modelo do zero para cada tipo problema. Os Large Language Models (LLM's) são uma classe dos Foundation Models, especificos para linguagem, portando focam em tarefas relacionadas a texto, nesse contexto que surge os conceitos de Prompt Engineering (prática de criar instruções (prompts) inteligentes para controlar e guiar o comportamento de modelos de linguagem) e Natural Language Processing (NLP) (prática de ensinar computadores a entender, interpretar, gerar e interagir usando à linguagem humana). OS LLM's requerem recursos computacionais significativos para processar dados, por isso utilizam unidades de processamento gráfico (GPUs), para acelerar o treinasmento e a opoeração dos chamados transformers.
 
-![userlmn_61d38ca6d280b8867ccc36047a493b56](https://github.com/user-attachments/assets/e3447078-f291-4ded-8621-2165489ca052)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e3447078-f291-4ded-8621-2165489ca052"/>
+</p>
 
-Source: Nvidia
+ Source: Nvidia 
 
-> Trnasformers são uma arquitetura de Deep Learning (redes neurais profundas) que transformam ou alteram uma sequência de entra em uma sequência de saída, foi apresentada pelo paper "Attention is All you Need". Sua arquitetura melhora a acapacidade dos modelos de Machine Learning ao capturar dependências contextuais em sequências de dados, como palavras em uma frase. As arquiteturas anteriores como RNN e LSTM perdiam detalhes em sequências longas, por se basearem em codificado e decodificado, a solução dos transformers introduzem mecanismo de atenção que capturam as relações contextuais entre todas as partes de um sequencia simultanemante ou seja em vez de processa sequências passo a passo (um elemento da sequência por vez). entendem não processam sequencialmente — olham toda a sequência de uma vez. entenem o contexto Porta	Função
-Forget gate	Decide o que esquecer do estado de célula anterior.
-Input gate	Decide o que adicionar de novo à memória.
+> Transformers são uma arquitetura que transformam ou alteram uma sequência de entra em uma sequência de saída de forma contínua, foi apresentada pelo paper "Attention is All you Need". Sua arquitetura melhora a capacidade dos modelos de Deep Learning ao capturar dependências contextuais em sequências de dados, como palavras em uma frase. As arquiteturas anteriores Recurrent Neural Network (RNN) e Long short-term memory (LSTM) perdiam detalhes em sequências longas, pois processavam a sequência passo a passo, ou seja, um elemento de cada vez. Os Transformers introduzem o mecanismo de Self-Attention, que olha todos os elementos da sequência de uma vez, ou seja, capturam as relações contextuais entre todas as partes de um sequência simultanemante (contexto)
 
- Enquanto LLMs são modelos especificos para lingiagem portando focam em tarefas relacionadas a texto (Prompt Engineering) os foudation Models tem um escopo mais amplo podendo ser apliucados a ddifversa finalidades como aplicacoes envolveno aimgfe audio video e etc
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ce0dd06f-c221-4ed8-ba49-72acc13f7bb5"/>
+</p>
 
->
->São modelos de Inteligência Aritificial (AI) que utilizam técnicas de Machine Learning para entender e gerar linguagem humana, utilizando Processamento de Linguagem NAtural (PLN) para interarigr com a linguagem humana
+ 
+
+
 ## Prompt Engineering
 
 https://www.promptingguide.ai/introduction
@@ -72,32 +75,4 @@ https://www.promptingguide.ai/introduction
 
 - **ReAct (Reason + Act)**: A técnica ReAct divide tarefas complexas em etapas de raciocínio e ação. O modelo primeiro raciocina sobre a tarefa, decidindo qual ação tomar, e depois executa essa ação. Esse processo é repetido até que a tarefa seja concluída. Isso é especialmente útil para tarefas que exigem várias etapas ou interação com ferramentas externas.
 
-### Repository Bibliographic References:
-- Large Language Models are Zero-short Reasoners Contrastive Chin of Thought prompting, by Takeshi Kojima, Shixiang Shane Gu, Machel Reid, Yutaka Matsuo, Yusuke Iwasawa. Available: https://arxiv.org/abs/2205.11916
-
-- Guiding Large Language Models via Directional Stimulus Prompting, by Zekun Li, Baolin Peng, Pengcheng He, Michel Galley, Jianfeng Gao, Xifeng Yan. Available: https://arxiv.org/abs/2302.11520
-
-- Chain-of-Thought Prompting Elicits Reasoning in Large Language Models, by Zekun Li, Baolin Peng, Pengcheng He, Michel Galley, Jianfeng Gao, Xifeng Yan. Available: https://arxiv.org/abs/2201.11903
-
-- Self-Consistency Improves Chain of Thought Reasoning in Language Models, by Xuezhi Wang, Jason Wei, Dale Schuurmans, Quoc Le, Ed Chi, Sharan Narang, Aakanksha Chowdhery, Denny Zhou. Available: https://arxiv.org/abs/2203.11171
-
-- Deliberate Problem Solving with Large Language Models, by Shunyu Yao, Dian Yu, Jeffrey Zhao, Izhak Shafran, Thomas L. Griffiths, Yuan Cao, Karthik Narasimhan. Available: https://arxiv.org/abs/2305.10601
-
-- Generative Agents: Interactive Simulacra of Human Behavior, by Joon Sung Park, Joseph C. O'Brien, Carrie J. Cai, Meredith Ringel Morris, Percy Liang, Michael S. Bernstein. Available: https://arxiv.org/abs/2304.03442
-
-- Large Language Model Guided Tree-of-Thought, by Jieyi Long. Available: https://arxiv.org/abs/2305.08291
-
-- Skeleton of Thought: Augmenting Language Models with Variable-Depth Reasoning Ability, by Xuefei Ning, Zinan Lin, Zixuan Zhou, Zifu Wang, Huazhong Yang, Yu Wang. Available: https://arxiv.org/abs/2307.15337
-
--  Generated Knowledge Prompting for Commonsense Reasoning, by Jiacheng Liu, Alisa Liu, Ximing Lu, Sean Welleck, Peter West, Ronan Le Bras, Yejin Choi, Hannaneh Hajishirzi. Available: https://arxiv.org/abs/2110.08387
-
-- Maieutic Prompting: Logically Consistent Reasoning with Recursive Explanations, by Jaehun Jung, Lianhui Qin, Sean Welleck, Faeze Brahman, Chandra Bhagavatula, Ronan Le Bras, Yejin Choi. Available: https://arxiv.org/abs/2205.11822
-
-- Retrieval Augmented Generation for Knowledge-Intensive NLP Tasks, by Katja Filippova. Available: https://aclanthology.org/2020.findings-emnlp.76/
-
-- PAL: Program-aided Language Models. by Luyu Gao, Aman Madaan, Shuyan Zhou, Uri Alon, Pengfei Liu, Yiming Yang, Jamie Callan, Graham Neubig. Available: https://arxiv.org/abs/2211.10435
-
-- Synergizing Reasoning and Acting in Language Models, by Shunyu Yao, Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik Narasimhan, Yuan Cao. Available: https://arxiv.org/abs/2210.03629
-
-https://arxiv.org/abs/1706.03762
 
