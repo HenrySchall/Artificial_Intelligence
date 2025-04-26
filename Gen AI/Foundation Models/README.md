@@ -23,16 +23,20 @@ Transformers são uma arquitetura que transformam ou alteram uma sequência de e
 
 source:brains.dev
 
-### Embeddings
-São representações numéricas de dados textuais, usados para transformar palavras ou sentenças em vetores númericos que o modelo possa entender e processar, permitindo que capturar o significado semâtico do texto. O modelo aprende a separar e agrupar esses extos com base em suas similaridades. Então por exemplo, quando o modelo recebe uma palavra nova, como "maça", ele sabe exatamente onde colocar, muito provavalmente em um bloco onde estão outras frutas.
+### Embeddings & Tokens
+Os Embeddings são representações vetoriais numéricas de dados textuais, usados para transformar palavras ou sentenças em vetores númericos que o modelo possa entender e processar, permitindo capturar o significado semâtico do texto. O modelo aprende a separar e agrupar esses extos com base em suas similaridades. Então por exemplo, quando o modelo recebe uma palavra nova, como "maça", ele sabe exatamente onde colocar, muito provavalmente em um bloco onde estão outras frutas. 
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/bfea28f0-0a3a-449a-923e-2f0655e3d766"/>
 </p>
 
-### Tokens > São unidades menores de texto criadas através do processo de tokenização, que converter texto em números
+> Já os tokens são unidades menores de texto criadas através do processo de tokenização, que converter texto em números. Sendo assim o Embedding é a representação vetorial do texto em um espaço multidimensional, o Token é uma representação estática de unidades de texto.
 
-Hugging Face
-Langchain
-MCP
-RAG
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/efba8ea9-338a-4ff0-89e8-f8e90cb5a213"/>
+</p>
+
+## Hugging Face
+## Langchain
+## MCP
+## RAG
