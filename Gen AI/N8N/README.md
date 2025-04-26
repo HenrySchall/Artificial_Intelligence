@@ -1,5 +1,44 @@
 #N*N
 
+Langflow
+
+https://smithery.ai/
+
+https://glama.ai/chat
+
+https://www.spaceship.com/
+
+https://www.doubletick.ai/
+
+https://julius.ai/
+
+https://getdex.com/
+
+https://momoai.co/
+
+https://www.wonsulting.com/networkai
+
+Visualmind
+https://www.freepik.com/ai/image-generator
+Argil AI
+
+smoothspeak
+
+https://auraai.app/
+
+https://www.financialdatasets.ai/
+
+ANI – Artificial Narrow Intelligence
+AGI – Artificial General Intelligence
+SI – Artificial Superintelligence
+- Modelos Generative Adversarial networks (GANs)
+- Variational autoencoders (VAEs)
+- Auoregressive Models
+- Transofmer models
+- Deep convolutional Genreative Adversiral networks
+Recurrent neural networks (RNNs)
+
+
 ### Vertical AI Guide
 
 - LockedIn AI = Plataforma projetada para auxiliar profissionais em entrevistas de emprego e reuniões
