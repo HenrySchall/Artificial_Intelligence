@@ -1,6 +1,6 @@
-# Large Language Models (LLM's)
+# Foundation Models Large Language Models (LLM's)
 
-> As LLM's são modelos de AI, baseados em técnicas de Machine Learning de aprendizado não-supervisionado, ou seja, são modelos alimentados por um conjunto de dados (centenas de palavras e frases) os quais são extraidos informações desses dados para se criar conexões e "aprender" sem qualquer instrução humana, como resultado ele captura as relações complexas entre palavras e frases dando origem ao processo de Natural Language Processing (NLP). As LLM's requerem recursos computacionais significativos para processar dados, por isso utilizam unidades de processamento gráfico (GPUs), para acelerar o treinasmento e a opoeração dos transformers.
+> Os Large Language Models (LLM's) são modelos de AI, baseados em técnicas de Machine Learning de aprendizado não-supervisionado, ou seja, são modelos alimentados por um conjunto de dados (centenas de palavras e frases) os quais são extraidos informações desses dados para se criar conexões e "aprender" sem qualquer instrução humana, como resultado ele captura as relações complexas entre palavras e frases dando origem ao processo de Natural Language Processing (NLP). As LLM's requerem recursos computacionais significativos para processar dados, por isso utilizam unidades de processamento gráfico (GPUs), para acelerar o treinasmento e a opoeração dos transformers.
 
 ![userlmn_61d38ca6d280b8867ccc36047a493b56](https://github.com/user-attachments/assets/e3447078-f291-4ded-8621-2165489ca052)
 
