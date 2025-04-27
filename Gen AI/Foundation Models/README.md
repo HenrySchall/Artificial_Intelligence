@@ -48,6 +48,8 @@ Esperando o envolvimentos em uma conversa
 
 modelos nao ajusrados para instruções simplesmente geram uma saide que continua a parti do prompt
 
+fine-tuning -. treinar um parte do modelo especifica para um especfiico cenario (base de dados menor e mais especializada)
+
 ## Langchain
 ## MCP
 ## RAG
