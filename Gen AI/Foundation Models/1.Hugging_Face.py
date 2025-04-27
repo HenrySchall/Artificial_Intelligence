@@ -10,9 +10,9 @@ def install_packages(pacotes):
         subprocess.check_call([sys.executable, "-m", "pip", "install", pacote])
 
 # List of packages
-packages_list = ["numpy", "pandas", "matplotlib", "scipy", "seaborn","statsmodels", "plotly", "gurobipy",
+packages_list = ["radian", "numpy", "pandas", "matplotlib", "scipy", "seaborn","statsmodels", "plotly", "gurobipy",
 "yfinance", "scikit-learn", "pyomo", "panel", "hvplot", "holoviews", "datashader", "param", "colorcet",
-"transformers","einops","accelerate", "bitsandbytes", "torch", "os", "torchvision","torchaudio"]
+"transformers","einops","accelerate", "bitsandbytes", "torch", "torchvision","torchaudio"]
 
 install_packages(packages_list)
 
@@ -20,28 +20,31 @@ install_packages(packages_list)
 ### Load Packages ###
 #####################
 
-def load_packages(pack):
-    import importlib
-    import sys
-
-    for packages_list, load in pack.items():
-        try:
-            modulo = importlib.import_module(packages_list)
-            sys.modules[load] = modulo
-            globals()[load] = modulo
-        except ImportError:
-            print(f"Erro ao importar o pacote: {packages_list}")
-
-load_packages({"radian":"rd", "pyomo.environ":"pyo", "gurobipy":"gp", "pandas":"pd", "string":"string", "random":"random", "seaborn":"sns", "numpy":"np", "pandas":"pd",
-"matplotlib.pyplot":"plt", "scipy":"stats", "matplotlib":"mpl", "seaborn.objects":"so", "plotly.express":"px", "matplotlib.pyplot":"plt", "math":"math","yfinance":"yf",
-"datetime":"datetime", "panel":"pn", "hvplot":"hvplot", "holoviews":"hv", "datashader":"ds", "colorcet":"cc", "param":"param"})
-
+import radian as rd
+import pyomo.environ as pyo
+import gurobipy as gp
+import pandas as pd 
+import seaborn as sns
+import plotly.express as px
+import numpy as np
+import panel as pn 
+import seaborn.objects as so
+import matplotlib as mpl
+import colorcet as cc
+import matplotlib.pyplot as plt
+import math
+import datetime
+import param
+import sklearn
+import scipy
+import string
+import random
+import torch
+import os
 from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline, BitsAndBytesConfig
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler, LabelEncoder, OneHotEncoder, MinMaxScaler
 from sklearn.naive_bayes import GaussianNB as GNB
-import torch
-import os
 
 ##################
 ### Introdução ###  
@@ -88,5 +91,3 @@ pipe = pipeline("text-generation", model = model, tokenizer = tokenizer)
 # "text-generation": especifica a tarefa que o pipeline está configurado para executar. Neste caso, estamos configurando um pipeline para geração de texto. O pipeline usará o modelo para gerar texto com base em um prompt fornecido.
 # model=model: especifica o modelo pré-treinado que o pipeline usará. Aqui, estamos passando o model que carregamos anteriormente. Este modelo é responsável por gerar texto com base nos tokens de entrada.
 # tokenizer=tokenizer: especifica o tokenizador que o pipeline usará. Passamos o tokenizer que carregamos anteriormente para garantir que o texto de entrada seja tokenizado corretamente e os tokens de saída sejam decodificados com precisão.~~
-
-pipe = pipeline("text-generation", model = model, tokenizer = tokenizer)
