@@ -10,7 +10,7 @@ def install_packages(pacotes):
         subprocess.check_call([sys.executable, "-m", "pip", "install", pacote])
 
 # List of packages
-packages_list = ["radian", "numpy", "pandas", "matplotlib", "scipy", "seaborn","statsmodels", "plotly", "gurobipy",
+packages_list = ["numpy", "pandas", "matplotlib", "scipy", "seaborn","statsmodels", "plotly", "gurobipy",
 "yfinance", "scikit-learn", "pyomo", "panel", "hvplot", "holoviews", "datashader", "param", "colorcet",
 "transformers","einops","accelerate", "bitsandbytes", "torch", "torchvision","torchaudio"]
 
@@ -20,7 +20,6 @@ install_packages(packages_list)
 ### Load Packages ###
 #####################
 
-import radian as rd
 import pyomo.environ as pyo
 import gurobipy as gp
 import pandas as pd 
