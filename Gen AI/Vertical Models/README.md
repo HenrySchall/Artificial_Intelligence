@@ -12,6 +12,10 @@ https://smithery.ai/
 
 https://glama.ai/chat
 
+https://www.pixelcut.ai/pt-br
+
+https://astra-ai.co/
+
 https://www.spaceship.com/
 
 https://www.doubletick.ai/
