@@ -12,7 +12,7 @@ def install_packages(pacotes):
 # List of packages
 packages_list = ["numpy", "pandas", "matplotlib", "scipy", "seaborn","statsmodels", "plotly", "gurobipy",
 "yfinance", "scikit-learn", "pyomo", "panel", "hvplot", "holoviews", "datashader", "param", "colorcet",
-"transformers","einops","accelerate", "bitsandbytes", "torch", "torchvision","torchaudio"]
+"transformers","einops","accelerate", "bitsandbytes"]
 
 install_packages(packages_list)
 
@@ -54,27 +54,9 @@ from sklearn.naive_bayes import GaussianNB as GNB
 # Verificar a versão do Nvidia CUDA = nvcc --version
 # Install Pytorch = https://pytorch.org/get-started/locally/
 
-
+print("Torch version:", torch.__version__)
 print("Number of GPU: ", torch.cuda.device_count())
 print("GPU Name: ", torch.cuda.get_device_name())
-
-
-device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-print('Using device:', device)print("Number of GPU: ", torch.cuda.device_count())
-print("GPU Name: ", torch.cuda.get_device_name())
-
-
-device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-print('Using device:', device)
-
-
-print("Torch version:", torch.__version__)
-print("CUDA disponível?", torch.cuda.is_available())
-if torch.cuda.is_available():
-    print("GPU:", torch.cuda.get_device_name(0))
-
-device = "cuda:0" if torch.cuda.is_available() else "cpu"
-print(f"Device: {device}")
 
 torch.random.manual_seed(42)
 os.environ["HF_TOKEN"] = "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"
