@@ -35,6 +35,18 @@ https://platform.openai.com/tokenizer
 proprietarios (closed source) ou de códgiosd aberttos (open Source)
 SLM -> Small Languagew Models = feito em ambientes locais
 
+### Configuração Nvidia Cuda
+https://docs.nvidia.com/deeplearning/cudnn/backend/latest/reference/support-matrix.html#f1
+
+Install Cuda Toolkit 
+
+Install cuDNN Toolkit 
+
+Observe que a versão do Cuda Toolkit deve ser compátivel com o cuDNN Toolkit e com a versão do Framework escolhido (Pytorch, Tensorflow ou Keras)
+
+Example: Pytorch Cuda 11.8 -> cuDNN 9.8.0 for CUDA 11.x
+
+
 ## Hugging Face
 
 Tipos de LLM's 
