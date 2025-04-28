@@ -49,12 +49,17 @@ from sklearn.naive_bayes import GaussianNB as GNB
 ### Introdução ###  
 ##################
 
-# Install Cuda Toolkit = https://developer.nvidia.com/cuda-toolkit-archive
-# Install cuDNN Toolkit= https://developer.nvidia.com/rdp/cudnn-archive -> Paste the files in NVIDIA GPU Computing Toolkit folder
+
+
 # Nvidia CUDA Version = nvcc --version
 # Install Pytorch = pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128 (https://pytorch.org/get-started/locally/)
 
+print("CUDA disponível?", torch.cuda.is_available())
+
 print("Torch version:", torch.__version__)
+print(torch.version.cuda)
+
+print(torch.cuda.is_available())
 print("Number of GPU: ", torch.cuda.device_count())
 print("GPU Name: ", torch.cuda.get_device_name())
 
@@ -183,3 +188,65 @@ template = """<|system|>
 
 output = pipe(template, **generation_args)
 print(output[0]['generated_text'])
+
+
+# Melhorando qualidade 
+
+https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-instruct
+
+# Formatando mensagens
+
+prompt = "O que é IA?"
+
+msg = [
+    {"role": "system", "content": "Você é um assistente virtual prestativo. Responda as perguntas em português."},
+    {"role": "user", "content": prompt}
+]
+
+output = pipe(msg, **generation_args)
+print(output[0]["generated_text"])
+
+prompt = "Liste o nome de 10 cidades famosas da Europa"
+prompt_sys = "Você é um assistente de viagens prestativo. Responda as perguntas em português."
+
+msg = [
+    {"role": "system", "content": prompt_sys},
+    {"role": "user", "content": prompt},
+]
+
+output = pipe(msg, **generation_args)
+print(output[0]['generated_text'])
+
+# Checar GPU -> !nvidia-smi
+
+# otimização
+
+https://huggingface.co/blog/4bit-transformers-bitsandbytes
+https://github.com/AutoGPTQ/AutoGPTQ
+https://github.com/casper-hansen/AutoAWQ
+
+quantization_config = BitsAndBytesConfig(
+    load_in_4bit=True,
+    bnb_4bit_quant_type="nf4",
+    bnb_4bit_use_double_quant=True,
+    bnb_4bit_compute_dtype=torch.bfloat16
+)
+
+model_id = "meta-llama/Meta-Llama-3-8B-Instruct"
+
+model = AutoModelForCausalLM.from_pretrained(model_id, quantization_config=quantization_config)
+tokenizer = AutoTokenizer.from_pretrained(model_id)
+
+https://huggingface.co/docs/transformers/chat_templating
+
+prompt = ("Quem foi a primeira pessoa no espaço?")
+messages = [{"role": "user", "content": prompt}]
+
+
+encodeds = tokenizer.apply_chat_template(messages, return_tensors="pt")
+model_inputs = encodeds.to(device)
+generated_ids = model.generate(model_inputs, max_new_tokens = 1000, do_sample = True,
+                               pad_token_id=tokenizer.eos_token_id)
+decoded = tokenizer.batch_decode(generated_ids)
+res = decoded[0]
+res
