@@ -49,7 +49,30 @@ from sklearn.naive_bayes import GaussianNB as GNB
 ### Introdução ###  
 ##################
 
-# Install Cuda Toolkit = https://developer.nvidia.com/cuda-toolkit
+# Install Cuda Toolkit = https://developer.nvidia.com/cuda-toolkit-archive
+# Install cuDNN Toolkit= https://developer.nvidia.com/rdp/cudnn-archive -> Paste the files in NVIDIA GPU Computing Toolkit folder
+# Verificar a versão do Nvidia CUDA = nvcc --version
+# Install Pytorch = https://pytorch.org/get-started/locally/
+
+
+print("Number of GPU: ", torch.cuda.device_count())
+print("GPU Name: ", torch.cuda.get_device_name())
+
+
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+print('Using device:', device)print("Number of GPU: ", torch.cuda.device_count())
+print("GPU Name: ", torch.cuda.get_device_name())
+
+
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+print('Using device:', device)
+
+
+print("Torch version:", torch.__version__)
+print("CUDA disponível?", torch.cuda.is_available())
+if torch.cuda.is_available():
+    print("GPU:", torch.cuda.get_device_name(0))
+
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
 print(f"Device: {device}")
 
