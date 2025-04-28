@@ -51,7 +51,7 @@ from sklearn.naive_bayes import GaussianNB as GNB
 
 # Install Cuda Toolkit = https://developer.nvidia.com/cuda-toolkit-archive
 # Install cuDNN Toolkit= https://developer.nvidia.com/rdp/cudnn-archive -> Paste the files in NVIDIA GPU Computing Toolkit folder
-# Verificar a versão do Nvidia CUDA = nvcc --version
+# Nvidia CUDA Version = nvcc --version
 # Install Pytorch = https://pytorch.org/get-started/locally/
 
 print("Torch version:", torch.__version__)
