@@ -40,7 +40,7 @@ https://docs.nvidia.com/deeplearning/cudnn/backend/latest/reference/support-matr
 
 Install Cuda Toolkit 
 
-Install cuDNN Toolkit 
+Install cuDNN Toolkit  pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128 (https://pytorch.org/get-started/locally/)
 
 Observe que a versão do Cuda Toolkit deve ser compátivel com o cuDNN Toolkit e com a versão do Framework escolhido (Pytorch, Tensorflow ou Keras)
 

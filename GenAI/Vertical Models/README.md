@@ -8,6 +8,8 @@ Make (Integromat)
 
 Pipedream
 
+Canva code
+
 https://smithery.ai/
 
 https://glama.ai/chat
