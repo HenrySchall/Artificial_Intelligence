@@ -1,3 +1,20 @@
+####################################
+### Create a Virtual Environment ###
+####################################
+
+# Links 
+# - https://docs.nvidia.com/deeplearning/cudnn/backend/latest/reference/support-matrix.html#f1
+# - https://pytorch.org/get-started/locally/
+
+# Run in Command Prompt 
+# nvidia-smi -> gives the version of Cuda
+# cmd.exe /K cd /d "C:\Users\henri\Documentos" -> Local Enviroment
+# python -m venv .venv -> Create environment
+# .venv\Scripts\activate.bat -> Activate environment
+# pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
+# C:\Users\henri\Documentos\.venv\Scripts\python.exe
+# Shift + Ctrl + P -> Python: Select Interpreter
+
 ########################
 ### Install Packages ###
 ########################
@@ -20,8 +37,6 @@ install_packages(packages_list)
 ### Load Packages ###
 #####################
 
-import pyomo.environ as pyo
-import gurobipy as gp
 import pandas as pd 
 import seaborn as sns
 import plotly.express as px
@@ -41,18 +56,14 @@ import random
 import torch
 import os
 from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline, BitsAndBytesConfig
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler, LabelEncoder, OneHotEncoder, MinMaxScaler
-from sklearn.naive_bayes import GaussianNB as GNB
 
 ##################
 ### Introdução ###  
 ##################
 
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+print('Using device:', device)
 
-
-# Nvidia CUDA Version = nvcc --version
-# Install Pytorch = pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128 (https://pytorch.org/get-started/locally/)
 
 print("CUDA disponível?", torch.cuda.is_available())
 
