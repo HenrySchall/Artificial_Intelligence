@@ -1,20 +1,3 @@
-####################################
-### Create a Virtual Environment ###
-####################################
-
-# Links 
-# - https://docs.nvidia.com/deeplearning/cudnn/backend/latest/reference/support-matrix.html#f1
-# - https://pytorch.org/get-started/locally/
-
-# Run in Command Prompt 
-# nvidia-smi -> gives the version of Cuda
-# cmd.exe /K cd /d "C:\Users\henri\Documentos" -> Local Enviroment
-# python -m venv .venv -> Create environment
-# .venv\Scripts\activate.bat -> Activate environment
-# pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
-# C:\Users\henri\Documentos\.venv\Scripts\python.exe
-# Shift + Ctrl + P -> Python: Select Interpreter
-
 ########################
 ### Install Packages ###
 ########################
@@ -28,18 +11,27 @@ def install_packages(pacotes):
 
 # List of packages
 packages_list = ["numpy", "pandas", "matplotlib", "scipy", "seaborn","statsmodels", "plotly", "gurobipy",
-"yfinance", "scikit-learn", "pyomo", "panel", "hvplot", "holoviews", "datashader", "param", "colorcet",
-"transformers","einops","accelerate", "bitsandbytes"]
+"yfinance", "scikit-learn", "panel", "datashader", "param", "colorcet", "transformers","einops","accelerate", 
+"bitsandbytes"]
 
 install_packages(packages_list)
+
+# pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
+# pip install cuda-python==12.8
+
+# Links 
+# - https://docs.nvidia.com/deeplearning/cudnn/backend/latest/reference/support-matrix.html#f1
+# - https://pytorch.org/get-started/locally/
+
+# Uninstall Packages
+# pip freeze > packages.txt
+# pip uninstall -y -r packages.txt
 
 #####################
 ### Load Packages ###
 #####################
 
-pip install -q transformers==4.48.2 einops accelerate bitsandbytes
-pip install cuda-python
-
+import gurobipy as gp
 import pandas as pd 
 import seaborn as sns
 import plotly.express as px
@@ -67,17 +59,8 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline, BitsAndB
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print('Using device:', device)
 
-print("CUDA disponível?", torch.cuda.is_available())
-
-print("Torch version:", torch.__version__)
-print(torch.version.cuda)
-
-print(torch.cuda.is_available())
-print("Number of GPU: ", torch.cuda.device_count())
-print("GPU Name: ", torch.cuda.get_device_name())
-
-device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-print('Using device:', device)
+print(torch.__version__) # Versão PyTorch
+print(torch.version.cuda) # Versão Cuda    
 
 torch.random.manual_seed(42)
 os.environ["HF_TOKEN"] = "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"

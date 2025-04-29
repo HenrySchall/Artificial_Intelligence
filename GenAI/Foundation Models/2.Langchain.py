@@ -11,16 +11,26 @@ def install_packages(pacotes):
 
 # List of packages
 packages_list = ["numpy", "pandas", "matplotlib", "scipy", "seaborn","statsmodels", "plotly", "gurobipy",
-"yfinance", "scikit-learn", "pyomo", "panel", "hvplot", "holoviews", "datashader", "param", "colorcet",
-"transformers","einops","accelerate", "bitsandbytes", "torch", "torchvision","torchaudio"]
+"yfinance", "scikit-learn", "panel", "datashader", "param", "colorcet", "transformers","einops","accelerate", 
+"bitsandbytes"]
 
 install_packages(packages_list)
+
+# pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
+# pip install cuda-python==12.8
+
+# Links 
+# - https://docs.nvidia.com/deeplearning/cudnn/backend/latest/reference/support-matrix.html#f1
+# - https://pytorch.org/get-started/locally/
+
+# Uninstall Packages
+# pip freeze > packages.txt
+# pip uninstall -y -r packages.txt
 
 #####################
 ### Load Packages ###
 #####################
 
-import pyomo.environ as pyo
 import gurobipy as gp
 import pandas as pd 
 import seaborn as sns
@@ -41,10 +51,8 @@ import random
 import torch
 import os
 from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline, BitsAndBytesConfig
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler, LabelEncoder, OneHotEncoder, MinMaxScaler
-from sklearn.naive_bayes import GaussianNB as GNB
 
 ##################
 ### Introdução ###
 ##################
+
