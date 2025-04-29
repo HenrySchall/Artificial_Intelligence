@@ -10,6 +10,8 @@ Pipedream
 
 Canva code
 
+cluely ai
+
 https://smithery.ai/
 
 https://glama.ai/chat
