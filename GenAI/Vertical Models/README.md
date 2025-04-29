@@ -8,6 +8,10 @@ Make (Integromat)
 
 Pipedream
 
+https://www.florafauna.ai/
+
+https://openart-blog-posts.webflow.io/pt
+
 web-ui ai
 
 Canva code
