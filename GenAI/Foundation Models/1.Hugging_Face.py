@@ -37,6 +37,9 @@ install_packages(packages_list)
 ### Load Packages ###
 #####################
 
+pip install -q transformers==4.48.2 einops accelerate bitsandbytes
+pip install cuda-python
+
 import pandas as pd 
 import seaborn as sns
 import plotly.express as px
@@ -63,7 +66,6 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline, BitsAndB
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print('Using device:', device)
-
 
 print("CUDA disponível?", torch.cuda.is_available())
 
