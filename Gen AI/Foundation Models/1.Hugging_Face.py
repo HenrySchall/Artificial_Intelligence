@@ -17,15 +17,13 @@ packages_list = ["numpy", "pandas", "matplotlib", "scipy", "seaborn","statsmodel
 install_packages(packages_list)
 
 # pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
+# print(torch.__version__)
 # pip install cuda-python==12.8
+# print(torch.version.cuda)
 
 # Links 
 # - https://docs.nvidia.com/deeplearning/cudnn/backend/latest/reference/support-matrix.html#f1
 # - https://pytorch.org/get-started/locally/
-
-# Uninstall Packages
-# pip freeze > packages.txt
-# pip uninstall -y -r packages.txt
 
 #####################
 ### Load Packages ###
@@ -58,9 +56,6 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline, BitsAndB
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print('Using device:', device)
-
-print(torch.__version__) # Versão PyTorch
-print(torch.version.cuda) # Versão Cuda    
 
 torch.random.manual_seed(42)
 os.environ["HF_TOKEN"] = "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"
