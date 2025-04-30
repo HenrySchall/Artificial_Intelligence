@@ -1,53 +1,100 @@
+# Vertical AI
 
+> “Vertical AI” refere-se a soluções de inteligência artificial desenvolvidas e treinadas para atender a demandas específicas de mercado (como saúde, finanças, agricultura, varejo, etc.), em contraste com a IA horizontal, que utiliza-se de modelos genéricos, pensados para atender a múltiplos tarefas (por exemplo, chatbots de uso geral, ferramentas de classificação de imagens genéricas, etc.)
 
+### Gerador de imagem e video 🖼
+- Aura AI (https://auraai.app/)
+- Argil AI
+- Hedra AI (https://www.hedra.com/)
+- Runaway AI (https://www.imagine.art/)
+- Leonardo AI (https://leonardo.ai/)
+- Freepik
+- Flux AI
+- Midjourney (https://www.midjourney.com/home)
+- Momo AI = geração de imagem (https://momoai.co/)
+- HunyuanVideo (https://www.hunyuanvideo.org/pt/)
+- Pixel AI = editor de fotos
+- Open Art 
+- Kling AI = Geração de vídeos realistas a partir de comandos de texto ou imagens
+- Colossyan = Transforma textos em vídeos com apresentadores virtuais realistas
+
+### Work Tools 📊
+- Flora Fauna AI = fluxos criativos para modelos de texto, imagem e vídeo (https://www.florafauna.ai/)
+- Rows 2.0 = inteligência artificial para planilhas (https://rows.com/product)
+- Synthflow AI = automação de ligações telefônicas (https://synthflow.ai/)
+- Cluely AI - chats invisiveis em reuniões 
+- LockedIn AI = auxiliar em entrevistas de emprego e reuniões (https://www.lockedinai.com/)
+- Final Round AI = auxiliar em entrevistas de emprego e reuniões (https://www.finalroundai.com/)
+- LedgerBox AI = Converter arquivos PDF em formatos estruturados, como Excel, CSV, JSON e QuickBooks
+- Julius AI = Plataforma para análise de dados (https://julius.ai/)
+- Gamma AI = Projetada para simplificar a criação de apresentações e documentos (https://gamma.app/)
+- DimenXioner = Transforma imagens 2D em modelos 3D realistas
+- Dex AI = plataforma de CRM pessoal e profissional
+- Spellbook = agilizar o trabalho de advogados contratuais (https://www.spellbook.legal/)
+- Admyral = Acelerar e automatizar a pesquisa de proprietários de imóveis (https://admyral.ai/)
+- Wonsulting AI = Otimizar a busca por empregos
+  
+### Code 🖥
+- Galileo AI = Design de interfaces de usuário (UI)
+- CopyCoder.ai = Transforma imagens ee interfaces de usuário (UI) 
+- Bolt.new = Plataforma de desenvolvimento web full-stack
+- Relume = Construção de websites
+- Lovable = Criação de aplicações web completas sem a necessidade de escrever código
+- Locofy AI = Transforma designs criados em ferramentas como Figma e Adobe XD em código front-end
+- Softgen = Desenvolvimento de aplicações web full-stack
+- v0.dev = Criar interfaces e aplicações
+- Same.new = Permite criar, clonar e iterar aplicações web completas
+- Replit = Criação de aplicações and websites
+- Ai2sql = Converte descrições em linguagem natural em consultas SQL otimizadas
+- BlazeSQL = Plataforma projetada para facilitar a interação com bancos de dados SQL
+- Blackbox AI = Auxiliar desenvolvedores na otimização de código
+
+### Business 💼
+- Looka AI = Criar logotipos e identidades visuais
+- Typefully = Gerenciamento de mídias sociais****
+- Mintlify = Ajudar equipes de desenvolvimento de produto/suporte a criar e otimizar documentações
+- Abacus.AI = Plataforma para criar, automatizar e escalar sistemas de IA personalizados
+- Resolve AI = Automatiza tarefas operacionais em ambientes de software de produção
+- Relevance AI = Criação de Agents AI No Code
+- DoubleTick AI = plataforma que automatiza assistente comercial
+- Shipfast = Desenvolvimento rápido de aplicações web, especialmente SaaS (Software as a Service).
+- Spaceship AI = plataforma para lançamento e a gestão de presença online(registro de domínios, hospedagem, e-mail e etc.) 
+- Pinecode.ai = Automatizar a criação de estratégias de negociação e indicadores técnicos para TradingView
+- WhiteBridge AI = Pesquisas de identidade digital 
+- GeoSpy.ai = Geolocalização de imagens
+- Nace.AI = Desenvolvimento de soluções corporativas
+
+### Study ✏️
+- Mapify = Cria mapas mentais
+- MyMap = Mapas mentais
+- Visualmind = Mapas mentais
+- Perplexity AI = Mecanismo de busca que combina a busca tradicional com respostas geradas por IA
+- Eskritor = Axuliar na criação de textos
+- Jenni AI = Auxiliar pesquisadores e profissionais na escrita acadêmica
+- Mystylus = Companheiro de IA para Redação de Documentos Eficiente
+- Astra AI = Calculadora 
+- ElevenLabs = Síntese e clonagem de voz, permitindo transformar texto em áudio realista e natural
+- Notta AI = Transcrever, resumir e traduzir áudios e vídeos
+
+# Agent AI
+
+https://openart-blog-posts.webflow.io/pt
+https://www.smoothspeak.ai/
+https://prompt-guide.xiniushu.com/category/prompt-engineering-ides
+https://www.promptstacks.com/
+https://docs.baseplate.ai/introduction
+https://www.lintrule.com/?ref=everyprompt
+https://gale.kore.ai/auth/login
+https://www.vellum.ai/
 N8N
 Lobe
 Zapier
 Teachable Machine
 Make (Integromat)
-
-Pipedream
-
-https://www.florafauna.ai/
-
-https://openart-blog-posts.webflow.io/pt
-
-web-ui ai
-
-Canva code
-
-cluely ai
-
-https://smithery.ai/
-
 https://glama.ai/chat
-
-https://www.pixelcut.ai/pt-br
-
-https://astra-ai.co/
-
-https://www.spaceship.com/
-
-https://www.doubletick.ai/
-
-https://julius.ai/
-
-https://getdex.com/
-
-https://momoai.co/
-
-https://www.wonsulting.com/networkai
-
-Visualmind
-https://www.freepik.com/ai/image-generator
-Argil AI
-
-smoothspeak
-
-https://auraai.app/
-
+https://smithery.ai/
 https://www.financialdatasets.ai/
-
+Pipedream
 ANI – Artificial Narrow Intelligence
 AGI – Artificial General Intelligence
 SI – Artificial Superintelligence
@@ -57,102 +104,3 @@ SI – Artificial Superintelligence
 - Transofmer models
 - Deep convolutional Genreative Adversiral networks
 Recurrent neural networks (RNNs)
-
-
-### Vertical AI Guide
-
-- LockedIn AI = Plataforma projetada para auxiliar profissionais em entrevistas de emprego e reuniões
-
-- Rows 2.0 = Integra inteligência artificial (IA) para transformar a maneira como você analisa, automatiza e compartilha planilhas
-
-- Mapify = Cria mapas mentais
-
-- MyMap = Cria mapas mentais
-
-- Jenni AI = Auxiliar pesquisadores e profissionais na escrita acadêmica para a produção de conteúdo de alta qualidade
-  
-- Locofy AI = Desenvolvimento low-code que transforma designs criados em ferramentas como Figma e Adobe XD em código front-end pronto para produção
-  
-- Galileo AI = Plataforma voltada para o design de interfaces de usuário (UI)
-
-- CopyCoder.ai = Transforma imagens ee interfaces de usuário (UI) 
-
-- Bolt.new = Plataforma de desenvolvimento web full-stack
-
-- Shipfast = Desenvolvimento rápido de aplicações web, especialmente SaaS (Software as a Service).
-
-https://admyral.ai/
-
-https://www.finalroundai.com/
-
-- Relume = Construção de websites
-  
-- Lovable = Criação de aplicações web completas sem a necessidade de escrever código
-
-- Replit = Criação de aplicações and websites
-
-- Softgen = Desenvolvimento de aplicações web full-stack
-
-- v0.dev = Criar interfaces e aplicações
-
-- Same.new = Permite criar, clonar e iterar aplicações web completas
-
-- Relevance AI = Criação de Agents AI (No Code)
-
-- Synthflow AI = Criar assistentes de voz para automatizar chamadas telefônicas de forma natural e eficiente, sem necessidade de programação
-
-- Pinecode.ai = Automatizar a criação de estratégias de negociação e indicadores técnicos para TradingView
-
-- Wonsulting AI = Otimizar a busca por empregos
-
-- LedgerBox AI = Converter arquivos PDF em formatos estruturados, como Excel, CSV, JSON e QuickBooks
-
-- Gamma AI = Projetada para simplificar a criação de apresentações e documentos
-
-- WhiteBridge AI = Pesquisas de identidade digital 
-
-- Looka AI = Criar logotipos e identidades visuais
-
-- Hedra AI = Transformar imagens estáticas em vídeos animados
-
-- Runaway AI = Criação e edição de vídeos, imagens
-
-- Leonardo AI = Criação de vídeos e imagens
-
-- Midjourney = Geração de imagens
-
-- Kling AI = Geração de vídeos realistas a partir de comandos de texto ou imagens
-
-- HunyuanVideo = Geração de vídeos
-
-- Colossyan = Transforma textos em vídeos com apresentadores virtuais realistas
-
-- ElevenLabs = Síntese e clonagem de voz, permitindo transformar texto em áudio realista e natural
-
-- Notta AI = Transcrever, resumir e traduzir áudios e vídeos
-
-- Eskritor = Axuliar na criação de textos
-
-- Mystylus = Companheiro de IA para Redação de Documentos Eficiente
-
-- DimenXioner = Transforma imagens 2D em modelos 3D realistas
-
-- Typefully = Gerenciamento de mídias sociais
-
-- Mintlify = Ajudar equipes de desenvolvimento de produto/suporte a criar e otimizar documentações
-
-- Abacus.AI = Plataforma projetada para empresas e profissionais que desejam criar, automatizar e escalar sistemas de IA personalizados
-
-- Resolve AI = Automatiza tarefas operacionais em ambientes de software de produção
-
-- Nace.AI = Desenvolvimento de soluções corporativas
-
-- Ai2sql = Converte descrições em linguagem natural em consultas SQL otimizadas
-
-- BlazeSQL = Plataforma projetada para facilitar a interação com bancos de dados SQL
-
-- GeoSpy.ai = Geolocalização de imagens
-
-- Blackbox AI = Auxiliar desenvolvedores na otimização de código
-
-- Perplexity AI = Mecanismo de busca que combina a busca tradicional com respostas geradas por IA
