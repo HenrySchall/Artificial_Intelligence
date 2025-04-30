@@ -34,6 +34,7 @@
 - Spellbook = agilizar o trabalho de advogados contratuais (https://www.spellbook.legal/)
 - Admyral = Acelerar e automatizar a pesquisa de proprietários de imóveis (https://admyral.ai/)
 - Wonsulting AI = Otimizar a busca por empregos
+- https://mecagent.com/
   
 ### Code 🖥
 - Galileo AI = Design de interfaces de usuário (UI)
