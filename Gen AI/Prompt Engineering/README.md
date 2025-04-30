@@ -1,6 +1,6 @@
 # Prompt Engineering
 
-> Engenharia de prompt é a prática de projetar, testar e refinar entradas (prompts) para obter modelos de linguagem (LLM's). Pesquisadores utilizam a engenharia de prompts para aprimorar a capacidade de LLMs em uma ampla gama de tarefas e desenvolvedores utilizam a engenharia de prompts para projetar técnicas de prompts robustas e eficazes para interagir com LLMs e outras ferramentas. Sendo assim, podemos dizer que é o desenvolvimento de prompts mais precisos, relevantes e controláveis.
+> Prompt Engineering é a prática de projetar, testar e refinar entradas (prompts) para compreender melhor as capacidades e limitações dos Large Language Models (LLM's). Pesquisadores utilizam a engenharia de prompt para aprimorar a capacidade de LLM's em uma ampla gama de tarefas e desenvolvedores utilizam a engenharia de prompts para projetar técnicas de prompts robustas e eficazes para interagir com LLMs e outras ferramentas. Sendo assim, podemos dizer que Prompt Engineering é o desenvolvimento de prompts mais precisos, relevantes e controláveis.
 
 ## Estrutura básica de prompt (P.R.O.M.P.T.)
 
