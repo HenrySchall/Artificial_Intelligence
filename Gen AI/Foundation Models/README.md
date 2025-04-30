@@ -66,5 +66,22 @@ fine-tuning -. treinar um parte do modelo especifica para um especfiico cenario 
 
 ## Langchain
 
+> É uma biblioteca de código aberto projetada para facilitar a integração de LLM's como
+
+Componentes
+- Modelos
+- Prompts
+- Chains = encaderar LLM's m aplicações complexas, permitindo a ligação entre múltiplos modelos ou outros módulos especializados
+- Memória: Módulos que permitem o gerenciamento e alteração de conversas anteriores, essencial para chatbots que preciam relembrar interações passadas para manter coerência
+- agentes = euqipads com kit de ferramentas abrangentes, que possibvvilita escolher quais ferramentas usar com base nas informações do usuário
+- Indices = metod spara organizar documentos 
+
+Econosistema
+- langchain community - integraç~~oes com terceiros tipo langchain-openai
+- lanchiga chain = chains, agentes e estrategias de retrivel quwe compoem a arquiteutra cognitiva de uma aplicação 
+- langraph: para construir aplicações robustas e como estado para múltiplos atores com LLM's, modelando etapas como arestas e nós em um gráfico. Integra-se perfeitamente com Langchain, mas pode ser usado sem ele
+- langserve: Para implementar chains do lang cghain com oapis rest 
+- langsmith platadfoma para desenvolver de aplicacoes LLM
+
 ## MCP
 ## RAG
