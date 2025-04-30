@@ -83,5 +83,15 @@ Econosistema
 - langserve: Para implementar chains do lang cghain com oapis rest 
 - langsmith platadfoma para desenvolver de aplicacoes LLM
 
+Aqui entra uma das principais vantagens do LangChain: ele permite trabalhar facilmente com diversos modelos. Alguns modelos são melhores para determinadas tarefas ou oferecem um melhor custo-benefício. Portanto, você provavelmente desejará explorar diferentes modelos durante seus testes
+
+https://python.langchain.com/v0.2/docs/integrations/llms/
+
+Devido ao fato do LangChain se integrar bem ao Hugging Face, podemos usar a mesma lógica de pipeline que vimos antes na implementação com o Transformers. São uma ótima e fácil maneira de usar modelos para inferência.
+
+Portanto, para essa primeira parte basicamente podemos usar o mesmo código que vimos anteriormente
+Abaixo faremos a quantização e também a tokanização. Utilizamos AutoModelForCausalLM para carregar o modelo e AutoTokenizer para carregar o tokenizer
+
+
 ## MCP
 ## RAG
