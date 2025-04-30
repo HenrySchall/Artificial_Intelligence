@@ -14,7 +14,8 @@
 - Momo AI = geração de imagem (https://momoai.co/)
 - HunyuanVideo (https://www.hunyuanvideo.org/pt/)
 - Pixel AI = editor de fotos
-- Open Art 
+- Open Art
+- Elevenlabs = gerador de audio (https://elevenlabs.io/)
 - Kling AI = Geração de vídeos realistas a partir de comandos de texto ou imagens
 - Colossyan = Transforma textos em vídeos com apresentadores virtuais realistas
 
