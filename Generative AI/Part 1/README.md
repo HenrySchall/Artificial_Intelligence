@@ -112,7 +112,7 @@ Econosistema
 
 ### Basic Prompt Structure
 
-![imgade](https://github.com/user-attachments/assets/ba4d2626-70da-4052-86fa-beeca1f917a2)
+![chatgpt prompt  frameworks  chatgptricks_page-0001](https://github.com/user-attachments/assets/e2e077ff-08ad-4db2-9b7f-a7cc3acaa00d)
 
 ### Techniques
 
