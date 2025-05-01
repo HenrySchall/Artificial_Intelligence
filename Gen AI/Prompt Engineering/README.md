@@ -21,13 +21,16 @@
 - **Self-Consistency:** Generate multiple responses and ask the model to develop a consensus.
 - **Delimiters**: Use delimiters such as `--` or XML tags (`<tag>content</tag>`) to separate sections of the prompt, such as instructions, examples, and data. This helps the model distinguish different parts of the prompt.
 
+### Basic Prompt Structure
+
+![imgade](https://github.com/user-attachments/assets/ba4d2626-70da-4052-86fa-beeca1f917a2)
+
+### Techniques
+
 ### Tools
 - Guide = https://www.promptingguide.ai/
 - Test Prompts = https://app.chathub.gg/?utm_source=chathub.gg
 - Generator of Prompts https://www.feedough.com/ai-prompt-generator/
-
-### Techniques
-
 
 ## Repository Bibliographic References:
 - Large Language Models are Zero-short Reasoners Contrastive Chin of Thought prompting, by Takeshi Kojima, Shixiang Shane Gu, Machel Reid, Yutaka Matsuo, Yusuke Iwasawa. 
