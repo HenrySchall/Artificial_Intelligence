@@ -17,9 +17,9 @@
 
 `2. Quote the exact passage that justifies your answer, within the <Quotes>…</Quotes> tag.`
 
-- **Temperatura do Modelo:** Ajuste a temperatura do modelo para controlar a criatividade, ou seja, utilize valores baixos para respostas mais factuais.
-- **Consistência Própria:** Gere múltiplas respostas e peça ao modelo para desenvolver um consenso.
-- **Delimitadores**: Utilize delimitadores como `--` ou tags XML (`<tag>conteúdo</tag>`) para separar seções do prompt, como instruções, exemplos e dados. Isso ajuda o modelo a distinguir diferentes partes do prompt.
+- **Model Temperature:** Adjust the temperature of the model to control creativity, i.e. use low values ​​for more factual responses.
+- **Self-Consistency:** Generate multiple responses and ask the model to develop a consensus.
+- **Delimiters**: Use delimiters such as `--` or XML tags (`<tag>content</tag>`) to separate sections of the prompt, such as instructions, examples, and data. This helps the model distinguish different parts of the prompt.
 
 ### Tools
 - Guide = https://www.promptingguide.ai/
