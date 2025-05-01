@@ -51,3 +51,6 @@ Basic of Time Series
 Business AZpplications
 Feature Selection Importance
 Overfitting vs Underfitting
+
+![435804192-302c6201-bc09-4b47-9367-c91437758147](https://github.com/user-attachments/assets/ab790343-3ce1-426b-9a26-a4c52a3da5c6)
+
