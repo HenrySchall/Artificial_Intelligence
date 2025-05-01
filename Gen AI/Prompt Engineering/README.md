@@ -1,22 +1,21 @@
 # Prompt Engineering
+> Prompt Engineering is the practice of designing, testing, and refining prompts to better understand the capabilities and limitations of Large Language Models (LLMs). Researchers use prompt engineering to improve the capabilities of LLMs across a wide range of tasks, and developers use prompt engineering to design robust and effective prompting techniques to interact with LLMs and other tools. Prompt Engineering is the development of more accurate, relevant, and controllable prompts.
 
-> Prompt Engineering é a prática de projetar, testar e refinar entradas (prompts) para compreender melhor as capacidades e limitações dos Large Language Models (LLM's). Pesquisadores utilizam a engenharia de prompt para aprimorar a capacidade de LLM's em uma ampla gama de tarefas e desenvolvedores utilizam a engenharia de prompts para projetar técnicas de prompts robustas e eficazes para interagir com LLMs e outras ferramentas. Sendo assim, podemos dizer que Prompt Engineering é o desenvolvimento de prompts mais precisos, relevantes e controláveis.
-
-### Evitando alucinações
-- **Humanize**: Permita que o modelo diga que não sabe a resposta e configure ele para te contestar, deixe ele adotar uma abordagem construtiva como se fosse um parceiro de ideias.
-- **Coloque Contexto**: Encontrar evidências teóricas (trechos relevantes) no contexto fornecido que embasem sua resposta (uso de `<Quotes>`). Exemplo:
+### Avoiding hallucinations
+- **Humanize**: Allow the model to say it doesn't know the answer and set it up for you to challenge it, letting it take a constructive approach as if it were a thought partner.
+- **Include Context**: Find theoretical evidence (relevant excerpts) in the given context that support your answer (use of `<Quotes>`). Example:
 
 `<Quotes>`
 
-`A Revolução Industrial começou na Inglaterra no século XVIII...`
+`The Industrial Revolution began in England in the 18th century...`
 
 `</Quotes>`
 
-`Com base no contexto acima, responda:`
+`Based on the context above, answer:`
 
-`1. Qual foi a principal causa da Revolução Industrial?`
+`1. What was the main cause of the Industrial Revolution?`
 
-`2. Cite o trecho exato que justifica sua resposta, dentro da tag <Quotes>…</Quotes>`
+`2. Quote the exact passage that justifies your answer, within the <Quotes>…</Quotes> tag.`
 
 - **Temperatura do Modelo:** Ajuste a temperatura do modelo para controlar a criatividade. Utilize valores baixos para respostas mais factuais.
 - **Consistência Própria:** Gere múltiplas respostas e peça ao modelo para desenvolver um consenso.
@@ -24,9 +23,12 @@
 - **Variáveis**: Ao usar plataformas como o console da Anthropic, você pode definir variáveis no prompt usando a sintaxe `{{variável}}`. Isso permite que você crie prompts genéricos que podem ser facilmente adaptados para casos específicos, substituindo apenas os valores das variáveis.
 
 ### Ferramentas 
-- Leitura = https://www.promptingguide.ai/
-- Testar Prompts = https://app.chathub.gg/?utm_source=chathub.gg
-- Gerador de Prompts https://www.feedough.com/ai-prompt-generator/
+- Guide = https://www.promptingguide.ai/
+- Test Prompts = https://app.chathub.gg/?utm_source=chathub.gg
+- Generator of Prompts https://www.feedough.com/ai-prompt-generator/
+
+## Techniques
+
 
 ## Repository Bibliographic References:
 - Large Language Models are Zero-short Reasoners Contrastive Chin of Thought prompting, by Takeshi Kojima, Shixiang Shane Gu, Machel Reid, Yutaka Matsuo, Yusuke Iwasawa. 
