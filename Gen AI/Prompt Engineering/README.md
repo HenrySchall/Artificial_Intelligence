@@ -17,17 +17,16 @@
 
 `2. Quote the exact passage that justifies your answer, within the <Quotes>…</Quotes> tag.`
 
-- **Temperatura do Modelo:** Ajuste a temperatura do modelo para controlar a criatividade. Utilize valores baixos para respostas mais factuais.
+- **Temperatura do Modelo:** Ajuste a temperatura do modelo para controlar a criatividade, ou seja, utilize valores baixos para respostas mais factuais.
 - **Consistência Própria:** Gere múltiplas respostas e peça ao modelo para desenvolver um consenso.
 - **Delimitadores**: Utilize delimitadores como `--` ou tags XML (`<tag>conteúdo</tag>`) para separar seções do prompt, como instruções, exemplos e dados. Isso ajuda o modelo a distinguir diferentes partes do prompt.
-- **Variáveis**: Ao usar plataformas como o console da Anthropic, você pode definir variáveis no prompt usando a sintaxe `{{variável}}`. Isso permite que você crie prompts genéricos que podem ser facilmente adaptados para casos específicos, substituindo apenas os valores das variáveis.
 
-### Ferramentas 
+### Tools
 - Guide = https://www.promptingguide.ai/
 - Test Prompts = https://app.chathub.gg/?utm_source=chathub.gg
 - Generator of Prompts https://www.feedough.com/ai-prompt-generator/
 
-## Techniques
+### Techniques
 
 
 ## Repository Bibliographic References:
