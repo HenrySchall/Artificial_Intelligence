@@ -64,6 +64,12 @@ fine-tuning -. treinar um parte do modelo especifica para um especfiico cenario 
 
 > É uma biblioteca de código aberto projetada para facilitar a integração de LLM's como
 
+
+![Captura de tela 2025-04-30 042839](https://github.com/user-attachments/assets/530e5943-1558-4841-b1e1-cc34bda62207)
+
+![ChatGPT Image 30 de abr  de 2025, 21_21_01](https://github.com/user-attachments/assets/9d0e919d-6ae1-4ab9-af67-e75d4dc33971)
+
+
 Componentes
 - Modelos
 - Prompts
