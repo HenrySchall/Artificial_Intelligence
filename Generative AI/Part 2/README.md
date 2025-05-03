@@ -2,6 +2,15 @@
 
 > “Vertical AI” refere-se a soluções de inteligência artificial desenvolvidas e treinadas para atender a demandas específicas de mercado (como saúde, finanças, agricultura, varejo, etc.), em contraste com a IA horizontal, que utiliza-se de modelos genéricos, pensados para atender a múltiplos tarefas (por exemplo, chatbots de uso geral, ferramentas de classificação de imagens genéricas, etc.)
 
+illustroke
+Radio Garden
+krisp
+bhuman AI
+pikzels AI
+Browse AI
+Taskade
+Durable Co
+https://klingai.com/global/
 https://huggingface.co/spaces/lmarena-ai/chatbot-arena-leaderboard
 https://www.autoapplier.com/
 https://opencreator.io/
