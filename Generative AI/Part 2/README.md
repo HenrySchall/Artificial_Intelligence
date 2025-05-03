@@ -5,6 +5,10 @@
 https://huggingface.co/spaces/lmarena-ai/chatbot-arena-leaderboard
 https://www.autoapplier.com/
 https://opencreator.io/
+https://trysai.com/
+https://spline.design/
+https://lovable.dev/
+https://n8nchat.com/
 
 ### Gerador de imagem e video 🖼
 - Aura AI (https://auraai.app/)
