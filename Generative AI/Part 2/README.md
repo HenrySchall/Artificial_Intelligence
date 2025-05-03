@@ -9,6 +9,9 @@ https://trysai.com/
 https://spline.design/
 https://lovable.dev/
 https://n8nchat.com/
+https://www.xblog.ai/
+https://feedly.com/
+https://www.paddle.com/
 
 ### Gerador de imagem e video 🖼
 - Aura AI (https://auraai.app/)
