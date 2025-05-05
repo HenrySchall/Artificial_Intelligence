@@ -69,6 +69,21 @@ fine-tuning -. treinar um parte do modelo especifica para um especfiico cenario 
 
 > É uma biblioteca de código aberto projetada para facilitar a integração de LLM's como
 
+> Modelos de LLM's disponíveis https://python.langchain.com/v0.2/docs/integrations/llms/
+
+> Devido ao fato do LangChain se integrar bem ao Hugging Face, podemos usar a mesma lógica de pipeline que vimos antes na implementação com o Transformers. São uma ótima e fácil maneira de usar modelos para inferência.quantização e também a tokanização.
+
+
+
+
+
+
+
+
+
+
+
+
 Componentes
 - Modelos
 - Prompts
