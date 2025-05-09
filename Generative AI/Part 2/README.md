@@ -10,6 +10,7 @@ pikzels AI
 Browse AI
 Taskade
 Durable Co
+https://typedream.com/
 https://klingai.com/global/
 https://huggingface.co/spaces/lmarena-ai/chatbot-arena-leaderboard
 https://www.autoapplier.com/
