@@ -113,26 +113,12 @@ print(output[0]['generated_text'])
 
 
 
-template = """<|system|>
-You are a helpful assistant.<|end|>
-<|user|>
-"{}"<|end|>
-<|assistant|>""".format(prompt)
 
-template
-output = pipe(template, **generation_args)
-print(output[0]['generated_text'])
 
-prompt = "O que é IA?"  # @param {type:"string"}
 
-template = """<|system|>
-You are a helpful assistant.<|end|>
-<|user|>
-"{}"<|end|>
-<|assistant|>""".format(prompt)
 
-output = pipe(template, **generation_args)
-print(output[0]['generated_text'])
+
+
 
 #  Explorando mais prompts
 
