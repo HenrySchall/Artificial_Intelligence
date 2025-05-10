@@ -2,28 +2,27 @@
 
 ## Hugging Face
 
-> O Hugging Face é uma empresa que começou na França em 2017, inicialmente focada no desenvolvimento de chatbots. Com o tempo, a empresa evoluiu para criar uma infraestrutura própria para o processamento de linguagem natural (NLP), oferecendo uma série de bibliotecas de Python que simplificam o uso de modelos de NLP. Hoje, o Hugging Face é um hub de modelos open-source, contendo diversos modelos pré-treinados que podem ser utilizados para desenvolvimento de soluções de Gen AI
+> O Hugging Face é uma empresa que começou na França em 2017, inicialmente focada no desenvolvimento de chatbots. Com o tempo, a empresa evoluiu para criar uma infraestrutura própria para o processamento de linguagem natural (NLP), oferecendo uma série de bibliotecas de Python que simplificam o uso de modelos de NLP. Hoje, o Hugging Face é um hub de modelos open-source, contendo diversos modelos pré-treinados que podem ser utilizados para desenvolvimento de soluções de Gen AI.
 
 ```
 id_model =  "microsoft/Phi-3-mini-4k-instruct"
 ```
 
-- 4k = Tamanho da Janela de Contexto ou Sequência de Tokens (4000 mil tokens em uma unica entrada, para gerar um sequência de texto)
-- instruct = Tipo de Modelo
+- microsoft = Organização desenvolvedora.
+- Phi-3-mini = Família do modelo. 
+- 4k = Tamanho da Janela de Contexto ou Sequência de Tokens (4000 mil tokens em uma única entrada, para gerar uma sequência de texto).
+- instruct = Tipo de Modelo.
 
 ```
 model = AutoModelForCausalLM.from_pretrained(id_model, device_map = "cuda", torch_dtype = "auto", trust_remote_code = True, attn_implementation="eager")
 ```
 
-- id_model = 
-- device_map = "cuda" = Especifica que o modelo deve ser processado usando GPU + CPU
-- torch_dtype = "auto" = Define o tipo de dados apropriado para os tensores do modelo
-- trust_remote_code = True = Permite o carregamento de código personalizado do repositório de modelos no HuggingFace
-- attn_implementation="eager" = Especifica o método de implementação para o mecanismo de Self-Attention. Sendo a configuração "eager" é uma implementação
-- 
-# particular que fornecer melhor desempenho  para alguns modelos ao processar o mecanismo de Self-Attention
+- device_map = "cuda" = Especifica que o modelo deve ser processado usando GPU.
+- torch_dtype = "auto" = Define o tipo de dados apropriado para os tensores do modelo.
+- trust_remote_code = True = Permite o carregamento de código personalizado do repositório de modelos no HuggingFace.
+- attn_implementation="eager" = Especifica o método de implementação para o mecanismo de Self-Attention. Sendo a configuração "eager" uma implementação particular.
 
-> Tokenizar -> Em nossa configuração, também precisamos carregar o tokenizer associado ao modelo. O tokenizer é crucial para preparar dados de texto em um formato que o modelo possa entender. Um tokenizador converte texto bruto em tokens
+> Tokenizador -> Preparar os dados de texto em um formato que o modelo possa entender, ou seja, realizar o processo de converte texto bruto em tokens (representações númericas).
 
 
 
