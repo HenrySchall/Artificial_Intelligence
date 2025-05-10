@@ -45,6 +45,7 @@ import param
 import sklearn
 import scipy
 import string
+import getpass
 import random
 import torch
 import os
@@ -58,7 +59,7 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print('Using device:', device)
 
 # torch.random.manual_seed()
-os.environ["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"]
+os.environ["HF_TOKEN"] = getpass.getpass()
 
 id_model = "microsoft/Phi-3-mini-4k-instruct"
 model = AutoModelForCausalLM.from_pretrained(id_model, device_map = "cuda", torch_dtype = "auto", trust_remote_code = True, attn_implementation="eager")
