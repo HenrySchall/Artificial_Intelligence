@@ -71,8 +71,19 @@ generation_args = {"max_new_tokens": 500, "return_full_text": False, "temperatur
 - "return_full_text = Se deve fornecer o texto completo (Prompt de entrada + resposta)
 - "temperature" = Controle de aleatoriedade do processo ( 0.1 - determinística < 0.5 > criativa - 0.9)
 - "do_sample" = Define se a amostragem aleatória será usada na geração das próximas palavras do texto.
+  
   - Quando do_sample = True, as próximas palavras são geradas com base na distribuição de probabilidades, permitindo variação e criatividade (o texto pode mudar, com o mesmo prompt).
   - Quando o do_sample = False, escolhe-se sempre a palavra mais provável (argmax). Isso gera respostas mais previsíveis e determinísticas.
+ 
+#### Templates para formatação 
+
+```
+# Essas tags formadas por <|##nome##|> são o que chamamos de Tokens especiais (special tokens) e são usadas para delimitar o início e fim de texto e dizer ao modelo como queremos que a mensagem seja interpretada
+# Os tokens especiais usados para interagir com o Phi 3 são esses:
+# <|system|>, <|user|> e <|assistant|>: correspondem ao papel (role) das mensagens. Os papéis usados aqui são: system, user e assistant
+# <|end|>: Isso é equivalente ao token EOS (End of String), usado para marcar o fim do texto/string.
+# Usaremos o .format para concatenar o prompt nesse template, assim não precisamos redigitar ali manualmente
+```
 
 
 > Foundation Models são modelos de inteligência artificial (AI) de grande escala, baseados em técnicas de Deep Learning (Redes Neurais Profundas) de aprendizado não-supervisionado, ou seja, sem qualquer instrução humana. Eles são utilizados em enormes volumes de dados para criar conexões e captura as relações complexas entre os dados, para depois podem ser adaptados para tarefas específicas. O termo foundation foi popularizado pela Universidade de Stanford em 2021, devido ao fato que eles funcionam como base para construção de outras aplicações, em vez de treinarem um modelo do zero para cada tipo problema. Os Large Language Models (LLM's) são uma classe dos Foundation Models, especificos para linguagem, portando focam em tarefas relacionadas a texto, nesse contexto que surge os conceitos de Prompt Engineering (prática de criar instruções (prompts) inteligentes para controlar e guiar o comportamento de modelos de linguagem) e Natural Language Processing (NLP) (prática de ensinar computadores a entender, interpretar, gerar e interagir usando à linguagem humana). OS LLM's requerem recursos computacionais significativos para processar dados, por isso utilizam unidades de processamento gráfico (GPUs), para acelerar o treinasmento e a opoeração dos chamados transformers.
