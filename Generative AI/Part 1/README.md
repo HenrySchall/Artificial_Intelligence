@@ -95,7 +95,6 @@ pipe = pipeline("text-generation", model = model , tokenizer = tokenizer) # Cria
 ```
 # Especificando paramâtros do modelo
 generation_args = {"max_new_tokens": 500, "return_full_text": False, "temperature": 0.1, "do_sample": True}
-
 ```
 
 - "max_new_tokens" = Comprimento do texto gerado 
@@ -113,11 +112,15 @@ generation_args = {"max_new_tokens": 500, "return_full_text": False, "temperatur
 > Os modelos (templates) de prompt ajudam a traduzir a entrada e os parâmetros do usuário em instruções para um modelo de linguagem. Isso pode ser usado para orientar a resposta de um modelo, ajudando-o a entender o contexto e gerar saída relevante e mais coerente. <|##nome##|> -> Tokens especiais (special tokens) usados para delimitar o início e fim de um texto e dizer ao modelo como queremos que a mensagem seja interpretada. Tipos:
 
 - <|system|>, <|user|> e <|assistant|>: correspondem ao papel (role) das mensagens. Os papéis usados aqui são: system, user e assistant
-- <|end|>: Isso é equivalente ao token EOS (End of String), usado para marcar o fim do texto/string.
+- <|end|>: Equivalente ao token EOS (End of String), usado para marcar o fim do texto/string.
 
-
-
-# Usaremos o .format para concatenar o prompt nesse template, assim não precisamos redigitar ali manualmente
+```
+template = """<|system|>
+You are a helpful assistant.<|end|>
+<|user|>
+"{}"<|end|>
+<|assistant|>""".format(prompt) # .format para concatenar o prompt nesse template, assim não precisamos redigitar ali manualment
+```
 
 
 
