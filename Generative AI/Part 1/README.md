@@ -1,5 +1,29 @@
 # Foundation Models
 
+## Hugging Face
+
+> O Hugging Face é uma empresa que começou na França em 2017, inicialmente focada no desenvolvimento de chatbots. Com o tempo, a empresa evoluiu para criar uma infraestrutura própria para o processamento de linguagem natural (NLP), oferecendo uma série de bibliotecas de Python que simplificam o uso de modelos de NLP. Hoje, o Hugging Face é um hub de modelos open-source, contendo diversos modelos pré-treinados que podem ser utilizados para desenvolvimento de soluções de Gen AI
+
+```
+"microsoft/Phi-3-mini-4k-instruct"
+4k = context window size or token sequence length (4000 mil tokens em uma unica entrada, gerar sequencias de texto)
+instruct = model type
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 '# Uninstall Packages # pip freeze > packages.txt# pip uninstall -y -r packages.txt'
 https://huggingface.co/docs/transformers/en/model_doc/cohere
 
@@ -42,32 +66,29 @@ https://platform.openai.com/tokenizer
 proprietarios (closed source) ou de códgiosd aberttos (open Source)
 SLM -> Small Languagew Models = feito em ambientes locais
 
-### Configuração Nvidia Cuda
-https://docs.nvidia.com/deeplearning/cudnn/backend/latest/reference/support-matrix.html#f1
+#### Tipos de LLM's 
 
-Install Cuda Toolkit 
+- Base models -. passam apenas pelo pré-trainamento e completam textos com palavras prova´veis (bons para prever palavras subsequentes entao se geramos um pergunta ele retorna com uma perguibnta (projetado para completaer frases prevendo as palavras mais provaveis com base no texto anterior palavra subsequentes - nao gera resposta g
 
-Install cuDNN Toolkit  pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128 (https://pytorch.org/get-started/locally/)
+- Instruct-Tuned -> modelos ajustados para instrulçoes passam por umaetapa adicional de ajuste parea instruções melhorand a capacidade de seguir comandos especificos (ESPERAM ser solicitados a fazer algo
 
-Observe que a versão do Cuda Toolkit deve ser compátivel com o cuDNN Toolkit e com a versão do Framework escolhido (Pytorch, Tensorflow ou Keras)
-
-Example: Pytorch Cuda 11.8 -> cuDNN 9.8.0 for CUDA 11.x
-
-
-## Hugging Face
-
-Tipos de LLM's 
-
-base models -. passam apenas pelo pré-trainamento e completam textos com palavras prova´veis (bons para prever palavras subsequentes entao se geramos um pergunta ele retorna com uma perguibnta (projetado para completaer frases prevendo as palavras mais provaveis com base no texto anterior
-
-Modelos instruct-tuned -> modelos ajustados para instrulçoes passam por umaetapa adicional de ajuste parea instruções melhorand a capacidade de seguir comandos especificos (ESPERAM ser solicitados a fazer algo
-
-Modelos de Chat -> foram ajustados para dfuncionar em chatbots, poretanto podem sewermais apropriados para conversas.
+- Chat -> foram ajustados para funcionar em chatbots, poretanto podem ser mais apropriados para conversas.
 Esperando o envolvimentos em uma conversa
 
-modelos nao ajusrados para instruções simplesmente geram uma saide que continua a parti do prompt
+instruct -> seguir as instruções fornecidas
 
-fine-tuning -. treinar um parte do modelo especifica para um especfiico cenario (base de dados menor e mais especializada)
+CHat -< esperam estar envolvidos em um conversa com diferentes atores
+
+modelos nao ajustados para instruções simplesmente geram uma saide que continua a parti do prompt
+
+fine-tuning -Tecnica treinar um parte do modelo especifica para um especfiico cenario (base de dados menor e mais especializada)
+transformar de base model para intruct-tuned, Envolve pegar o mnodelo base pre-treinado e treina-lo mais com um datasert menor e mauis especializado relevatge para a tarefa desejada
+
+
+LLM's sao projetados para completar frases prevendo as palavras mais provaveis com base n otexto anterior entao os modelos bases funcionam dessa forma, pdoeriamo dar algum dica para ele tipo um pergunta onde os poinguins viver e ja dar uma parte da resposta, isso e a egnhearia de prompt (escolhare das melhores plavras para a AI) maximizara resposta
+
+
+
 
 ## Langchain
 
