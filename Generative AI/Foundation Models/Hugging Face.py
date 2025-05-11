@@ -45,11 +45,14 @@ import param
 import sklearn
 import scipy
 import string
-import getpass
 import random
 import torch
 import os
 from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline, BitsAndBytesConfig
+
+#########################
+### Foundation Models ###
+#########################
 
 ####################
 ### Hugging Face ###
@@ -58,44 +61,85 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline, BitsAndB
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print('Using device:', device)
 
-# torch.random.manual_seed()
-os.environ["HF_TOKEN"] = getpass.getpass()
+torch.random.manual_seed(42)
+os.environ["HF_TOKEN"] =
 
 id_model = "microsoft/Phi-3-mini-4k-instruct"
-model = AutoModelForCausalLM.from_pretrained(id_model, device_map = "cuda", torch_dtype = "auto", trust_remote_code = True, attn_implementation="eager")
 
-######################################
-### Tokenize and Prompt Generation ###
-######################################
+# 4k = context window size or token sequence length (4000 mil tokens em uma unica entrada, gerar sequencias de texto)
+# instruct = model type
+
+model = AutoModelForCausalLM.from_pretrained(id_model,
+    device_map = "cuda", # processamento usando a placas de vídeo (GPU) + processador (CPU) - Tecnologia NVIDIA
+    torch_dtype = "auto",
+    trust_remote_code = True,
+    attn_implementation="eager")
+
+# device_map="cuda" = Especifica que o modelo deve ser processado usando GPU + CPU
+# torch_dtype="auto" = Define automaticamente o tipo de dados apropriado para os tensores do modelo
+# trust_remote_code=True = Permite o carregamento de código personalizado do repositório de modelos no HuggingFace
+# attn_implementation="eager" = Especifica o método de implementação para o mecanismo de Self-Attention. Sendo a configuração "eager" é uma implementação 
+# particular que fornecer melhor desempenho  para alguns modelos ao processar o mecanismo de Self-Attention
+
+# Tokenizar
+
+# Em nossa configuração, também precisamos carregar o tokenizer associado ao modelo. O tokenizer é crucial para preparar dados de texto em um formato que o modelo possa entender.
+# Um tokenizador converte texto bruto em tokens
 
 tokenizer = AutoTokenizer.from_pretrained(id_model)
+
+# Criação de Pipiline
+# gora criaremos um pipeline para geração de texto usando nosso modelo e tokenizer carregados anteriormente. A função de pipeline HuggingFace 
+# simplifica o processo de execução de várias tarefas de processamento de linguagem natural ao fornecer uma interface de alto nível. Um pipeline é uma abstração que simplifica o uso de modelos 
+# pré-treinados para uma variedade de tarefas de PLN. Ele fornece uma API unificada para diferentes tarefas, como geração de texto, classificação de texto, tradução e muito mais.
+
 pipe = pipeline("text-generation", model = model, tokenizer = tokenizer)
-generation_args = {"max_new_tokens": 500, "return_full_text": False, "temperature": 0.1, "do_sample": True}
 
-# Example 1
-prompt = "Quanto é 7 x 7 - 36?"
+# "text-generation": especifica a tarefa que o pipeline está configurado para executar. Neste caso, estamos configurando um pipeline para geração de texto. O pipeline usará o modelo para gerar texto com base em um prompt fornecido.
+# model=model: especifica o modelo pré-treinado que o pipeline usará. Aqui, estamos passando o model que carregamos anteriormente. Este modelo é responsável por gerar texto com base nos tokens de entrada.
+# tokenizer=tokenizer: especifica o tokenizador que o pipeline usará. Passamos o tokenizer que carregamos anteriormente para garantir que o texto de entrada seja tokenizado corretamente e os tokens de saída sejam decodificados com precisão.
+
+generation_args = {
+    "max_new_tokens": 500,
+    "return_full_text": False,
+    "temperature": 0.1, # 0.1 até 0.9
+    "do_sample": True,
+}
+
+# max_new_tokens" -> numero maxim ode token que devem ser gerados (comprimento do texto)
+# "return_full_text": False, (se deve retornar o texto completo)
+#  "temperature": 0.1, # 0.1 até 0.9 (aleatoriade do processo = grau de criativade)
+# "do_sample": True, (amostragem true = com base nas probalibdades e false e escolhe o token  de maior probabilidade)
+
+prompt = "Quanto é 7 x 6 - 42?"
 output = pipe(prompt, **generation_args)
 print(output[0]['generated_text'])
 
-# Example 2
-prompt = "Quem foi a primeira pessoa no espaço?"
+# **generation_args: Isso descompacta o dicionário generation_args e passa seu conteúdo como argumentos de palavra-chave para o pipeline, personalizando o processo de geração de texto.
+
+prompt = "Explique o que é computação quântica"
 output = pipe(prompt, **generation_args)
 print(output[0]['generated_text'])
 
-# Para descobrir o template adequado, sempre cheque a descrição do modelo, por exemplo: https://huggingface.co/microsoft/Phi-3-mini-4k-instruct
+# Templates e engenharia de prompt
+
+# Essas tags formadas por <|##nome##|> são o que chamamos de Tokens especiais (special tokens) e são usadas para delimitar o início e fim de texto e dizer ao modelo como queremos que a mensagem seja interpretada
+# Os tokens especiais usados para interagir com o Phi 3 são esses:
+# <|system|>, <|user|> e <|assistant|>: correspondem ao papel (role) das mensagens. Os papéis usados aqui são: system, user e assistant
+# <|end|>: Isso é equivalente ao token EOS (End of String), usado para marcar o fim do texto/string.
+# Usaremos o .format para concatenar o prompt nesse template, assim não precisamos redigitar ali manualmente
 
 template = """<|system|>
 You are a helpful assistant.<|end|>
 <|user|>
 "{}"<|end|>
-<|assistant|>""".format(prompt) # .format para concatenar o prompt nesse template, assim não precisamos redigitar ali manualment
-template
+<|assistant|>""".format(prompt)
 
+template
 output = pipe(template, **generation_args)
 print(output[0]['generated_text'])
 
-# Example 3
-prompt = "O que é IA?" 
+prompt = "O que é IA?"  # @param {type:"string"}
 
 template = """<|system|>
 You are a helpful assistant.<|end|>
@@ -105,20 +149,6 @@ You are a helpful assistant.<|end|>
 
 output = pipe(template, **generation_args)
 print(output[0]['generated_text'])
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #  Explorando mais prompts
 
