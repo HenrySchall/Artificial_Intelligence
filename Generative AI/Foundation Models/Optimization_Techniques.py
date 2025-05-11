@@ -67,7 +67,7 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print('Using device:', device)
 
 # torch.random.manual_seed(42)
-os.environ["HF_TOKEN"] = 
+#os.environ["HF_TOKEN"]
 
 model_id = "meta-llama/Meta-Llama-3-8B-Instruct"
 
