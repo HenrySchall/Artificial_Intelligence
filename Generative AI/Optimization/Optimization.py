@@ -55,7 +55,6 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline, BitsAndB
 ##########################
 
 # pip install langchain, langchain-community, langchain-huggingface, langchainhub, langchain_chroma
-
 from langchain_huggingface import HuggingFacePipeline
 from langchain.prompts import PromptTemplate
 from langchain_core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate, MessagesPlaceholder
