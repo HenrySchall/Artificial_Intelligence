@@ -62,7 +62,7 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print('Using device:', device)
 
 torch.random.manual_seed(42)
-os.environ["HF_TOKEN"] = "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"
+os.environ["HF_TOKEN"] =
 
 id_model = "microsoft/Phi-3-mini-4k-instruct"
 
