@@ -8,8 +8,8 @@
 
 Source: Nvidia
 
-#### Transformers
-Transformers são uma arquitetura que transformam ou alteram uma sequência de entra em uma sequência de saída de forma contínua, foi apresentada pelo paper "Attention is All you Need". Sua arquitetura melhora a capacidade dos modelos de Deep Learning ao capturar dependências contextuais em sequências de dados, como palavras em uma frase. As arquiteturas anteriores Recurrent Neural Network (RNN) e Long short-term memory (LSTM) perdiam detalhes em sequências longas, pois processavam a sequência passo a passo, ou seja, um elemento de cada vez. Os Transformers introduzem o mecanismo de Self-Attention, que olha todos os elementos da sequência de uma vez, ou seja, capturam as relações contextuais entre todas as partes de um sequência simultanemante (contexto). Por exemplo, no prompt de entrada "Qual é a cor do céu?", o modelo indentifica a relação entre "cor", "céu" e "azul" para gerar o prompt de saída "O céu é azul".
+### Transformers
+> Transformers são uma arquitetura que transformam ou alteram uma sequência de entra em uma sequência de saída de forma contínua, foi apresentada pelo paper "Attention is All you Need". Sua arquitetura melhora a capacidade dos modelos de Deep Learning ao capturar dependências contextuais em sequências de dados, como palavras em uma frase. As arquiteturas anteriores Recurrent Neural Network (RNN) e Long short-term memory (LSTM) perdiam detalhes em sequências longas, pois processavam a sequência passo a passo, ou seja, um elemento de cada vez. Os Transformers introduzem o mecanismo de Self-Attention, que olha todos os elementos da sequência de uma vez, ou seja, capturam as relações contextuais entre todas as partes de um sequência simultanemante (contexto). Por exemplo, no prompt de entrada "Qual é a cor do céu?", o modelo indentifica a relação entre "cor", "céu" e "azul" para gerar o prompt de saída "O céu é azul".
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/72f25195-e576-4d6c-8148-e6f236ac2190"/>
@@ -17,8 +17,8 @@ Transformers são uma arquitetura que transformam ou alteram uma sequência de e
 
 source:brains.dev
 
-#### Embeddings & Tokens
-Os Embeddings são representações vetoriais numéricas de dados textuais, usados para transformar palavras ou sentenças em vetores númericos que o modelo possa entender e processar, permitindo capturar o significado semâtico do texto. O modelo aprende a separar e agrupar esses extos com base em suas similaridades. Então por exemplo, quando o modelo recebe uma palavra nova, como "maça", ele sabe exatamente onde colocar, muito provavalmente em um bloco onde estão outras frutas. 
+### Embeddings & Tokens
+> Embeddings são representações vetoriais numéricas de dados textuais, usados para transformar palavras ou sentenças em vetores númericos que o modelo possa entender e processar, permitindo capturar o significado semâtico do texto. O modelo aprende a separar e agrupar esses extos com base em suas similaridades. Então por exemplo, quando o modelo recebe uma palavra nova, como "maça", ele sabe exatamente onde colocar, muito provavalmente em um bloco onde estão outras frutas. 
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/bfea28f0-0a3a-449a-923e-2f0655e3d766"/>
@@ -31,8 +31,7 @@ Os Embeddings são representações vetoriais numéricas de dados textuais, usad
 </p>
 https://platform.openai.com/tokenizer
 
-
-#### Tipos de LLM's 
+### Tipos de LLM's 
 
 - Base models -. passam apenas pelo pré-trainamento e completam textos com palavras prova´veis (bons para prever palavras subsequentes entao se geramos um pergunta ele retorna com uma perguibnta (projetado para completaer frases prevendo as palavras mais provaveis com base no texto anterior palavra subsequentes - nao gera resposta g
 
@@ -52,8 +51,6 @@ transformar de base model para intruct-tuned, Envolve pegar o mnodelo base pre-t
 
 
 LLM's sao projetados para completar frases prevendo as palavras mais provaveis com base n otexto anterior entao os modelos bases funcionam dessa forma, pdoeriamo dar algum dica para ele tipo um pergunta onde os poinguins viver e ja dar uma parte da resposta, isso e a egnhearia de prompt (escolhare das melhores plavras para a AI) maximizara resposta
-
-
 
 ## Hugging Face
 
@@ -77,10 +74,10 @@ model = AutoModelForCausalLM.from_pretrained(id_model, device_map = "cuda", torc
 - trust_remote_code = Permite o carregamento de código personalizado do repositório de modelos no HuggingFace.
 - attn_implementation = Especifica o método de implementação para o mecanismo de Self-Attention. Sendo a configuração "eager" uma implementação particular.
 
-#### Tokenizador
+### Tokenizador
 > Preparar os dados para realizar o processo de converção de texto bruto em tokens (representações númericas), ou seja, permite o modelo interpretar o texto digitado.
 
-#### Pipeline 
+### Pipeline 
 > É uma abstração que simplifica o uso de modelos pré-treinados para uma variedade de tarefas, facilitando o processo de execução de processamento de linguagem natural, devido a sua interface unificada.
 ```
 tokenizer = AutoTokenizer.from_pretrained(id_model)
@@ -107,7 +104,7 @@ generation_args = {"max_new_tokens": 500, "return_full_text": False, "temperatur
  
 > Repare que o modelo continuou gerando depois de dar a resposta, até por isso dessa vez demorou mais. O que acontece é que o modelo continua "conversando sozinho", como se simulasse uma conversa. É um comportamento esperado já que não definimos o que chamamos de token de parada (end token). Isso será explicado com detalhes, mas por enquanto o que você precisa saber é que para evitar esse comportamento nós utilizamos templates, que são recomendados pelos próprios autores geralmente (ou pela comunidade). Uma forma de consertar isso são os templates
  
-#### Templates 
+### Templates 
 
 > Os modelos (templates) de prompt ajudam a traduzir a entrada e os parâmetros do usuário em instruções para um modelo de linguagem. Isso pode ser usado para orientar a resposta de um modelo, ajudando-o a entender o contexto e gerar saída relevante e mais coerente. <|##nome##|> -> Tokens especiais (special tokens) usados para delimitar o início e fim de um texto e dizer ao modelo como queremos que a mensagem seja interpretada. Tipos:
 
@@ -122,5 +119,8 @@ You are a helpful assistant.<|end|>
 <|assistant|>""".format(prompt) # .format para concatenar o prompt nesse template, assim não precisamos redigitar ali manualment
 ```
 
+## Langchain
+
+## CrewAI
 
 
