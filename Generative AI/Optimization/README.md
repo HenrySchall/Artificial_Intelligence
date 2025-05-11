@@ -23,17 +23,16 @@
 
 ### Basic Prompt Structure
 
-![chatgpt prompt  frameworks  chatgptricks_page-0001](https://github.com/user-attachments/assets/e2e077ff-08ad-4db2-9b7f-a7cc3acaa00d)
+![chatgpt](https://github.com/user-attachments/assets/e2e077ff-08ad-4db2-9b7f-a7cc3acaa00d)
 
 ### Techniques
+- colocar tabela 
 
 ### Tools
 - Guide = https://www.promptingguide.ai/
 - Test Prompts = https://app.chathub.gg/?utm_source=chathub.gg
-- Generator of Prompts https://www.feedough.com/ai-prompt-generator/
-
-### Ranking
-https://beta.lmarena.ai/leaderboard
+- Generator of Prompts = https://www.feedough.com/ai-prompt-generator/
+- Ranking of LLM's = https://beta.lmarena.ai/leaderboard
 
 
 # RAG
