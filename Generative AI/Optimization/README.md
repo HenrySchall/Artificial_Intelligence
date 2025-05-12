@@ -106,6 +106,53 @@ model = AutoModelForCausalLM.from_pretrained(model_id, quantization_config=quant
 tokenizer = AutoTokenizer.from_pretrained(model_id)
 ```
 
+```
+prompt = ("Quem foi a primeira pessoa no espaço?")
+messages = [{"role": "user", "content": prompt}]
+```
+
+Recomendamos usar a função Hugging Face tokenizer.apply_chat_template(), que aplica automaticamente o modelo de chat correto para o respectivo modelo. É mais fácil do que escrever manualmente o modelo de chat e menos propenso a erros. return_tensors="pt" especifica que os tensores retornados devem ser no formato PyTorch.
+
+As demais linhas de código: tokenizam as mensagens de entrada, movem os tensores para o dispositivo correto, geram novos tokens com base nos inputs fornecidos, decodificam os tokens gerados de volta em texto legível e finalmente retornam o texto gerado.
+
+    model_inputs = encodeds.to(device) - Move os tensores codificados para o dispositivo especificado (CPU ou GPU) para serem processados pelo modelo.
+
+    encodeds - Os tensores gerados na linha anterior. to(device) - Move os tensores para o dispositivo especificado (device), que pode ser uma CPU ou GPU.
+
+    generated_ids = model.generate... -> Gera uma sequência de tokens a partir dos model_inputs.
+        model.generate: Função do modelo que gera texto baseado nos inputs fornecidos.
+        model_inputs: Os inputs processados, prontos para serem usados pelo modelo.
+        max_new_tokens=1000: Limita a geração a no máximo 1000 novos tokens.
+        do_sample=True: Habilita amostragem aleatória durante a geração, o que pode resultar em saídas mais variadas.
+        pad_token_id=tokenizer.eos_token_id: Define o token de padding para ser o token de fim de sequência, garantindo que a geração seja corretamente terminada.
+
+    decoded = tokenizer.batch_decode(generated_ids) - decodifica os IDs gerados de volta para texto legível.
+        tokenizer.batch_decode - função que converte uma lista de IDs de tokens de volta para texto.
+        generated_ids - os IDs dos tokens gerados na etapa anterior.
+
+- res = decoded[0] - extrai o primeiro item da lista de textos decodificados. decoded[0]: Pega o primeiro texto da lista decoded, que corresponde à geração de texto para o primeiro (e possivelmente único) input fornecido.
+
+```
+encodeds = tokenizer.apply_chat_template(messages, return_tensors="pt")
+model_inputs = encodeds.to(device)
+generated_ids = model.generate(model_inputs, max_new_tokens = 1000, do_sample = True,
+                               pad_token_id=tokenizer.eos_token_id)
+decoded = tokenizer.batch_decode(generated_ids)
+res = decoded[0]
+res
+```
+
+
+Você verá que, com o LangChain, teremos mais opções e ferramentas, pois a biblioteca oferece um ecossistema completo e integrado às principais e mais modernas soluções de modelos de linguagem, tanto abertas quanto privadas.
+
+Então, por que pode ser interessante saber esse método que mostramos agora, se o LangChain é melhor e oferece mais opções? Pode ser útil caso você esteja testando um modelo novo e recém-publicado que ainda não possui tanta compatibilidade.
+
+Mesmo com o LangChain, ao lidar com literalmente milhares de modelos diferentes, pode haver certa incompatibilidade ao carregá-los. Isso geralmente é corrigido pela equipe de desenvolvimento em algum release futuro, mas nem sempre é imediato - e outras soluções você encontrará apenas procurando em fóruns já que são publicados pela comunidade.
+
+Portanto, saber esse método pode ser útil se você estiver testando os modelos open-source mais recentes que não carregaram corretamente com o LangChain.
+
+Pode ser um pequeno inconveniente para alguns, mas é necessário entender que esse é o "preço" a se pagar por estar na fronteira e usar os modelos Open Source mais modernos e poder utilizá-los de forma gratuita.
+
 
 # RAG
 
