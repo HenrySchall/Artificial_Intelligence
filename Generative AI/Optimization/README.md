@@ -69,6 +69,7 @@ Existem diversos sites e repositórios que disponibilizam prompts feitos pela co
 Um exemplo é hub do LangSmith: https://smith.langchain.com/hub Ele faz parte do ecossistema LangChain. Isso será muito conveniente mais tarde, pois veremos como puxar prompts hospedados lá através de apenas uma função
 
 
+![20250512_010859444_iOS](https://github.com/user-attachments/assets/bc1fa200-861c-43ba-a803-d2610a1bd0c6)
 
 
 # RAG
