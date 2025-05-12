@@ -143,9 +143,19 @@ You are a helpful assistant.<|end|>
 
 ### Ecossistema 
 
+• langchain-core: Abstrações básicas e LangChain Expression Language (LCEL).
+
+• langchain-community: Integrações de terceiros. Pacotes parceiros (por exemplo, langchain-openai, langchain-anthropic, etc.): Algumas integrações foram divididas em seus próprios pacotes leves que dependem apenas do langchain-core.
+
+• langchain: Chains, Agentes e Estratégias de Retrieval que compõem a arquitetura cognitiva de uma aplicação.
+
+• LangGraph: Para construir aplicações robustas e com estado para múltiplos atores com LLMs, modelando etapas como arestas e nós em um gráfico. Integra-se perfeitamente com LangChain, mas pode ser usado sem ele.
+
+• LangServe: Para implementar chains do LangChain como APIs REST.
+
+• LangSmith: Uma plataforma para desenvolvedores que permite depurar, testar, avaliar e monitorar aplicações LLM's
+
 ![userlm](https://github.com/user-attachments/assets/0e3d7455-9f4a-4a3c-93cb-ae795cd38331)
-
-
 
 ## CrewAI
 
