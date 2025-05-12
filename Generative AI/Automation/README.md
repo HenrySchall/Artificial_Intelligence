@@ -6,6 +6,11 @@
 
 # Vertical AI
 
+https://www.topview.ai/
+google ai studio
+zapier
+NotebookLM
+
 > “Vertical AI” refere-se a soluções de inteligência artificial desenvolvidas e treinadas para atender a demandas específicas de mercado (como saúde, finanças, agricultura, varejo, etc.), em contraste com a IA horizontal, que utiliza-se de modelos genéricos, pensados para atender a múltiplos tarefas (por exemplo, chatbots de uso geral, ferramentas de classificação de imagens genéricas, etc.)
 
 illustroke
