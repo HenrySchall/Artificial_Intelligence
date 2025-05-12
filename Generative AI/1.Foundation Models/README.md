@@ -157,6 +157,10 @@ You are a helpful assistant.<|end|>
 
 ![userlm](https://github.com/user-attachments/assets/0e3d7455-9f4a-4a3c-93cb-ae795cd38331)
 
+> A integração de Hugging Face com LangChain traz diversos benefícios,
+conforme citado anteriormente.• Hugging Face disponibiliza uma ampla variedade de modelos pré-treinados
+que podem ser facilmente incorporados às suas aplicações. • LangChain facilita essa incorporação, fornecendo uma interface uniforme eferramentas extras para melhorar desempenho e eficiência. • Com essas ferramentas combinadas, você pode se focar mais na lógica de negócios e menos nas questões técnicas
+
 ## CrewAI
 
 
