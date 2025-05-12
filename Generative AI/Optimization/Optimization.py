@@ -121,6 +121,8 @@ print(output[0]['generated_text'])
 ### Quantization ###
 ####################
 
+device = "cuda:0" if torch.cuda.is_available() else "cpu"
+
 quantization_config = BitsAndBytesConfig(
     load_in_4bit=True,
     bnb_4bit_quant_type="nf4",
@@ -132,3 +134,14 @@ Para aplicar a quantização, agora carregaremos o modelo com o método "AutoMod
 model_id = "meta-llama/Meta-Llama-3-8B-Instruct"
 model = AutoModelForCausalLM.from_pretrained(model_id, quantization_config=quantization_config)
 tokenizer = AutoTokenizer.from_pretrained(model_id)
+
+prompt = ("Quem foi a primeira pessoa no espaço?")
+messages = [{"role": "user", "content": prompt}]
+
+encodeds = tokenizer.apply_chat_template(messages, return_tensors="pt")
+model_inputs = encodeds.to(device)
+generated_ids = model.generate(model_inputs, max_new_tokens = 1000, do_sample = True,
+                               pad_token_id=tokenizer.eos_token_id)
+decoded = tokenizer.batch_decode(generated_ids)
+res = decoded[0]
+res
