@@ -125,8 +125,6 @@ You are a helpful assistant.<|end|>
 
 ### Componentes 
 
-
-
 - Modelos: Oferece uma interface padrão para interações com uma ampla gama de LLMs.
 
 - Prompts: Ferramentas para simplificar a criação e tratamento de prompts dinâmicos.
@@ -138,6 +136,10 @@ You are a helpful assistant.<|end|>
 - Agentes: Equipados com um kit de ferramentas abrangente, podem escolher quais ferramentas usar com base nas informações do usuário.
 
 - Índices: Métodos para organizar documentos (que contém dados proprietários, por exemplo) de forma a facilitar a interação eficaz com LLMs.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/cf01f65a-81b7-4f79-b6ef-dbe5c82af5cb"/>
+</p>
 
 ### Ecossistema 
 
