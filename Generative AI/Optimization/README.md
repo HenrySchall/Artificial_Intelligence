@@ -34,6 +34,42 @@
 - Generator of Prompts = https://www.feedough.com/ai-prompt-generator/
 - Ranking of LLM's = https://beta.lmarena.ai/leaderboard
 
+```
+# Example 1
+prompt = "Gere um código em python que escreva a sequência de fibonnaci"
+
+template = """<|system|>
+{}<|end|>
+<|user|>
+"{}"<|end|>
+<|assistant|>""".format(prompt)
+
+output = pipe(template, **generation_args)
+print(output[0]['generated_text'])
+
+# Example 2
+prompt = "Gere um código em python que escreva a sequência de fibonnaci"
+
+sys_prompt = "Você é um programador experiente. Retorne o código requisitado e forneça explicações breves se achar conveniente" - Adiciona o modo de comportamento da AI
+
+template = """<|system|>
+{}<|end|>
+<|user|>
+"{}"<|end|>
+<|assistant|>""".format(sys_prompt, prompt)
+
+output = pipe(template, **generation_args)
+print(output[0]['generated_text'])
+```
+
+Criar seu próprio prompt pode ser o ideal caso deseje alcançar casos muito específicos. Mas caso esteja sem muito tempo para experimentar (ou não sabe muito bem o melhor modo) uma boa dica é procurar por prompts na internet.
+
+Existem diversos sites e repositórios que disponibilizam prompts feitos pela comunidade.
+
+Um exemplo é hub do LangSmith: https://smith.langchain.com/hub Ele faz parte do ecossistema LangChain. Isso será muito conveniente mais tarde, pois veremos como puxar prompts hospedados lá através de apenas uma função
+
+
+
 
 # RAG
 
