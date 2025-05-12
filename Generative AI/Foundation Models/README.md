@@ -79,10 +79,10 @@ model = AutoModelForCausalLM.from_pretrained(id_model, device_map = "cuda", torc
 
 ### Pipeline 
 > É uma abstração que simplifica o uso de modelos pré-treinados para uma variedade de tarefas, facilitando o processo de execução de processamento de linguagem natural, devido a sua interface unificada.
+
 ```
 tokenizer = AutoTokenizer.from_pretrained(id_model)
 pipe = pipeline("text-generation", model = model , tokenizer = tokenizer) # Criação de pipeline
-
 ```
 
 - "text-generation" = Especifica a tarefa que o pipeline está configurado para executar.
