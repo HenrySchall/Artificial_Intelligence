@@ -2,6 +2,10 @@
 ### Install Packages ###
 ########################
 
+##############
+### CrewAI ###
+##############
+
 import subprocess
 import sys
 
@@ -116,7 +120,7 @@ You are a helpful assistant.<|end|>
 output = pipe(template, **generation_args)
 print(output[0]['generated_text'])
 
-#################
+################# 
 ### Langchain ###
 #################
 
@@ -130,6 +134,28 @@ from langchain_core.runnables import RunnablePassthrough
 from langchain_core.messages import (HumanMessage, SystemMessage)
 from langchain_huggingface import ChatHuggingFace
 
-##############
-### CrewAI ###
-##############
+# My License Keys
+# https://drive.google.com/file/d/1Cu5iQHkbF47FLSXpTH-l75ArX9KBDByd/view?usp=sharing
+
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+print('Using device:', device)
+
+torch.random.manual_seed(20)
+os.environ["HF_TOKEN"] =
+
+model_id = "microsoft/Phi-3-mini-4k-instruct"
+
+quantization_config = BitsAndBytesConfig(
+    load_in_4bit=True,
+    bnb_4bit_use_double_quant=True,
+    bnb_4bit_quant_type="nf4",
+    bnb_4bit_compute_dtype=torch.bfloat16)
+
+model = AutoModelForCausalLM.from_pretrained(model_id, quantization_config=quantization_config)
+tokenizer = AutoTokenizer.from_pretrained(model_id)
+
+pipe = pipeline(model = model, tokenizer = tokenizer, task = "text-generation", temperature = 0.1, max_new_tokens = 500, do_sample = True, repetition_penalty = 1.1, return_full_text = False,)
+llm = HuggingFacePipeline(pipeline = pipe)
+
+input = "Quem foi a primeira pessoa no espaço?"
+input = "Quem foi a primeira pessoa no espaço?"
