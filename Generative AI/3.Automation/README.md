@@ -8,6 +8,7 @@
 
 https://www.topview.ai/
 google ai studio
+Loveable AI
 zapier
 NotebookLM
 
