@@ -60,13 +60,13 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline, BitsAndB
 ###################
 
 # My License Keys
-# https://drive.google.com/file/d/1aMw7MGhE8FOPBs5iUWAvknoeKtth2ooZ/view?usp=drive_link
+# https://drive.google.com/file/d/1Cu5iQHkbF47FLSXpTH-l75ArX9KBDByd/view?usp=sharing
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print('Using device:', device)
 
 torch.random.manual_seed(20)
-os.environ["HF_TOKEN"] = "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"
+os.environ["HF_TOKEN"] =
 
 id_model = "microsoft/Phi-3-mini-4k-instruct"
 model = AutoModelForCausalLM.from_pretrained(id_model, device_map = "cuda", torch_dtype = "auto", trust_remote_code = True, attn_implementation="eager")
