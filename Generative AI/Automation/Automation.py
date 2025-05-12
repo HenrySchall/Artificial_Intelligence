@@ -41,6 +41,7 @@ import colorcet as cc
 import matplotlib.pyplot as plt
 import math
 import datetime
+import gc
 import param
 import sklearn
 import scipy
@@ -49,3 +50,13 @@ import random
 import torch
 import os
 from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline, BitsAndBytesConfig
+
+#####################
+### Configuration ###
+#####################
+
+# My License Keys
+# https://drive.google.com/file/d/1aMw7MGhE8FOPBs5iUWAvknoeKtth2ooZ/view?usp=drive_link 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
+
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+print('Using device:', device)

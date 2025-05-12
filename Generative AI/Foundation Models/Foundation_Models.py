@@ -41,13 +41,13 @@ import colorcet as cc
 import matplotlib.pyplot as plt
 import math
 import datetime
+import gc
 import param
 import sklearn
 import scipy
 import string
 import random
 import torch
-import getpass
 import os
 from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline, BitsAndBytesConfig
 
@@ -55,15 +55,18 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline, BitsAndB
 ### Foundation Models ###
 #########################
 
-####################
-### Hugging Face ###
-####################
+###################
+### HuggingFace ###
+###################
+
+# My License Keys
+# https://drive.google.com/file/d/1aMw7MGhE8FOPBs5iUWAvknoeKtth2ooZ/view?usp=drive_link
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print('Using device:', device)
 
-torch.random.manual_seed()
-os.environ["HF_TOKEN"] = getpass.getpass()
+torch.random.manual_seed(20)
+os.environ["HF_TOKEN"] = "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"
 
 id_model = "microsoft/Phi-3-mini-4k-instruct"
 model = AutoModelForCausalLM.from_pretrained(id_model, device_map = "cuda", torch_dtype = "auto", trust_remote_code = True, attn_implementation="eager")
@@ -83,6 +86,11 @@ print(output[0]['generated_text'])
 prompt = "Explique o que é computação quântica"
 output = pipe(prompt, **generation_args)
 print(output[0]['generated_text'])
+
+# Limpar cache
+# gc.collect()
+# torch.cuda.empty_cache()
+# print("Cache de memória CUDA esvaziado.")
 
 ### Templates ###
 # https://huggingface.co/docs/transformers/chat_templating
