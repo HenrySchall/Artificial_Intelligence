@@ -121,6 +121,30 @@ You are a helpful assistant.<|end|>
 
 ## Langchain
 
+> 
+
+### Componentes 
+
+
+
+- Modelos: Oferece uma interface padrão para interações com uma ampla gama de LLMs.
+
+- Prompts: Ferramentas para simplificar a criação e tratamento de prompts dinâmicos.
+
+- Chains (Corrente, Cadeia ou Sequencia): Interface padrão para encadear LLMs em aplicações complexas, permitindo a ligação entre múltiplos modelos ou outros módulos especializados.
+
+- Memória: Módulos que permitem o gerenciamento e alteração de conversas anteriores, essencial para chatbots que precisam relembrar interações passadas para manter coerência.
+
+- Agentes: Equipados com um kit de ferramentas abrangente, podem escolher quais ferramentas usar com base nas informações do usuário.
+
+- Índices: Métodos para organizar documentos (que contém dados proprietários, por exemplo) de forma a facilitar a interação eficaz com LLMs.
+
+### Ecossistema 
+
+![userlm](https://github.com/user-attachments/assets/0e3d7455-9f4a-4a3c-93cb-ae795cd38331)
+
+
+
 ## CrewAI
 
 
