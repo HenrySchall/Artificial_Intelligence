@@ -49,7 +49,6 @@ modelos nao ajustados para instruções simplesmente geram uma saide que continu
 fine-tuning -Tecnica treinar um parte do modelo especifica para um especfiico cenario (base de dados menor e mais especializada)
 transformar de base model para intruct-tuned, Envolve pegar o mnodelo base pre-treinado e treina-lo mais com um datasert menor e mauis especializado relevatge para a tarefa desejada
 
-
 LLM's sao projetados para completar frases prevendo as palavras mais provaveis com base n otexto anterior entao os modelos bases funcionam dessa forma, pdoeriamo dar algum dica para ele tipo um pergunta onde os poinguins viver e ja dar uma parte da resposta, isso e a egnhearia de prompt (escolhare das melhores plavras para a AI) maximizara resposta
 
 ## Hugging Face
@@ -103,21 +102,6 @@ generation_args = {"max_new_tokens": 500, "return_full_text": False, "temperatur
   - Quando o do_sample = False, escolhe-se sempre a palavra mais provável (argmax). Isso gera respostas mais previsíveis e determinísticas.
  
 > Repare que o modelo continuou gerando depois de dar a resposta, até por isso dessa vez demorou mais. O que acontece é que o modelo continua "conversando sozinho", como se simulasse uma conversa. É um comportamento esperado já que não definimos o que chamamos de token de parada (end token). Isso será explicado com detalhes, mas por enquanto o que você precisa saber é que para evitar esse comportamento nós utilizamos templates, que são recomendados pelos próprios autores geralmente (ou pela comunidade). Uma forma de consertar isso são os templates
- 
-### Templates 
-
-> Os modelos (templates) de prompt ajudam a traduzir a entrada e os parâmetros do usuário em instruções para um modelo de linguagem. Isso pode ser usado para orientar a resposta de um modelo, ajudando-o a entender o contexto e gerar saída relevante e mais coerente. <|##nome##|> -> Tokens especiais (special tokens) usados para delimitar o início e fim de um texto e dizer ao modelo como queremos que a mensagem seja interpretada. Tipos:
-
-- <|system|>, <|user|> e <|assistant|>: correspondem ao papel (role) das mensagens. Os papéis usados aqui são: system, user e assistant
-- <|end|>: Equivalente ao token EOS (End of String), usado para marcar o fim do texto/string.
-
-```
-template = """<|system|>
-You are a helpful assistant.<|end|>
-<|user|>
-"{}"<|end|>
-<|assistant|>""".format(prompt) # .format para concatenar o prompt nesse template, assim não precisamos redigitar ali manualment
-```
 
 ## Langchain
 
@@ -161,6 +145,96 @@ You are a helpful assistant.<|end|>
 conforme citado anteriormente.• Hugging Face disponibiliza uma ampla variedade de modelos pré-treinados
 que podem ser facilmente incorporados às suas aplicações. • LangChain facilita essa incorporação, fornecendo uma interface uniforme eferramentas extras para melhorar desempenho e eficiência. • Com essas ferramentas combinadas, você pode se focar mais na lógica de negócios e menos nas questões técnicas
 
-## CrewAI
+```
+model_id = "microsoft/Phi-3-mini-4k-instruct"
+
+quantization_config = BitsAndBytesConfig(
+    load_in_4bit=True,
+    bnb_4bit_use_double_quant=True,
+    bnb_4bit_quant_type="nf4",
+    bnb_4bit_compute_dtype=torch.bfloat16)
+
+model = AutoModelForCausalLM.from_pretrained(model_id, quantization_config=quantization_config)
+tokenizer = AutoTokenizer.from_pretrained(model_id)
+
+pipe = pipeline(model = model, tokenizer = tokenizer, task = "text-generation", temperature = 0.1, max_new_tokens = 500, do_sample = True, repetition_penalty = 1.1, return_full_text = False)
+llm = HuggingFacePipeline(pipeline = pipe)
+```
+- do_sample = Indica que a geração deve envolver amostragem aleatória (em vez de escolher sempre o token mais prováve
+- repetition_penalty = Penaliza repetições de tokens já gerados. Valores acima de 1 reduzem a chance de repetições
+- return_full_text = Se False, a saída retorna apenas o texto gerado, sem incluir o prompt original.
+
+### Quantização
+
+> A quantização reduz a precisão dos números usados para representar os parâmetros de um modelo, diminuindo o footprint (uso) de memória e carga computacional, possibilitando carregar e executar modelos massivos de forma eficiente, sem comprometer significativamente o desempenho. O processo consiste em usar números de ponto flutuante de 16 bits (float16) ou de 8 bits (int8), ao invés de 32 bits (float32). Dentre os Frameworks disponíveis para realizar o processos existem o  BitsAndBytesConfig, AutoGPTQ e AutoAWQ, a escolha deles vai de preferência do usuário ou da performace do modelo sendo utilizado.
+> Link: https://huggingface.co/blog/4bit-transformers-bitsandbytes
+
+```
+quantization_config = BitsAndBytesConfig(
+    load_in_4bit=True,
+    bnb_4bit_quant_type="nf4",
+    bnb_4bit_use_double_quant=True,
+    bnb_4bit_compute_dtype=torch.bfloat16)
+```
+
+- load_in_4bit- Este parâmetro habilita a quantização de 4 bits. Quando definido como True, os pesos do modelo são carregados com precisão de 4 bits, reduzindo significativamente o uso de memória.Impacto: Menor uso de memória e cálculos mais rápidos com impacto mínimo na precisão do modelo.
+- bnb_4bit_quant_type - especifica o tipo de quantização de 4 bits a ser usado. "nf4" significa NormalFloat4, um esquema de quantização que ajuda a manter o desempenho do modelo enquanto reduz a precisão. Impacto: Equilibra o trade-off entre tamanho e desempenho do modelo.
+- bnb_4bit_use_double_quant - quando definido como True, este parâmetro habilita a quantização dupla, o que reduz ainda mais o erro de quantização e melhora a estabilidade do modelo. Impacto: Reduz o erro de quantização, aprimorando a estabilidade do modelo.
+- bnb_4bit_compute_dtype - define o tipo de dados para cálculos. Usar torch.bfloat16 (Brain Floating Point) ajuda a melhorar a eficiência computacional, mantendo a maior parte da precisão dos números de ponto flutuante de 32 bits. Impacto: Cálculos eficientes com perda mínima de precisão.
+
+```
+model_id = "meta-llama/Meta-Llama-3-8B-Instruct"
+model = AutoModelForCausalLM.from_pretrained(model_id, quantization_config=quantization_config)
+tokenizer = AutoTokenizer.from_pretrained(model_id)
+```
+
+```
+prompt = ("Quem foi a primeira pessoa no espaço?")
+messages = [{"role": "user", "content": prompt}]
+```
+
+Recomendamos usar a função Hugging Face tokenizer.apply_chat_template(), que aplica automaticamente o modelo de chat correto para o respectivo modelo. É mais fácil do que escrever manualmente o modelo de chat e menos propenso a erros. return_tensors="pt" especifica que os tensores retornados devem ser no formato PyTorch.
+
+As demais linhas de código: tokenizam as mensagens de entrada, movem os tensores para o dispositivo correto, geram novos tokens com base nos inputs fornecidos, decodificam os tokens gerados de volta em texto legível e finalmente retornam o texto gerado.
+
+    model_inputs = encodeds.to(device) - Move os tensores codificados para o dispositivo especificado (CPU ou GPU) para serem processados pelo modelo.
+
+    encodeds - Os tensores gerados na linha anterior. to(device) - Move os tensores para o dispositivo especificado (device), que pode ser uma CPU ou GPU.
+
+    generated_ids = model.generate... -> Gera uma sequência de tokens a partir dos model_inputs.
+        model.generate: Função do modelo que gera texto baseado nos inputs fornecidos.
+        model_inputs: Os inputs processados, prontos para serem usados pelo modelo.
+        max_new_tokens=1000: Limita a geração a no máximo 1000 novos tokens.
+        do_sample=True: Habilita amostragem aleatória durante a geração, o que pode resultar em saídas mais variadas.
+        pad_token_id=tokenizer.eos_token_id: Define o token de padding para ser o token de fim de sequência, garantindo que a geração seja corretamente terminada.
+
+    decoded = tokenizer.batch_decode(generated_ids) - decodifica os IDs gerados de volta para texto legível.
+        tokenizer.batch_decode - função que converte uma lista de IDs de tokens de volta para texto.
+        generated_ids - os IDs dos tokens gerados na etapa anterior.
+
+- res = decoded[0] - extrai o primeiro item da lista de textos decodificados. decoded[0]: Pega o primeiro texto da lista decoded, que corresponde à geração de texto para o primeiro (e possivelmente único) input fornecido.
+
+```
+encodeds = tokenizer.apply_chat_template(messages, return_tensors="pt")
+model_inputs = encodeds.to(device)
+generated_ids = model.generate(model_inputs, max_new_tokens = 1000, do_sample = True,
+                               pad_token_id=tokenizer.eos_token_id)
+decoded = tokenizer.batch_decode(generated_ids)
+res = decoded[0]
+res
+```
+
+
+Você verá que, com o LangChain, teremos mais opções e ferramentas, pois a biblioteca oferece um ecossistema completo e integrado às principais e mais modernas soluções de modelos de linguagem, tanto abertas quanto privadas.
+
+Então, por que pode ser interessante saber esse método que mostramos agora, se o LangChain é melhor e oferece mais opções? Pode ser útil caso você esteja testando um modelo novo e recém-publicado que ainda não possui tanta compatibilidade.
+
+Mesmo com o LangChain, ao lidar com literalmente milhares de modelos diferentes, pode haver certa incompatibilidade ao carregá-los. Isso geralmente é corrigido pela equipe de desenvolvimento em algum release futuro, mas nem sempre é imediato - e outras soluções você encontrará apenas procurando em fóruns já que são publicados pela comunidade.
+
+Portanto, saber esse método pode ser útil se você estiver testando os modelos open-source mais recentes que não carregaram corretamente com o LangChain.
+
+Pode ser um pequeno inconveniente para alguns, mas é necessário entender que esse é o "preço" a se pagar por estar na fronteira e usar os modelos Open Source mais modernos e poder utilizá-los de forma gratuita.
+
+
 
 
