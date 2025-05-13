@@ -154,6 +154,24 @@ Os tokens especiais usados para interagir via prompt com o Llama 3 são esses:
 
 https://huggingface.co/collections/eduagarcia/portuguese-llm-leaderboard-best-models-65c152c13ab3c67bc4f203a6
 
+Alguns modelos de linguagem pegam uma lista de mensagens como entrada e retornam uma mensagem. Existem alguns tipos diferentes de mensagens. Todas as mensagens têm uma propriedade role, content e response_metadata.
+
+A função (role) descreve quem está dizendo a mensagem (ex: human, system). LangChain tem diferentes classes de mensagem para diferentes funções
+
+A propriedade conteúdo (content) descreve o conteúdo da mensagem, podendo ser:
+
+    Uma string (a maioria dos modelos lida com esse tipo de conteúdo)
+    Uma lista de dicionários (isso é usado para entrada multimodal, onde o dicionário contém informações sobre esse tipo de entrada e esse local de entrada)
+
+A propriedade response_metadata contém metadados adicionais sobre a resposta. Os dados aqui são frequentemente específicos para cada provedor de modelo. É aqui que informações como log-probs (probabilidades de log) e uso de token podem ser armazenadas. Certos modelos de chat podem ser configurados para retornar probabilidades de log em nível de token, representando a probabilidade de um determinado token. Por exemplo, para isso pode-se usar essa sintaxe: msg.response_metadata["logprobs"]["content"][:5]
+
+https://python.langchain.com/v0.2/docs/concepts/#messages
+
+Os modelos de prompt (Prompt Templates) ajudam a traduzir a entrada e os parâmetros do usuário em instruções para um modelo de linguagem. Pode ser usado para orientar a resposta de um modelo, ajudando-o a entender o contexto e gerar uma saída relevante e coerente baseada em linguagem. Isso principalmente facilita a criação de prompts de maneiras variáveis. Com o Langchain, temos uma maneira eficiente de conectar isso aos diferentes LLMs que existe. Para mudar a LLM, basta alterar o código anterior de carregamento, e o código seguinte permanece igual. Ou seja, é um modo muito mais eficiente caso esteja querendo desenvolver aplicações profissionais.
+
+https://python.langchain.com/v0.2/docs/concepts/#prompt-templates
+
+Existem alguns tipos diferentes de modelos de prompt:
 
 
 # RAG
