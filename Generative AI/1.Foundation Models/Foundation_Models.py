@@ -2,10 +2,6 @@
 ### Install Packages ###
 ########################
 
-##############
-### CrewAI ###
-##############
-
 import subprocess
 import sys
 
@@ -89,17 +85,17 @@ prompt = "Explique o que é computação quântica"
 output = pipe(prompt, **generation_args)
 print(output[0]['generated_text'])
 
-# Limpar cache casos esteja travando o deploy
-# gc.collect()
-# torch.cuda.empty_cache()
-# print("Cache de memória CUDA esvaziado.")
+#Limpar cache casos esteja travando o deploy
+#gc.collect()
+#torch.cuda.empty_cache()
+#print("Cache de memória CUDA esvaziado.")
 
 ################# 
 ### Langchain ###
 #################
 
 # pip install langchain, langchain-community, langchain-huggingface, langchainhub, langchain_chroma
-from langchain_huggingface import HuggingFacePipeline
+from langchain.llms import HuggingFacePipeline
 from langchain.prompts import PromptTemplate
 from langchain_core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate, MessagesPlaceholder
 from langchain_core.messages import SystemMessage
@@ -108,24 +104,15 @@ from langchain_core.runnables import RunnablePassthrough
 from langchain_core.messages import (HumanMessage, SystemMessage)
 from langchain_huggingface import ChatHuggingFace
 
-# My License Keys
-# https://drive.google.com/file/d/1Cu5iQHkbF47FLSXpTH-l75ArX9KBDByd/view?usp=sharing
-
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print('Using device:', device)
 
 torch.random.manual_seed(20)
-os.environ["HF_TOKEN"] =
+os.environ["HF_TOKEN"] = "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"
 
 model_id = "microsoft/Phi-3-mini-4k-instruct"
 
-quantization_config = BitsAndBytesConfig(
-    load_in_4bit=True,
-    bnb_4bit_use_double_quant=True,
-    bnb_4bit_quant_type="nf4",
-    bnb_4bit_compute_dtype=torch.bfloat16)
-
-model = AutoModelForCausalLM.from_pretrained(model_id, quantization_config=quantization_config)
+model = AutoModelForCausalLM.from_pretrained(model_id, device_map = "cuda", torch_dtype = "auto", trust_remote_code = True, attn_implementation="eager")
 tokenizer = AutoTokenizer.from_pretrained(model_id)
 
 pipe = pipeline(model = model, tokenizer = tokenizer, task = "text-generation", temperature = 0.1, max_new_tokens = 500, do_sample = True, repetition_penalty = 1.1, return_full_text = False)
@@ -139,62 +126,35 @@ print(output)
 ### CrewAI ###
 ##############
 
-#################
-### Templates ###
-#################
+####################
+### Quantization ###
+####################
 
-# Example 1
-id_model = "microsoft/Phi-3-mini-4k-instruct"
-model = AutoModelForCausalLM.from_pretrained(id_model, device_map = "cuda", torch_dtype = "auto", trust_remote_code = True, attn_implementation="eager")
-
-tokenizer = AutoTokenizer.from_pretrained(id_model)
-pipe = pipeline("text-generation", model = model, tokenizer = tokenizer)
-generation_args = {"max_new_tokens": 500, "return_full_text": False, "temperature": 0.1, "do_sample": True,}
-
-prompt = "Explique o que é computação quântica"
-
-template = """<|system|>
-You are a helpful assistant.<|end|>
-<|user|>
-"{}"<|end|>
-<|assistant|>""".format(prompt)
-
-output = pipe(template, **generation_args)
-print(output[0]['generated_text'])
-
-# Example 2
-model_id = "meta-llama/Meta-Llama-3-8B-Instruct"
+model_id = "microsoft/Phi-3-mini-4k-instruct"
 
 quantization_config = BitsAndBytesConfig(
     load_in_4bit=True,
-    bnb_4bit_use_double_quant=True,
     bnb_4bit_quant_type="nf4",
+    bnb_4bit_use_double_quant=True,
     bnb_4bit_compute_dtype=torch.bfloat16)
 
 model = AutoModelForCausalLM.from_pretrained(model_id, quantization_config=quantization_config)
 tokenizer = AutoTokenizer.from_pretrained(model_id)
 
-pipe = pipeline(model=model, tokenizer=tokenizer, task="text-generation", temperature=0.1, max_new_tokens=500, do_sample=True, repetition_penalty=1.1, return_full_text=False)
-llm = HuggingFacePipeline(pipeline=pipe)
+pipe = pipeline(
+    model = model,
+    tokenizer = tokenizer,
+    task = "text-generation",
+    temperature = 0.1,
+    max_new_tokens = 500,
+    do_sample = True,
+    repetition_penalty = 1.1,
+    return_full_text = False,
+)
 
-input = "Qual foi a primeira linguagem de programação?"
-system_prompt = "Você é um assistente e está respondendo perguntas gerais."
+llm = HuggingFacePipeline(pipeline = pipe)
 
-template = """
-<|begin_of_text|>
-<|start_header_id|>system<|end_header_id|>
-{system_prompt}
-<|eot_id|>
-<|start_header_id|>user<|end_header_id|>
-{user_prompt}
-<|eot_id|>
-<|start_header_id|>assistant<|end_header_id|>
-"""
-
-prompt_template = template.format(system_prompt = system_prompt, user_prompt = input)
-prompt_template
-
-output = llm.invoke(prompt_template)
+input = "Quem foi a primeira pessoa no espaço?"
+output = llm.invoke(input)
 print(output)
 
-# Modelos de Chat https://python.langchain.com/v0.2/docs/integrations/chat/
