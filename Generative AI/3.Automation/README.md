@@ -4,6 +4,7 @@
 # Agents AI 
 
 Google ADK
+coploy AI
 
 # Vertical AI
 
