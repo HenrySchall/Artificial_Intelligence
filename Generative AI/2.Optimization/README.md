@@ -116,78 +116,44 @@ output = pipe(messages, **generation_args)
 print(output[0]['generated_text'])
 ```
 
-### Quantização
+## Templates 
 
-> A quantização reduz a precisão dos números usados para representar os parâmetros de um modelo, diminuindo o footprint (uso) de memória e carga computacional, possibilitando carregar e executar modelos massivos de forma eficiente, sem comprometer significativamente o desempenho. O processo consiste em usar números de ponto flutuante de 16 bits (float16) ou de 8 bits (int8), ao invés de 32 bits (float32). Dentre os Frameworks disponíveis para realizar o processos existem o  BitsAndBytesConfig, AutoGPTQ e AutoAWQ, a escolha deles vai de preferência do usuário ou da performace do modelo sendo utilizado.
-> Link: https://huggingface.co/blog/4bit-transformers-bitsandbytes
+> Os modelos (templates) de prompt ajudam a traduzir a entrada e os parâmetros do usuário em instruções para um modelo de linguagem. Isso pode ser usado para orientar a resposta de um modelo, ajudando-o a entender o contexto e gerar saída relevante e mais coerente. <|##nome##|> -> Tokens especiais (special tokens) usados para delimitar o início e fim de um texto e dizer ao modelo como queremos que a mensagem seja interpretada. Tipos:
 
-```
-quantization_config = BitsAndBytesConfig(
-    load_in_4bit=True,
-    bnb_4bit_quant_type="nf4",
-    bnb_4bit_use_double_quant=True,
-    bnb_4bit_compute_dtype=torch.bfloat16)
-```
+https://huggingface.co/docs/transformers/chat_templating
 
-- load_in_4bit- Este parâmetro habilita a quantização de 4 bits. Quando definido como True, os pesos do modelo são carregados com precisão de 4 bits, reduzindo significativamente o uso de memória.Impacto: Menor uso de memória e cálculos mais rápidos com impacto mínimo na precisão do modelo.
-- bnb_4bit_quant_type - especifica o tipo de quantização de 4 bits a ser usado. "nf4" significa NormalFloat4, um esquema de quantização que ajuda a manter o desempenho do modelo enquanto reduz a precisão. Impacto: Equilibra o trade-off entre tamanho e desempenho do modelo.
-- bnb_4bit_use_double_quant - quando definido como True, este parâmetro habilita a quantização dupla, o que reduz ainda mais o erro de quantização e melhora a estabilidade do modelo. Impacto: Reduz o erro de quantização, aprimorando a estabilidade do modelo.
-- bnb_4bit_compute_dtype - define o tipo de dados para cálculos. Usar torch.bfloat16 (Brain Floating Point) ajuda a melhorar a eficiência computacional, mantendo a maior parte da precisão dos números de ponto flutuante de 32 bits. Impacto: Cálculos eficientes com perda mínima de precisão.
+- <|system|>, <|user|> e <|assistant|>: correspondem ao papel (role) das mensagens. Os papéis usados aqui são: system, user e assistant
+- <|end|>: Equivalente ao token EOS (End of String), usado para marcar o fim do texto/string.
 
 ```
-model_id = "meta-llama/Meta-Llama-3-8B-Instruct"
-model = AutoModelForCausalLM.from_pretrained(model_id, quantization_config=quantization_config)
-tokenizer = AutoTokenizer.from_pretrained(model_id)
+prompt = "Explique o que é computação quântica"
+
+template = """<|system|>
+You are a helpful assistant.<|end|>
+<|user|>
+"{}"<|end|>
+<|assistant|>""".format(prompt) # .format para concatenar o prompt nesse template, assim não precisamos redigitar ali manualment
+
+output = pipe(template, **generation_args)
+print(output[0]['generated_text'])
 ```
 
 ```
-prompt = ("Quem foi a primeira pessoa no espaço?")
-messages = [{"role": "user", "content": prompt}]
-```
-
-Recomendamos usar a função Hugging Face tokenizer.apply_chat_template(), que aplica automaticamente o modelo de chat correto para o respectivo modelo. É mais fácil do que escrever manualmente o modelo de chat e menos propenso a erros. return_tensors="pt" especifica que os tensores retornados devem ser no formato PyTorch.
-
-As demais linhas de código: tokenizam as mensagens de entrada, movem os tensores para o dispositivo correto, geram novos tokens com base nos inputs fornecidos, decodificam os tokens gerados de volta em texto legível e finalmente retornam o texto gerado.
-
-    model_inputs = encodeds.to(device) - Move os tensores codificados para o dispositivo especificado (CPU ou GPU) para serem processados pelo modelo.
-
-    encodeds - Os tensores gerados na linha anterior. to(device) - Move os tensores para o dispositivo especificado (device), que pode ser uma CPU ou GPU.
-
-    generated_ids = model.generate... -> Gera uma sequência de tokens a partir dos model_inputs.
-        model.generate: Função do modelo que gera texto baseado nos inputs fornecidos.
-        model_inputs: Os inputs processados, prontos para serem usados pelo modelo.
-        max_new_tokens=1000: Limita a geração a no máximo 1000 novos tokens.
-        do_sample=True: Habilita amostragem aleatória durante a geração, o que pode resultar em saídas mais variadas.
-        pad_token_id=tokenizer.eos_token_id: Define o token de padding para ser o token de fim de sequência, garantindo que a geração seja corretamente terminada.
-
-    decoded = tokenizer.batch_decode(generated_ids) - decodifica os IDs gerados de volta para texto legível.
-        tokenizer.batch_decode - função que converte uma lista de IDs de tokens de volta para texto.
-        generated_ids - os IDs dos tokens gerados na etapa anterior.
-
-- res = decoded[0] - extrai o primeiro item da lista de textos decodificados. decoded[0]: Pega o primeiro texto da lista decoded, que corresponde à geração de texto para o primeiro (e possivelmente único) input fornecido.
 
 ```
-encodeds = tokenizer.apply_chat_template(messages, return_tensors="pt")
-model_inputs = encodeds.to(device)
-generated_ids = model.generate(model_inputs, max_new_tokens = 1000, do_sample = True,
-                               pad_token_id=tokenizer.eos_token_id)
-decoded = tokenizer.batch_decode(generated_ids)
-res = decoded[0]
-res
-```
 
+Os tokens especiais usados para interagir via prompt com o Llama 3 são esses:
 
-Você verá que, com o LangChain, teremos mais opções e ferramentas, pois a biblioteca oferece um ecossistema completo e integrado às principais e mais modernas soluções de modelos de linguagem, tanto abertas quanto privadas.
+    <|begin_of_text|>: equivalente ao token BOS (Beginning of String), indicando o início de uma nova sequência de texto.
 
-Então, por que pode ser interessante saber esse método que mostramos agora, se o LangChain é melhor e oferece mais opções? Pode ser útil caso você esteja testando um modelo novo e recém-publicado que ainda não possui tanta compatibilidade.
+    <|eot_id|>: indica o fim de uma mensagem.
 
-Mesmo com o LangChain, ao lidar com literalmente milhares de modelos diferentes, pode haver certa incompatibilidade ao carregá-los. Isso geralmente é corrigido pela equipe de desenvolvimento em algum release futuro, mas nem sempre é imediato - e outras soluções você encontrará apenas procurando em fóruns já que são publicados pela comunidade.
+    <|start_header_id|>{role}<|end_header_id|>: esses tokens envolvem o papel de uma mensagem específica. Os papéis possíveis são: system, user e assistant.
 
-Portanto, saber esse método pode ser útil se você estiver testando os modelos open-source mais recentes que não carregaram corretamente com o LangChain.
+    <|end_of_text|>: Isso é equivalente ao token EOS (End of String). Ao chegar nesse token, o Llama 3 deixará de gerar mais tokens.
 
-Pode ser um pequeno inconveniente para alguns, mas é necessário entender que esse é o "preço" a se pagar por estar na fronteira e usar os modelos Open Source mais modernos e poder utilizá-los de forma gratuita.
+https://huggingface.co/collections/eduagarcia/portuguese-llm-leaderboard-best-models-65c152c13ab3c67bc4f203a6
 
-### Prompt Engineering com LangChain
 
 
 # RAG
