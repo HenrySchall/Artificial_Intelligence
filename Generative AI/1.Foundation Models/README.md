@@ -43,7 +43,7 @@
 > É a técnica de alimentar um modelo com um conjunto de dados menor e mais específico relacionado à tarefa específica que ele vai executar, não sendo necessário treinar o modelo do zero para uma nova tarefa. Uma analogia desse processo é imaginar um chef de cozinha que já aprendeu o básico da culinária francesa, italiana e japonesa, ou seja, um chef "pré-treinado" com uma base sólida em conhecimento culinário. Agora imagine que esse chefe queira se especializar em fazer um tipo específico de sushi vegano com ingredientes locais brasileiros. Em vez de ensinar tudo da culinária do zero, ele aprende técnicas e os ingredientes específicos para esse tipo de prato, isso só é possível pelo fato dele já ter uma bas sólida, então o aprendizado é mais rápido e eficiente (seria o mesmo de transformar um base model em um Instruct model)
 
 ## Hugging Face
-> Hugging Face é uma empresa fundada na França em 2017, inicialmente focada no desenvolvimento de chatbots, mas que com o tempo, evoluiu para um hub de modelos open-source de Natural Language Processing (NLP). Oferecendo uma série de bibliotecas, que simplificam o uso de modelos de NLP e que podem ser utilizados para desenvolvimento de soluções de GenAI.
+> Hugging Face é uma empresa fundada na França em 2017, inicialmente focada no desenvolvimento de chatbots, mas que com o tempo, evoluiu para um hub de modelos open-source de Natural Language Processing (NLP). Oferecendo uma série de bibliotecas, que simplificam o uso de modelos de NLP, podendo ser utilizados para o desenvolvimento de soluções de GenAI.
 
 ```
 id_model =  "microsoft/Phi-3-mini-4k-instruct"
