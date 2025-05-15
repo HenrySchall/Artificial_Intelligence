@@ -37,7 +37,7 @@
 
 
 ### Techniques
-![userlmn_7f2a12cbd44fd3a86b5eff06df5f7681](https://github.com/user-attachments/assets/4deba17e-a6c8-40d9-898d-9fb46daa62d1)
+![userlmn_9f9c8b875320c473f0d5b0184c7fc685](https://github.com/user-attachments/assets/aa8ca758-e3be-4910-a1c6-e88984386237)
 
 ![userlmn_4b632bd14438d2bee546d6a03af16caf](https://github.com/user-attachments/assets/8b49a7ad-b783-484b-b8b8-3a495c86d6b7)
 
