@@ -28,7 +28,8 @@
 <p align="center">
   <img src="https://github.com/user-attachments/assets/efba8ea9-338a-4ff0-89e8-f8e90cb5a213"/>
 </p>
-https://platform.openai.com/tokenizer
+
+- Testar o funcionamento: https://platform.openai.com/tokenizer
 
 ### Tipos de LLM's 
 
