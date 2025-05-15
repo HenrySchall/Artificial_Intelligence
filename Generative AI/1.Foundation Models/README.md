@@ -33,23 +33,15 @@
 
 ### Tipos de LLM's 
 
-- Base models -. passam apenas pelo pré-trainamento e completam textos com palavras prova´veis (bons para prever palavras subsequentes entao se geramos um pergunta ele retorna com uma perguibnta (projetado para completaer frases prevendo as palavras mais provaveis com base no texto anterior palavra subsequentes - nao gera resposta g
+- Base models: Projetados para completaer frases prevendo as palavras mais prováveis com base no texto anterior, ou seja, como não são ajustados simplesmente geram uma saida que continua a partir do prompt de entrada. É muito comum dar alguma dica para ele tipo um pergunta onde os poinguins viver e ja dar uma parte da resposta, isso e a egnhearia de prompt (escolhare das melhores plavras para a AI) maximizara resposta
 
-- Instruct-Tuned -> modelos ajustados para instrulçoes passam por umaetapa adicional de ajuste parea instruções melhorand a capacidade de seguir comandos especificos (ESPERAM ser solicitados a fazer algo
+- Instruct-Tuned: Modelos ajustados para seguirem instruções específicas (esperam uma solicitados).
 
-- Chat -> foram ajustados para funcionar em chatbots, poretanto podem ser mais apropriados para conversas.
-Esperando o envolvimentos em uma conversa
+- Chat: foram ajustados para funcionar em chatbots, por tanto podem ser mais apropriados para conversas (esperam uma conversa)
 
-instruct -> seguir as instruções fornecidas
-
-CHat -< esperam estar envolvidos em um conversa com diferentes atores
-
-modelos nao ajustados para instruções simplesmente geram uma saide que continua a parti do prompt
-
-fine-tuning -Tecnica treinar um parte do modelo especifica para um especfiico cenario (base de dados menor e mais especializada)
+### Fine-Tuning 
+> Tecnica treinar um parte do modelo especifica para um especfiico cenario (base de dados menor e mais especializada)
 transformar de base model para intruct-tuned, Envolve pegar o mnodelo base pre-treinado e treina-lo mais com um datasert menor e mauis especializado relevatge para a tarefa desejada
-
-LLM's sao projetados para completar frases prevendo as palavras mais provaveis com base n otexto anterior entao os modelos bases funcionam dessa forma, pdoeriamo dar algum dica para ele tipo um pergunta onde os poinguins viver e ja dar uma parte da resposta, isso e a egnhearia de prompt (escolhare das melhores plavras para a AI) maximizara resposta
 
 ## Hugging Face
 
