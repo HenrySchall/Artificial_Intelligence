@@ -23,7 +23,7 @@
   <img src="https://github.com/user-attachments/assets/bfea28f0-0a3a-449a-923e-2f0655e3d766"/>
 </p>
 
-> Já os tokens são unidades menores de texto criadas através do processo de tokenização, que converter texto em números. Sendo assim o Embedding é a representação vetorial do texto em um espaço multidimensional, o Token é uma representação estática de unidades de texto.
+> Já os tokens são unidades menores de texto criadas através do processo de tokenização, que converte texto em números. Sendo assim, pode-se dizer Embedding é a representação vetorial do texto em um espaço multidimensional, o Token é uma representação estática de unidades de texto.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/efba8ea9-338a-4ff0-89e8-f8e90cb5a213"/>
