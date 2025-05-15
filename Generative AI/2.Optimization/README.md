@@ -37,7 +37,11 @@
 
 
 ### Techniques
-- colocar tabela 
+![userlmn_7f2a12cbd44fd3a86b5eff06df5f7681](https://github.com/user-attachments/assets/4deba17e-a6c8-40d9-898d-9fb46daa62d1)
+
+![userlmn_4b632bd14438d2bee546d6a03af16caf](https://github.com/user-attachments/assets/8b49a7ad-b783-484b-b8b8-3a495c86d6b7)
+
+![userlmn_f3131d99cee239cc838c87703fe88e75](https://github.com/user-attachments/assets/0f04bf07-cc9d-4df7-9d40-a645b92c65b7)
 
 ### Prompt Engineering com HuggingFace 
 
