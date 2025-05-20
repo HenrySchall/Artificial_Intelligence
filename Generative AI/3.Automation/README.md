@@ -8,6 +8,8 @@ https://www.mathwrite.com/en
 https://adapta.org/
 coploy AI
 
+https://admisist.ai/
+
 # Vertical AI
 
 https://www.topview.ai/
