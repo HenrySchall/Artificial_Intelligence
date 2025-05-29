@@ -10,6 +10,7 @@ coploy AI
 
 Veo 3
 EvoAI
+https://evo-ai.co
 
 https://admisist.ai/
 
