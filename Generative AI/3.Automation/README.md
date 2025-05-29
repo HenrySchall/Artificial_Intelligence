@@ -9,6 +9,7 @@ https://adapta.org/
 coploy AI
 
 Veo 3
+EvoAI
 
 https://admisist.ai/
 
