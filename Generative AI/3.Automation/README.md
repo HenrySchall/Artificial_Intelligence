@@ -8,6 +8,8 @@ https://www.mathwrite.com/en
 https://adapta.org/
 coploy AI
 
+https://higgsfield.ai/
+
 Veo 3
 EvoAI
 https://evo-ai.co
