@@ -15,6 +15,10 @@ https://medium.com/@hassaanidrees7/rnn-vs-lstm-vs-gru-a-comprehensive-guide-to-s
 
 https://medium.com/@mervebdurna/nlp-with-deep-learning-neural-networks-rnns-lstms-and-gru-3de7289bb4f8
 
+Deep Learning
+- https://www.coursera.org/professional-certificates/ibm-deep-learning-with-pytorch-keras-tensorflow 
+- https://www.udemy.com/course/formacao-deep-learning-pytorch-python/
+- https://www.udemy.com/course/formacao-deep-learning-tensorflow-python/?couponCode=KEEPLEARNINGBR
 
 A/B Testing
 Stable diffusion
