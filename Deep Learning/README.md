@@ -19,6 +19,7 @@ Deep Learning
 - https://www.coursera.org/professional-certificates/ibm-deep-learning-with-pytorch-keras-tensorflow 
 - https://www.udemy.com/course/formacao-deep-learning-pytorch-python/
 - https://www.udemy.com/course/formacao-deep-learning-tensorflow-python/?couponCode=KEEPLEARNINGBR
+- https://www.udemy.com/course/series-temporais-com-python/?couponCode=KEEPLEARNINGBR
 
 A/B Testing
 Stable diffusion
