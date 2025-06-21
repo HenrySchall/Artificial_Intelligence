@@ -14,6 +14,11 @@
 - Foundations of Machine Learning, Mehryar Mohri, Afshin Rostamizadeh, Ameet Talwalkar
 
 
+Machine Learning
+- https://app.datacamp.com/learn/courses/machine-learning-for-time-series-data-in-python
+- https://medium.com/equals-lab/uma-breve-introdu%C3%A7%C3%A3o-ao-algoritmo-de-machine-learning-gradient-boosting-utilizando-a-biblioteca-311285783099 
+- https://www.coursera.org/professional-certificates/ibm-machine-learning 
+- https://www.coursera.org/learn/fundamentals-machine-learning-in-finance 
 
 
 
