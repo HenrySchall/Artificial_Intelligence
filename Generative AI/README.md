@@ -56,4 +56,19 @@
 - Multimodal Chain-of-Thought Reasoning in Language Models, by Zhuosheng Zhang, Aston Zhang, Mu Li, Hai Zhao, George Karypis, Alex Smola
 - GraphPrompt: Unifying Pre-Training and Downstream Tasks for Graph Neural Networks, by Zemin Liu, Xingtong Yu, Yuan Fang, Xinming Zhang
 
+- - https://www.udemy.com/course/domine-llms-com-langchain/learn/lecture/45674073#overview
+- https://www.udemy.com/course/formacao-processamento-de-linguagem-natural-nlp/?couponCode=KEEPLEARNINGBR
+- https://medium.com/blog-do-zouza/rag-retrieval-augmented-generation-8238a20e381d
+- https://www.coursera.org/professional-certificates/ai-engineer 
+- https://www.coursera.org/professional-certificates/ibm-generative-ai-engineering
+- https://www.coursera.org/learn/building-gen-ai-powered-applications
+- https://www.coursera.org/learn/fundamentals-of-ai-agents-using-rag-and-langchain
+- https://www.datacamp.com/tutorial/mcp-model-context-protocol 
+- https://www.udemy.com/course/langchain-desenvolva-agentes-e-aplicacoes-ia-com-llms/?couponCode=KEEPLEARNINGBR 
+- https://www.datacamp.com/tutorial/mcp-model-context-protocol 
+- https://hub.asimov.academy/curso/aplicacoes-de-ia-com-langchain/
+- https://hub.asimov.academy/curso/deploy-com-crewai/
+- https://hub.asimov.academy/curso/criando-multi-agent-systems-com-crewai/
+- https://www.coursera.org/specializations/ai-for-business-wharton/paidmedia?placement=Instagram_Stories&campaign.id=120209465764710695&adset.id=120209465764670695&ad.id=120209468976110695
+
 
