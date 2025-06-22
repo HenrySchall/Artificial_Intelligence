@@ -1,7 +1,11 @@
 # Automation 
 
-
+Bydance seedance aI
 # Agents AI 
+napkin.ai
+Visual Eletric
+
+
 
 Google ADK
 https://www.mathwrite.com/en
