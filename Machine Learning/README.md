@@ -22,6 +22,12 @@ Machine Learning
 
 
 
+XGBoost (Extreme Gradient Boosting)
+Geometric Brownian Motion 
+LightGBM (rápido e eficiente para dados grandes)
+CatBoost (bom para dados categóricos)
+Scikit-Learn GradientBoostingClassifier/Regressor
+
 
 O pickle é um módulo em Python usado para serializar e desserializar objetos Python, ou seja, converter objetos Python em uma sequência de bytes para que possam ser salvos em um arquivo ou transmitidos pela rede e, posteriormente, reconstruí-los de volta no formato original.
 
