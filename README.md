@@ -21,6 +21,8 @@
 ✅ Em vez disso, ela aprende pequenos vetores adicionais chamados prompt embeddings que são “injetados” como parte da entrada do modelo.
 É o ajuste completo (ou parcial) dos pesos internos do modelo para que ele aprenda melhor uma tarefa específica.
 
+https://rockcontent.com/br/blog/bert/
+
 https://hub.asimov.academy/blog/autogen-agentes-autonomos-com-ia/
 💡 Resumindo:
 
