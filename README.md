@@ -16,3 +16,15 @@
 ### Repository Bibliographic References:
 - Aifolks.org (Majority of images and mind maps)
 - Perceptrons: An Introduction to Computational Geometry, by Marvin Minsky, Seymour A. Papert
+
+É uma técnica leve de adaptação de modelos de linguagem que não altera os pesos originais do modelo.
+✅ Em vez disso, ela aprende pequenos vetores adicionais chamados prompt embeddings que são “injetados” como parte da entrada do modelo.
+É o ajuste completo (ou parcial) dos pesos internos do modelo para que ele aprenda melhor uma tarefa específica.
+
+💡 Resumindo:
+
+    Você faz o modelo "esquecer um pouco" o que sabia antes e aprender algo novo.
+
+    Pode ser feito no modelo todo (full fine-tuning) ou só em partes (ex.: LoRA, QLoRA).
+    QLoRA vai além: combina LoRA com quantização para economizar ainda mais memória.
+    LoRA é uma técnica de fine-tuning eficiente para modelos grandes, criada para reduzir custo e memória durante o treinamento.
