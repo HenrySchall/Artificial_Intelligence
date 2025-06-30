@@ -71,6 +71,7 @@
 - https://hub.asimov.academy/curso/criando-multi-agent-systems-com-crewai/
 - https://www.coursera.org/specializations/ai-for-business-wharton/paidmedia?placement=Instagram_Stories&campaign.id=120209465764710695&adset.id=120209465764670695&ad.id=120209468976110695
 
+https://base44.com/
 
 https://synced.medium.com/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai-71ee394285c6
 
