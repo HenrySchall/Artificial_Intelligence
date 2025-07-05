@@ -39,6 +39,7 @@
 
 https://www.futurehouse.org/
 https://www.mgx.ae/en
+https://labs.google/fx/tools/whisk
 
 - Large Language Models are Zero-short Reasoners Contrastive Chin of Thought prompting, by Takeshi Kojima, Shixiang Shane Gu, Machel Reid, Yutaka Matsuo, Yusuke Iwasawa. 
 - Guiding Large Language Models via Directional Stimulus Prompting, by Zekun Li, Baolin Peng, Pengcheng He, Michel Galley, Jianfeng Gao, Xifeng Yan. 
