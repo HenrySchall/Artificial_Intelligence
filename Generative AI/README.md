@@ -79,6 +79,20 @@ https://labs.google/fx/tools/whisk
 
 https://base44.com/
 
+App Gemini
+Tenha ainda mais acesso ao 2.5 Pro, nosso modelo mais avançado. Ele vem com o recurso de pesquisa Deep Research e o Veo 3 Fast, modelo de geração de vídeos de alta qualidade com velocidade otimizada.
+Flow
+Crie cenas incríveis e histórias cinematográficas com a nossa ferramenta de produção de vídeo com IA integrada ao Veo 3 Fast.
+Whisk
+Limites maiores para transformar imagens em vídeos com o Veo 2
+NotebookLM
+Assistente de pesquisa e escrita, com 5x mais Resumos em Áudio, notebooks e outros benefícios
+Gemini no Gmail, Documentos, Vids e outros apps
+Acesso ao Gemini diretamente nos apps do Google
+Armazenamento
+2 TB de armazenamento total para o Fotos, o Drive e o Gmail
+
+
 https://synced.medium.com/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai-71ee394285c6
 
 https://www.youtube.com/watch?v=8juRvzZg_AI&list=WL&index=9
