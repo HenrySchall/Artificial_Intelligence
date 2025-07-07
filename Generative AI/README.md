@@ -96,6 +96,10 @@ https://www.udemy.com/course/modelcontextprotocol/?couponCode=LOCLZDOFFPBRCTRL
 https://www.udemy.com/course/google-adk-agent-development-kit-mac-windows-ubuntu/?couponCode=LOCLZDOFFPBRCTRL
 https://synced.medium.com/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai-71ee394285c6
 
+https://rockcontent.com/br/blog/bert/
+
+https://hub.asimov.academy/blog/autogen-agentes-autonomos-com-ia/
+
 https://www.youtube.com/watch?v=8juRvzZg_AI&list=WL&index=9
 https://www.youtube.com/watch?v=lAtA2nCTfF0&list=WL&index=10
 https://www.youtube.com/watch?v=dRVCO4zFb0k&list=WL&index=11
