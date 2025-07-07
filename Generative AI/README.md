@@ -92,7 +92,8 @@ Acesso ao Gemini diretamente nos apps do Google
 Armazenamento
 2 TB de armazenamento total para o Fotos, o Drive e o Gmail
 
-
+https://www.udemy.com/course/modelcontextprotocol/?couponCode=LOCLZDOFFPBRCTRL
+https://www.udemy.com/course/google-adk-agent-development-kit-mac-windows-ubuntu/?couponCode=LOCLZDOFFPBRCTRL
 https://synced.medium.com/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai-71ee394285c6
 
 https://www.youtube.com/watch?v=8juRvzZg_AI&list=WL&index=9
