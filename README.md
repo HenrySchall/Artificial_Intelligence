@@ -7,8 +7,6 @@
 
 ![Img](https://github.com/user-attachments/assets/5b4e233c-9d83-4c10-93ac-94d066669d28)
 
-<em>Empowering Machines to Think, Learn, and Innovate</em>
-
 <!-- BADGES -->
 <img src="https://img.shields.io/github/license/HenrySchall/Artificial_Intelligence?style=flat&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="license">
 <img src="https://img.shields.io/github/last-commit/HenrySchall/Artificial_Intelligence?style=flat&logo=git&logoColor=white&color=0080ff" alt="last-commit">
