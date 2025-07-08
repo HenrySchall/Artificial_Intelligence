@@ -20,7 +20,6 @@ install_packages(packages_list)
 ### Load Packages ###
 #####################
 
-import pyomo.environ as pyo
 import gurobipy as gp
 import pandas as pd 
 import seaborn as sns
@@ -54,7 +53,15 @@ from sklearn.naive_bayes import GaussianNB as GNB
 data = "https://drive.google.com/uc?export=download&id=1wMapByTvMFt16zz9Bd2643eTHJXtEhnX"
 df = pd.read_csv(data)
 
-Traipubtos diferentes considera que nao ha correlacao entre as variaveis explicwtivaw 
+# https://raw.githubusercontent.com/usuario/repositorio/main/dados/exemplo.csv
+# https://github.com/HenrySchall/Databases/blob/main/credit_data.csv
+
+data = "https://raw.githubusercontent.com/HenrySchall/Databases/main/credit_data.csv"
+df = pd.read_csv(data)
+
+# df = pd.read_excel('https://raw.githubusercontent.com/usuario/repositorio/main/dados/exemplo.xlsx')
+
+# Tratamentos diferentes considera que nao ha correlacao entre as variaveis explicativas
 
 df
 df.describe()
