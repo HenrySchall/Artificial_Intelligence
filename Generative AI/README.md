@@ -102,6 +102,8 @@ https://rockcontent.com/br/blog/bert/
 
 https://hub.asimov.academy/blog/autogen-agentes-autonomos-com-ia/
 
+https://youtube.com/playlist?list=PLYAGaVIlnsYYwZrQdUFFSb2dCpNWByG55
+
 https://www.youtube.com/watch?v=8juRvzZg_AI&list=WL&index=9
 https://www.youtube.com/watch?v=lAtA2nCTfF0&list=WL&index=10
 https://www.youtube.com/watch?v=dRVCO4zFb0k&list=WL&index=11
