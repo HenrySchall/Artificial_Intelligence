@@ -1,18 +1,59 @@
+<div id="top">
+
+<!-- HEADER STYLE: CLASSIC -->
+<div align="center">
+
 # Artificial Intelligence
 
-![file](https://github.com/user-attachments/assets/0707d875-a1fb-440c-99ba-d1a0292642cf)
+![Img](https://github.com/user-attachments/assets/5b4e233c-9d83-4c10-93ac-94d066669d28)
 
-> Artificial Intelligence (AI) is a field of computing that develops systems capable of performing tasks that would normally require human intelligence. This includes learning, reasoning, perception, pattern recognition, and decision-making. It uses mathematical models to analyze data and learn from it. The existing models are:
+<!-- BADGES -->
+<img src="https://img.shields.io/github/license/HenrySchall/Artificial_Intelligence?style=flat&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="license">
+<img src="https://img.shields.io/github/last-commit/HenrySchall/Artificial_Intelligence?style=flat&logo=git&logoColor=white&color=0080ff" alt="last-commit">
+<img src="https://img.shields.io/github/languages/top/HenrySchall/Artificial_Intelligence?style=flat&color=0080ff" alt="repo-top-language">
+<img src="https://img.shields.io/github/languages/count/HenrySchall/Artificial_Intelligence?style=flat&color=0080ff" alt="repo-language-count">
 
+<em>Built with the tools and technologies:</em>
+
+<img src="https://img.shields.io/badge/Markdown-000000.svg?style=flat&logo=Markdown&logoColor=white" alt="Markdown">
+<img src="https://img.shields.io/badge/Python-3776AB.svg?style=flat&logo=Python&logoColor=white" alt="Python">
+
+</div>
+<br>
+
+---
+## Overview
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [Testing](#testing)
+- [Features](#features)
+- [Project Structure](#project-structure)
+    - [Project Index](#project-index)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgment](#acknowledgment)
+
+---
+
+> Inteligência Artificial (IA) é um campo da computação que desenvolve sistemas capazes de executar tarefas que normalmente exigiriam inteligência humana. Isso inclui aprendizagem, raciocínio, percepção, reconhecimento de padrões e tomada de decisão. Ela utiliza modelos matemáticos para analisar dados e aprender com eles. Os modelos existentes são:
+
+* Symbolic AI = 
 * Machine Learning (ML) = Models that allow computers to learn from data and make predictions or decisions without being explicitly programmed to perform these tasks.
-* Neural Networks (NM) = Models inspired by the structure and functioning of the human brain.
 * Deep Learning (DL) = Models that use Neural Networks with multiple layers.
 * Generative AI = The intelligence, capable of creating new content, such as text, images, music and even videos, based on patterns learned from existing data.
-  
-### Mind Map
 
-![Imgs](https://github.com/user-attachments/assets/abeade2e-6950-4da2-a21f-61ef039030c8)
+---
 
-### Repository Bibliographic References:
+## Bibliographic References:
+
 - Aifolks.org (Majority of images and mind maps)
 - Perceptrons: An Introduction to Computational Geometry, by Marvin Minsky, Seymour A. Papert
+
+---
