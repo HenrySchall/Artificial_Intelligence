@@ -99,7 +99,8 @@ https://www.udemy.com/course/google-adk-agent-development-kit-mac-windows-ubuntu
 https://synced.medium.com/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai-71ee394285c6
 
 https://rockcontent.com/br/blog/bert/
-
+Pinecode.aj
+https://flowith.io/blank
 https://hub.asimov.academy/blog/autogen-agentes-autonomos-com-ia/
 
 https://youtube.com/playlist?list=PLYAGaVIlnsYYwZrQdUFFSb2dCpNWByG55
