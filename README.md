@@ -3,9 +3,9 @@
 <!-- HEADER STYLE: CLASSIC -->
 <div align="center">
 
-<img src="Artificial_Intelligence.png" width="30%" style="position: relative; top: 0; right: 0;" alt="Project Logo"/>
+# Artificial Intelligence
 
-# ARTIFICIAL_INTELLIGENCE
+![Img](https://github.com/user-attachments/assets/5b4e233c-9d83-4c10-93ac-94d066669d28)
 
 <em>Empowering Machines to Think, Learn, and Innovate</em>
 
@@ -528,22 +528,10 @@ pytest
 
 ---
 
-## Roadmap
 
-- [X] **`Task 1`**: <strike>Implement feature one.</strike>
-- [ ] **`Task 2`**: Implement feature two.
-- [ ] **`Task 3`**: Implement feature three.
 
 ---
 
-## Contributing
-
-- **💬 [Join the Discussions](https://github.com/HenrySchall/Artificial_Intelligence/discussions)**: Share your insights, provide feedback, or ask questions.
-- **🐛 [Report Issues](https://github.com/HenrySchall/Artificial_Intelligence/issues)**: Submit bugs found or log feature requests for the `Artificial_Intelligence` project.
-- **💡 [Submit Pull Requests](https://github.com/HenrySchall/Artificial_Intelligence/blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
-
-<details closed>
-<summary>Contributing Guidelines</summary>
 
 1. **Fork the Repository**: Start by forking the project repository to your github account.
 2. **Clone Locally**: Clone the forked repository to your local machine using a git client.
@@ -587,7 +575,8 @@ Artificial_intelligence is protected under the [LICENSE](https://choosealicense.
 
 ## Acknowledgments
 
-- Credit `contributors`, `inspiration`, `references`, etc.
+- Aifolks.org (Majority of images and mind maps)
+- Perceptrons: An Introduction to Computational Geometry, by Marvin Minsky, Seymour A. Papert
 
 <div align="left"><a href="#top">⬆ Return</a></div>
 
@@ -609,7 +598,3 @@ Artificial_intelligence is protected under the [LICENSE](https://choosealicense.
 ### Mind Map
 
 ![Imgs](https://github.com/user-attachments/assets/abeade2e-6950-4da2-a21f-61ef039030c8)
-
-### Repository Bibliographic References:
-- Aifolks.org (Majority of images and mind maps)
-- Perceptrons: An Introduction to Computational Geometry, by Marvin Minsky, Seymour A. Papert
