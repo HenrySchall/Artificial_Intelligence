@@ -14,3 +14,6 @@
 - https://www.udemy.com/course/pesquisa-operacional-programacao-linear/?couponCode=LOCLZDOFFPBRCTRL
 - https://www.udemy.com/course/previsao-de-demanda-indicadores-de-erro-de-acurarica/
 - https://www.udemy.com/course/hyperparameter-optimization-for-machine-learning/
+- https://www.youtube.com/watch?v=AJ6LeiMe_PQ&list=PLzQG9dlL-us7zZz6T6AHFpq8U2WT_4aoM
+- https://www.youtube.com/watch?v=RzyxPv0pV2c
+- https://www.alura.com.br/conteudo/ia-aumentada-entendendo-praticando-otimizacao-or-tools
