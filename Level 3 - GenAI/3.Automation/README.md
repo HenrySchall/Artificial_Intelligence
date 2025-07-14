@@ -7,7 +7,7 @@ Visual Eletric
 
 https://durable.co/
 https://www.freenom.com/pt/index.html?lang=pt
-
+https://aistudio.google.com/prompts/new_chat
 
 Google ADK
 https://www.mathwrite.com/en
