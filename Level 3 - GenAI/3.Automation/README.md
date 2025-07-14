@@ -5,6 +5,8 @@ Bydance seedance aI
 napkin.ai
 Visual Eletric
 
+https://durable.co/
+https://www.freenom.com/pt/index.html?lang=pt
 
 
 Google ADK
