@@ -64,6 +64,12 @@ https://weaviate.io/product
 
 https://mgx.dev/
 
+https://www.hackerrank.com/
+
+https://higgsfield.ai/
+
+https://perssua.com/pt
+
 https://openbb.co/products/workspace
 
 https://www.datacamp.com/pt/tracks/machine-learning-engineer
