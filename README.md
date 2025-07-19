@@ -61,3 +61,5 @@
 https://www.zenml.io/
 
 https://weaviate.io/product
+
+Zendesk AI 
