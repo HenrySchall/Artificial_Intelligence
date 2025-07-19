@@ -62,4 +62,10 @@ https://www.zenml.io/
 
 https://weaviate.io/product
 
+https://mgx.dev/
+
+https://openbb.co/products/workspace
+
+https://www.datacamp.com/pt/tracks/machine-learning-engineer
+
 Zendesk AI 
