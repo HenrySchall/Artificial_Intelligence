@@ -1,9 +1,6 @@
-<div id="top">
-
-<!-- HEADER STYLE: CLASSIC -->
-<div align="center">
-
 # Artificial Intelligence
+
+<div align="center">
 
 ![Img](https://github.com/user-attachments/assets/5b4e233c-9d83-4c10-93ac-94d066669d28)
 
@@ -21,33 +18,28 @@
 </div>
 <br>
 
----
-## Overview
-
-## Table of Contents
-
-- [Overview](#overview)
-- [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [Testing](#testing)
-- [Features](#features)
-- [Project Structure](#project-structure)
-    - [Project Index](#project-index)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgment](#acknowledgment)
-
----
-
 > Inteligência Artificial (IA) é um campo da computação que desenvolve sistemas capazes de executar tarefas que normalmente exigiriam inteligência humana. Isso inclui aprendizagem, raciocínio, percepção, reconhecimento de padrões e tomada de decisão. Ela utiliza modelos matemáticos para analisar dados e aprender com eles. Os modelos existentes são:
 
-* Symbolic AI = 
-* Machine Learning (ML) = Models that allow computers to learn from data and make predictions or decisions without being explicitly programmed to perform these tasks.
-* Deep Learning (DL) = Models that use Neural Networks with multiple layers.
-* Generative AI = The intelligence, capable of creating new content, such as text, images, music and even videos, based on patterns learned from existing data.
+### Modelos
+
+* Symbolic AI = Modelos que representa o conhecimento símbolos e regras lógicas explícitas. Ela é baseada na ideia de que o raciocínio humano pode ser reproduzido através de manipulações simbólicas.
+* Machine Learning (ML) = Modelos que aprendem automaticamente a partir de dados, sem serem explicitamente programados para executar tarefas específicas.
+* Neural Networks (NN) = Modelos computacionais inspirados no funcionamento do cérebro humano.
+* Deep Learning (DL) = Modelos que utilizam Redes Neurais com múltiplas camadas.
+* Generative AI = Modelos capaz de criar novos conteúdos, como textos, imagens, músicas e até vídeos, com base em padrões aprendidos a partir de dados existentes.
+
+---
+## Índice
+
+- [Symbolic AI]([#overview](https://github.com/HenrySchall/Artificial_Intelligence/tree/main/Level%201%20-%20Symbolic%20AI))
+    - []()
+    - []()
+- [Machine Learning and Deep Learning]()
+    - []()
+    - []()
+- [GenAI](https://github.com/HenrySchall/Artificial_Intelligence/tree/main/Level%203%20-%20GenAI)
+    - []()
+    - []()
 
 ---
 
@@ -55,23 +47,3 @@
 
 - Aifolks.org (Majority of images and mind maps)
 - Perceptrons: An Introduction to Computational Geometry, by Marvin Minsky, Seymour A. Papert
-
----
-
-https://www.zenml.io/
-
-https://weaviate.io/product
-
-https://mgx.dev/
-
-https://www.hackerrank.com/
-
-https://higgsfield.ai/
-
-https://perssua.com/pt
-
-https://openbb.co/products/workspace
-
-https://www.datacamp.com/pt/tracks/machine-learning-engineer
-
-Zendesk AI 

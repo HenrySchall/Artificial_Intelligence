@@ -111,3 +111,39 @@ https://www.youtube.com/watch?v=dRVCO4zFb0k&list=WL&index=11
 https://www.youtube.com/watch?v=tsh0oSAdoBk&list=WL&index=16
 https://youtube.com/@wellpiresai?si=zmnf0M840qNTmGzJ
 https://askmarvin.ai/welcome
+
+
+https://www.zenml.io/
+
+https://weaviate.io/product
+
+https://mgx.dev/
+
+https://www.hackerrank.com/
+
+https://higgsfield.ai/
+
+https://perssua.com/pt
+
+https://openbb.co/products/workspace
+
+https://www.datacamp.com/pt/tracks/machine-learning-engineer
+
+https://deepmind.google/science/synthid/
+
+https://vercel.com/
+
+https://cloud.google.com/products/agentspace?hl=pt_br
+
+https://cohere.com/
+
+https://www.aino.world/
+
+Zendesk AI 
+
+XGBoost e LightGBM 
+DeepAR
+Prophet Time Series 
+Autoenconders
+Isolation Forest
+HDBSCAN
