@@ -76,6 +76,8 @@ https://www.datacamp.com/pt/tracks/machine-learning-engineer
 
 https://deepmind.google/science/synthid/
 
+https://vercel.com/
+
 https://cloud.google.com/products/agentspace?hl=pt_br
 
 https://cohere.com/
