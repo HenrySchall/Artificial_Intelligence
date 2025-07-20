@@ -17,3 +17,5 @@
 - https://www.youtube.com/watch?v=AJ6LeiMe_PQ&list=PLzQG9dlL-us7zZz6T6AHFpq8U2WT_4aoM
 - https://www.youtube.com/watch?v=RzyxPv0pV2c
 - https://www.alura.com.br/conteudo/ia-aumentada-entendendo-praticando-otimizacao-or-tools
+- https://www.youtube.com/watch?v=RzyxPv0pV2c
+- https://www.alura.com.br/curso-online-ia-aumentada-entendendo-praticando-otimizacao-or-tools
