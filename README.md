@@ -20,12 +20,13 @@
 
 > Inteligência Artificial (IA) é um campo da computação que desenvolve sistemas capazes de executar tarefas que normalmente exigiriam inteligência humana. Isso inclui aprendizagem, raciocínio, percepção, reconhecimento de padrões e tomada de decisão. Ela utiliza modelos matemáticos para analisar dados e aprender com eles. Os modelos existentes são:
 
-### Tipos
+### Modelos
 
-* Symbolic AI = 
-* Machine Learning (ML) = Models that allow computers to learn from data and make predictions or decisions without being explicitly programmed to perform these tasks.
-* Deep Learning (DL) = Models that use Neural Networks with multiple layers.
-* Generative AI = The intelligence, capable of creating new content, such as text, images, music and even videos, based on patterns learned from existing data.
+* Symbolic AI = Modelos que representa o conhecimento símbolos e regras lógicas explícitas. Ela é baseada na ideia de que o raciocínio humano pode ser reproduzido através de manipulações simbólicas.
+* Machine Learning (ML) = Modelos que aprendem automaticamente a partir de dados, sem serem explicitamente programados para executar tarefas específicas.
+* Neural Networks (NN) = Modelos computacionais inspirados no funcionamento do cérebro humano.
+* Deep Learning (DL) = Modelos que utilizam Redes Neurais com múltiplas camadas.
+* Generative AI = Modelos capaz de criar novos conteúdos, como textos, imagens, músicas e até vídeos, com base em padrões aprendidos a partir de dados existentes.
 
 ---
 ## Índice
