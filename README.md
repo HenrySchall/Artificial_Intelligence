@@ -85,3 +85,10 @@ https://cohere.com/
 https://www.aino.world/
 
 Zendesk AI 
+
+XGBoost e LightGBM 
+DeepAR
+Prophet Time Series 
+Autoenconders
+Isolation Forest
+HDBSCAN
