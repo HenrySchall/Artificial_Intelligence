@@ -19,9 +19,6 @@
 <br>
 
 ---
-
-## Overview
-
 ## Table of Contents
 
 - [Overview](#overview)
