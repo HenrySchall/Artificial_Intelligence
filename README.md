@@ -18,31 +18,27 @@
 </div>
 <br>
 
----
-## Table of Contents
-
-- [Overview](#overview)
-- [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [Testing](#testing)
-- [Features](#features)
-- [Project Structure](#project-structure)
-    - [Project Index](#project-index)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgment](#acknowledgment)
-
----
-
 > Inteligência Artificial (IA) é um campo da computação que desenvolve sistemas capazes de executar tarefas que normalmente exigiriam inteligência humana. Isso inclui aprendizagem, raciocínio, percepção, reconhecimento de padrões e tomada de decisão. Ela utiliza modelos matemáticos para analisar dados e aprender com eles. Os modelos existentes são:
+
+### Tipos
 
 * Symbolic AI = 
 * Machine Learning (ML) = Models that allow computers to learn from data and make predictions or decisions without being explicitly programmed to perform these tasks.
 * Deep Learning (DL) = Models that use Neural Networks with multiple layers.
 * Generative AI = The intelligence, capable of creating new content, such as text, images, music and even videos, based on patterns learned from existing data.
+
+---
+## Índice
+
+- [Symbolic AI]([#overview](https://github.com/HenrySchall/Artificial_Intelligence/tree/main/Level%201%20-%20Symbolic%20AI))
+    - []()
+    - []()
+- [Machine Learning and Deep Learning]()
+    - []()
+    - []()
+- [GenAI](https://github.com/HenrySchall/Artificial_Intelligence/tree/main/Level%203%20-%20GenAI)
+    - []()
+    - []()
 
 ---
 
