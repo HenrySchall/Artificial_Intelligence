@@ -1,9 +1,6 @@
-<div id="top">
-
-<!-- HEADER STYLE: CLASSIC -->
-<div align="center">
-
 # Artificial Intelligence
+
+<div align="center">
 
 ![Img](https://github.com/user-attachments/assets/5b4e233c-9d83-4c10-93ac-94d066669d28)
 
@@ -22,6 +19,7 @@
 <br>
 
 ---
+
 ## Overview
 
 ## Table of Contents
@@ -55,40 +53,3 @@
 
 - Aifolks.org (Majority of images and mind maps)
 - Perceptrons: An Introduction to Computational Geometry, by Marvin Minsky, Seymour A. Papert
-
----
-
-https://www.zenml.io/
-
-https://weaviate.io/product
-
-https://mgx.dev/
-
-https://www.hackerrank.com/
-
-https://higgsfield.ai/
-
-https://perssua.com/pt
-
-https://openbb.co/products/workspace
-
-https://www.datacamp.com/pt/tracks/machine-learning-engineer
-
-https://deepmind.google/science/synthid/
-
-https://vercel.com/
-
-https://cloud.google.com/products/agentspace?hl=pt_br
-
-https://cohere.com/
-
-https://www.aino.world/
-
-Zendesk AI 
-
-XGBoost e LightGBM 
-DeepAR
-Prophet Time Series 
-Autoenconders
-Isolation Forest
-HDBSCAN
