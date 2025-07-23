@@ -137,6 +137,8 @@ https://cloud.google.com/products/agentspace?hl=pt_br
 
 https://cohere.com/
 
+https://cluely.com/
+
 https://www.aino.world/
 
 Zendesk AI 
