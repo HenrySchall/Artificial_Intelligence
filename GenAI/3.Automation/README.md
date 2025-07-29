@@ -5,6 +5,8 @@ Bydance seedance aI
 napkin.ai
 Visual Eletric
 
+icon marketing AI
+
 https://durable.co/
 https://www.freenom.com/pt/index.html?lang=pt
 https://aistudio.google.com/prompts/new_chat
