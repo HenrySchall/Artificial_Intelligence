@@ -25,8 +25,7 @@
 
 * Symbolic AI = Modelos que representa o conhecimento símbolos e regras lógicas explícitas. Ela é baseada na ideia de que o raciocínio humano pode ser reproduzido através de manipulações simbólicas.
 * Machine Learning (ML) = Modelos que aprendem automaticamente a partir de dados, sem serem explicitamente programados para executar tarefas específicas.
-* Neural Networks (NN) = Modelos computacionais inspirados no funcionamento do cérebro humano.
-* Deep Learning (DL) = Modelos que utilizam Redes Neurais com múltiplas camadas.
+* Deep Learning (DL) = Modelos baseados em estruturas de Redes Neurais (estruturas semelhantes aos neurônios do cérebro humano) com múltiplas camadas.
 * Generative AI = Modelos capaz de criar novos conteúdos, como textos, imagens, músicas e até vídeos, com base em padrões aprendidos a partir de dados existentes.
 
 ---
@@ -41,7 +40,7 @@
 - [Deep Learning]()
     - []()
     - []()
-- [GenAI](https://github.com/HenrySchall/Artificial_Intelligence/tree/main/Level%203%20-%20GenAI)
+- [Generative AI](https://github.com/HenrySchall/Artificial_Intelligence/tree/main/Level%203%20-%20GenAI)
     - []()
     - []()
 
@@ -51,13 +50,3 @@
 
 - Aifolks.org (Majority of images and mind maps)
 - Perceptrons: An Introduction to Computational Geometry, by Marvin Minsky, Seymour A. Papert
-
-CLIP
-
-LoRA
-
-QLoRA
-
-Multi-Agent Systems
-
-redes baynesianas
