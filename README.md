@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Img](https://github.com/user-attachments/assets/5b4e233c-9d83-4c10-93ac-94d066669d28)
+![Img](https://github.com/user-attachments/assets/4040d612-70b4-4e4d-b8a1-5b9222596a4e)
 
 <!-- BADGES -->
 <img src="https://img.shields.io/github/license/HenrySchall/Artificial_Intelligence?style=flat&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="license">
