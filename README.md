@@ -29,7 +29,7 @@
 * Generative AI = Modelos projetados para criar novos conteúdos, com base em padrões aprendidos a partir de dados existentes.
 
 ---
-## Índice
+### Índice
 
 - [Symbolic AI](https://github.com/HenrySchall/Artificial_Intelligence/tree/main/Symbolic%20AI)
     - [Gurobi]()
