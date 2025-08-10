@@ -31,7 +31,7 @@
 ---
 ## Índice
 
-- [Symbolic AI]([#overview](https://github.com/HenrySchall/Artificial_Intelligence/tree/main/Level%201%20-%20Symbolic%20AI))
+- [Symbolic AI](https://github.com/HenrySchall/Artificial_Intelligence/tree/main/Symbolic%20AI))
     - []()
     - []()
 - [Machine Learning]()
