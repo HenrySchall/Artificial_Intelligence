@@ -17,10 +17,10 @@
 
 ### Componentes principais (DDPMC)
 * Previsão de Demanda = Estimar quanto os clientes vão comprar para planejar a produção e o estoque.
-* Planejamento de Capacidade = Ajustar recursos (máquinas, pessoas, espaço, níveis de estoque) para atender a demanda.
-* Planejamento de Produção = Definir o que, quando e quanto produzir.
 * Planejamento de Distribuição = Organizar a entrega dos produtos acabados para os clientes.
+* Planejamento de Produção = Definir o que, quando e quanto produzir.
 * Planejamento de Materiais = Garantir que os insumos e componentes estejam disponíveis para a produção.
+* Planejamento de Capacidade = Ajustar recursos (máquinas, pessoas, espaço, níveis de estoque) para atender a demanda.
 
 ---
 ## Índice
