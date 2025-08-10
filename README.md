@@ -20,7 +20,7 @@
 <br>
 
 > Supply Chain Planning (Planejamento da Cadeia de Suprimentos) é o processo de organizar, coordenar e gerenciar todas as atividades relacionadas ao fluxo de produtos, informações e recursos desde a matéria-prima até o consumidor final.
-> 
+
 ### Modelos
 
 * Symbolic AI = Modelos que representam regras lógicas explícitas (baseados no raciocinio de manipulações simbólicas).
