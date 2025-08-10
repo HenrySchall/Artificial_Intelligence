@@ -19,8 +19,8 @@
 </div>
 <br>
 
-> Inteligência Artificial é um campo da ciência da computação que desenvolve sistemas capazes de executar tarefas que normalmente exigiriam inteligência humana. Essas tarefas incluem aprendizagem, raciocínio, percepção, reconhecimento de padrões, tomada de decisão, dentre outros. Ela utiliza-se de modelos matemáticos e algoritmos para analisar informações e aprender com elas, permitindo automatizar processos e melhorar a eficiência em diversas áreas. Os modelos existentes podem ser divididos nos seguintes grupos:
-
+> Supply Chain Planning (Planejamento da Cadeia de Suprimentos) é o processo de organizar, coordenar e gerenciar todas as atividades relacionadas ao fluxo de produtos, informações e recursos desde a matéria-prima até o consumidor final.
+> 
 ### Modelos
 
 * Symbolic AI = Modelos que representam regras lógicas explícitas (baseados no raciocinio de manipulações simbólicas).
