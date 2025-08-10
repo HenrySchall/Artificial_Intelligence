@@ -31,13 +31,13 @@
 ---
 ## Índice
 
-- [Symbolic AI](https://github.com/HenrySchall/Artificial_Intelligence/tree/main/Symbolic%20AI))
+- [Symbolic AI](https://github.com/HenrySchall/Artificial_Intelligence/tree/main/Symbolic%20AI)
     - []()
     - []()
-- [Machine Learning]()
+- [Machine Learning](https://github.com/HenrySchall/Artificial_Intelligence/tree/main/Machine%20Learning)
     - []()
     - []()
-- [Deep Learning]()
+- [Deep Learning](https://github.com/HenrySchall/Artificial_Intelligence/tree/main/Deep%20Learning)
     - []()
     - []()
 - [Generative AI](https://github.com/HenrySchall/Artificial_Intelligence/tree/main/Level%203%20-%20GenAI)
