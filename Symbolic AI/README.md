@@ -8,6 +8,7 @@
 6. Otimização Multiobjetivo
 7. Metaheurísticas
 Modelagem MIP
+CBC (COIN-OR Branch-and-Cut) e GLPK (GNU Linear Programming Kit) são solucionadores de problemas de programação matemática (PL e MIP) de código aberto usados para modelagem e otimização
 
 - https://www.youtube.com/watch?v=lzMpvlKNQ-Y&list=PL9H2pvV0741ZxpxH36aCClPUZ6YHL9fYn
 - https://www.udemy.com/course/numerical-optimization-and-operations-research-in-python/?couponCode=KEEPLEARNINGBR
