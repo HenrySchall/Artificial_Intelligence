@@ -1,5 +1,7 @@
 # Generative AI
 
+https://supabase.com/
+
 ### Repository Bibliographic References:
 - Situational Awareness: The Decade Ahead
 
