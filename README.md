@@ -53,3 +53,5 @@
 ### Referências Biográficas:
 - Aifolks.org (Majority of images and mind maps)
 - Perceptrons: An Introduction to Computational Geometry, by Marvin Minsky, Seymour A. Papert
+
+https://madewithml.com/
