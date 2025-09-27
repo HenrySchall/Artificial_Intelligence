@@ -13,7 +13,7 @@
 
 > A imagem (Input) é enviada para o sistema para passar por um pré-processamento (Pre-Processor), onde aplicam as dependências Leptônicas. Leptônica é uma biblioteca de processamento e análise de imagens, desenvolvida em Linguagem C, responsável por fornece um conjunto de funções para manipular imagens em baixo nível, como: leitura e escrita em vários formatos (JPEG, PNG, TIFF), conversões de cor e escala de cinza, operações morfológicas (erosão, dilatação, abertura, fechamento), além de processos de filtragem, redimensionamento e rotação. Em seguida, aplica-se a Engine do Tesseract (Lembrando que a Engine a partir da 4.ª Versão, passou a permitir o uso de redes neurais artificiais, então é possível usar uma base de dados de treinamento ou AI API, para treinar os modelos), que realiza o processo de extração dos caracteres desejados, em outras palavras, ele vai percorrer linha por linha identificando e extraindo cara letra, de cada palavra. Nesse ponto, o texto já está digitavel e ajustável (output), todavia pode-se ainda realizar um processo de ajuste de pós-processamento (post-processor), para corrigir anomalias se necessário.
 
-Observação: O Tesseract ainda tem uma função também muito importante para detectar a oritentação do texto na imagem, assim como o alfabeto em que ele é escrito, essa função é chamada de OSD (Orientation and Script Detection).
+Observação: O Tesseract ainda tem uma função também muito importante para detectar a oritentação do texto na imagem, assim como o alfabeto em que ele é escrito, essa função é chamada de OSD (Orientation and Script Detection), muito utilizado para pré-processamento.
 
 Notas da Versão 
 - 1.ª  Versão: Oferecia suporte somente para Inglês
