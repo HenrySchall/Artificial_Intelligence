@@ -19,6 +19,11 @@ Notas de Versão
 
 - 4.º Versão (atual): Oferece suporte para mais de 100 idiomas, para caracteres e símbolos
 
-Fontes:
-- Pytesseract: https://pypi.org/project/pytesseract/ 
-- Repositório oficial: github.com/tesseract-ocr/tesseract
+
+
+
+
+### Fontes:
+- https://pypi.org/project/pytesseract/ 
+- https://github.com/tesseract-ocr/tesseract
+- https://medium.com/@balaajip/optical-character-recognition-99aba2dad314
