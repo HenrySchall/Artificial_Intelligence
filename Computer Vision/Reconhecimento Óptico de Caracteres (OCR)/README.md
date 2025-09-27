@@ -8,4 +8,17 @@
 
 #### Introdução ao Tesseract
 
-> O Tesseract é a tecnologia/engine de Reconhecimento Óptico de Caracteres (OCR) de código aberto, desenvolvido originalmente pela HP na década de 1980 e, desde 2006, mantido pelo Google.
+> O Tesseract é a engine de Reconhecimento Óptico de Caracteres (OCR) de código aberto, desenvolvido originalmente pela HP na década de 1980 e, desde 2006, mantido pelo Google.
+
+Notas de Versão 
+- 1.º Versão: Oferecia suporte somente para Inglês
+
+- 2.º Versão: Suporte para o português brasileiro, assim como para francês, italiano, alemão, espanhol e holandês
+
+- 3.º Versão: Expandiu drasticamente o suporte para incluir idiomas ideográficos (simbólicos) como japonês e chinês, bem como idiomas de escrita da direita para a esquerda, como árabe e hebraico
+
+- 4.º Versão (atual): Oferece suporte para mais de 100 idiomas, para caracteres e símbolos
+
+Fontes:
+- Pytesseract: https://pypi.org/project/pytesseract/ 
+- Repositório oficial: github.com/tesseract-ocr/tesseract
