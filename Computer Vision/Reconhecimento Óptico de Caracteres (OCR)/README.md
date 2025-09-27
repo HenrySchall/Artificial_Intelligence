@@ -19,9 +19,7 @@ Notas de Versão
 
 - 4.º Versão (atual): Oferece suporte para mais de 100 idiomas, para caracteres e símbolos
 
-
-
-
+![Img1](https://github.com/user-attachments/assets/c7ab8af2-e6d1-4623-99d7-35d8e0942773)
 
 ### Fontes:
 - https://pypi.org/project/pytesseract/ 
