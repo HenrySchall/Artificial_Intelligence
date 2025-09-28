@@ -1,49 +1,38 @@
-#####################
-### Configuration ###
-#####################
+# Windows: winget install -e --id UB-Mannheim.TesseractOCR
+# MacOS: brew install tesseract
+# Linux: sudo apt install tesseract-ocr
 
-# My License Keys
-# https://drive.google.com/file/d/1Cu5iQHkbF47FLSXpTH-l75ArX9KBDByd/view?usp=sharing
-
-device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-print('Using device:', device)
-
-torch.random.manual_seed(20)
-os.environ["HF_TOKEN"] = "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"
-
-
-!pip install Pillow==9.1.0 # necessário após atualização no módulo Pillow carregado pelo Colab
-# Após executar, clique no botão [Restart Runtime] que vai aparecer no output dessa célula, logo abaixo. Em seguida, pode continuar executando normalmente o restante do código
-
-!sudo apt install tesseract-ocr
-!pip install pytesseract
+# pip install pytesseract
+# pip install pillow
+# pip install opencv-python
 
 import pytesseract
 import numpy as np
-import cv2 # OpenCV
-from google.colab.patches import cv2_imshow
+import cv2
+import requests
+from PIL import Image
 
-img = cv2.imread('/content/teste01.jpg')
-cv2_imshow(img) # BGR (RGB)
+url = "https://raw.githubusercontent.com/HenrySchall/Databases/main/Artificial%20Intelligence/Computer%20Vision/Reconhecimento%20Óptico%20de%20Caracteres%20(OCR)/Imagens/teste01.jpg"
 
+# Baixar a imagem como bytes
+response = requests.get(url)
+response.raise_for_status()
+
+# Ler a imagem diretamente em OpenCV (BGR)
+img_array = np.frombuffer(response.content, np.uint8)
+img = cv2.imdecode(img_array, cv2.IMREAD_COLOR)
+
+# Mostrar a imagem (fora do Colab)
+cv2.imshow("Imagem", img)
+cv2.waitKey(0)  # Espera qualquer tecla
+cv2.destroyAllWindows()
+
+# Converter para RGB (OpenCV usa BGR por padrão)
 rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-cv2_imshow(rgb)
+cv2.imshow("Imagem", rgb)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
 
+pytesseract.pytesseract.tesseract_cmd = "C:/Program Files/Tesseract-OCR/tesseract.exe"
 texto = pytesseract.image_to_string(rgb)
-
 print(texto)
-
-img = cv2.imread('teste02.jpg')
-cv2_imshow(img)
-
-rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-cv2_imshow(rgb)
-
-texto = pytesseract.image_to_string(rgb)
-print(texto) # resumé, fiancé, déjà vu
-
-!tesseract --list-langs
-
-!apt-get install tesseract-ocr-por
-
-!tesseract --list-langs
