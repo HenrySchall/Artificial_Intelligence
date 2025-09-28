@@ -32,3 +32,18 @@ Outras opções para OCR
 - https://github.com/tesseract-ocr/tesseract
 - https://static.googleusercontent.com/media/research.google.com/pt-BR//pubs/archive/33418.pdf
 - https://medium.com/@balaajip/optical-character-recognition-99aba2dad314
+
+
+ Mais sobre o funcionamento do Tesseract: 
+https://static.googleusercontent.com/media/research.google.com/pt-PT//pubs/archive/33418.pdf
+ •
+ https://github.com/tesseract-ocr/docs/blob/master/das_tutorial2016/6ModernizationEfforts.pdf
+ Treinar seu próprio modelo para o Tesseract: 
+• Documentação oficial: 
+•
+ •
+ •
+ https://tesseract-ocr.github.io/tessdoc/tess4/TrainingTesseract-4.00.html
+ https://www.endpoint.com/blog/2018/07/09/training-tesseract-models-from-scratch
+ https://pretius.com/how-to-prepare-training-files-for-tesseract-ocr-and-improve-characters-recognition/
+ https://vovaprivalov.medium.com/tesseract-ocr-tips-custom-dictionary-to-improve-ocr-d2b9cd17850b
