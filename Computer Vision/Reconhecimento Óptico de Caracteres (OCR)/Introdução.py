@@ -14,11 +14,14 @@ import requests
 from PIL import Image
 from io import BytesIO
 
+#######################################
+### Introdução ao OCR com Tesseract ###
+#######################################
+
 #########################
 ### Imagem 1 (OpenCV) ###
 #########################
 
-#url = "https://raw.githubusercontent.com/HenrySchall/Databases/main/Artificial%20Intelligence/Computer%20Vision/Reconhecimento%20Óptico%20de%20Caracteres%20(OCR)/Imagens/teste01.jpg"
 url = "https://drive.google.com/uc?export=download&id=1CXcIsaSjyQBDL53_6UvZH7-aSd-6NZwj"
 
 # Baixar a imagem como bytes
@@ -68,6 +71,7 @@ print(texto)
 # No cmd, rode o comando: "C:\Program Files\Tesseract-OCR\tesseract.exe" --list-langs
 # Caso não tenha o idioma, baixe o arquivo .traineddata do idioma desejado (link: https://github.com/tesseract-ocr/tessdata)
 # e coloque na pasta "C:/Program Files/Tesseract-OCR/tessdata"
+# Para obter ajuda No cmd, rode o comando: "C:\Program Files\Tesseract-OCR\tesseract.exe" --help-nome_do_comando
 
 texto = pytesseract.image_to_string(rgb, lang='por') 
 print(texto) 
@@ -76,12 +80,42 @@ print(texto)
 ### Page Segmentation Mode (PSM) ###
 ####################################
 
-url3 = "https://drive.google.com/uc?export=download&id=1MHsLmCXfq2eXLE0FvuqK7aoMFn8xLw5k"
+#################
+### Imagem 1 ####
+#################
+
+url3 = "https://drive.google.com/uc?export=download&id=1sj15Be8h9josm97IKr3_g5vi9ZkilPUl"
 
 response = requests.get(url3)
-response.raise_for_status() 
+response.raise_for_status()  
 
 img = Image.open(BytesIO(response.content))
 img.show()
 
+# Sem PSM 6 (Padrão: 3 - Assume uma página com vários blocos de texto)
+pytesseract.pytesseract.tesseract_cmd = "C:/Program Files/Tesseract-OCR/tesseract.exe"
+texto = pytesseract.image_to_string(img, lang='por')
+print(texto)
 
+# Com PSM 6 (Assume um único bloco uniforme de texto)
+pytesseract.pytesseract.tesseract_cmd = "C:/Program Files/Tesseract-OCR/tesseract.exe"
+config_tesseract = '--psm 6'
+texto = pytesseract.image_to_string(img, lang='por', config=config_tesseract)
+print(texto)
+
+################
+### Imagem 2 ###
+################
+
+url4 = "https://drive.google.com/uc?export=download&id=1qHKUrP17MyZD8PrplEPRGBo1MhXYC--h"
+
+response = requests.get(url4)
+response.raise_for_status()  
+
+img2 = Image.open(BytesIO(response.content))
+img2.show()
+
+pytesseract.pytesseract.tesseract_cmd = "C:/Program Files/Tesseract-OCR/tesseract.exe"
+config_tesseract = '--psm 7'
+texto = pytesseract.image_to_string(img2, lang='por', config=config_tesseract)
+print(texto)
