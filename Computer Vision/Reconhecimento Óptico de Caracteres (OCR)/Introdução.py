@@ -18,9 +18,9 @@ from io import BytesIO
 ### Introdução ao OCR com Tesseract ###
 #######################################
 
-#########################
-### Imagem 1 (OpenCV) ###
-#########################
+##############
+### OpenCV ###
+##############
 
 url = "https://drive.google.com/uc?export=download&id=1CXcIsaSjyQBDL53_6UvZH7-aSd-6NZwj"
 
@@ -44,9 +44,9 @@ pytesseract.pytesseract.tesseract_cmd = "C:/Program Files/Tesseract-OCR/tesserac
 texto = pytesseract.image_to_string(rgb)
 print(texto)
 
-#########################
-### Imagem 2 (Pillow) ###
-#########################
+##############
+### Pillow ###
+##############
 
 url2 = "https://drive.google.com/uc?export=download&id=1QC4npS_HDYcxJsZuXMnbW1BwhC7py9vt"
 
@@ -76,14 +76,13 @@ print(texto)
 texto = pytesseract.image_to_string(rgb, lang='por') 
 print(texto) 
 
-####################################
+##################
+### Parâmetros ###
+##################
+
 ### Page Segmentation Mode (PSM) ###
-####################################
 
-#################
-### Imagem 1 ####
-#################
-
+# Imagem 1 
 url3 = "https://drive.google.com/uc?export=download&id=1sj15Be8h9josm97IKr3_g5vi9ZkilPUl"
 
 response = requests.get(url3)
@@ -103,10 +102,7 @@ config_tesseract = '--psm 6'
 texto = pytesseract.image_to_string(img, lang='por', config=config_tesseract)
 print(texto)
 
-################
-### Imagem 2 ###
-################
-
+# Imagem 2 
 url4 = "https://drive.google.com/uc?export=download&id=1qHKUrP17MyZD8PrplEPRGBo1MhXYC--h"
 
 response = requests.get(url4)
@@ -119,3 +115,5 @@ pytesseract.pytesseract.tesseract_cmd = "C:/Program Files/Tesseract-OCR/tesserac
 config_tesseract = '--psm 7'
 texto = pytesseract.image_to_string(img2, lang='por', config=config_tesseract)
 print(texto)
+
+### Detecção de orientação da página ###
