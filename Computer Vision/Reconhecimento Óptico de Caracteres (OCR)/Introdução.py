@@ -26,16 +26,13 @@ response.raise_for_status()
 img_array = np.frombuffer(response.content, np.uint8)
 img = cv2.imdecode(img_array, cv2.IMREAD_COLOR)
 
-# Mostrar a imagem (fora do Colab)
+# Mostrar a imagem
 cv2.imshow("Imagem", img)
-cv2.waitKey(0)  # Espera qualquer tecla
+cv2.waitKey(0)
 cv2.destroyAllWindows()
 
 # Converter para RGB (OpenCV usa BGR por padrão)
 rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-cv2.imshow("Imagem", rgb)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
 
 pytesseract.pytesseract.tesseract_cmd = "C:/Program Files/Tesseract-OCR/tesseract.exe"
 texto = pytesseract.image_to_string(rgb)
@@ -52,12 +49,23 @@ response.raise_for_status()
 
 img_array = np.frombuffer(response.content, np.uint8)
 img = cv2.imdecode(img_array, cv2.IMREAD_COLOR)
-
 rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+
 cv2.imshow("Imagem", img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
-pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+pytesseract.pytesseract.tesseract_cmd = "C:/Program Files/Tesseract-OCR/tesseract.exe"
 texto = pytesseract.image_to_string(rgb)
-print(texto)
+print(texto) 
+
+# Observe que o Tesseract reconhece automaticamente o idioma do texto.
+# Caso queira definir o idioma, baixe o pacote de idiomas desejado, usando o parâmetro 'lang':
+
+texto = pytesseract.image_to_string(rgb, lang='por') 
+print(texto) 
+
+# Se não funcionar, verifique se o idioma foi instalado corretamente:
+# No cmd, rode o comando: "C:/Program Files/Tesseract-OCR/tesseract.exe" --list-langs
+# Caso não tenha o idioma, baixe o arquivo .traineddata do idioma desejado (link: https://github.com/tesseract-ocr/tessdata)
+# e coloque na pasta "C:/Program Files/Tesseract-OCR/tessdata"
