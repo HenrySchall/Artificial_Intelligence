@@ -21,29 +21,23 @@ Notas da Versão
 - 3.ª  Versão: Expandiu drasticamente o suporte para incluir idiomas ideográficos (simbólicos) como japonês e chinês, bem como idiomas de escrita da direita para a esquerda, como árabe e hebraico
 - 4.ª  Versão (atual): Oferece suporte para mais de 100 idiomas, para caracteres e símbolos
 
-Outras opções para OCR
-- EasyOCR é uma biblioteca que tem como proposta ser uma solução eficiente e prática que, oferece suporte para mais de 80 linguagens (até o presente momento). Sua acurácia bate de frente com os resultados do Tesseract, e sua detecção de textos nativa aplicado em cenários menos controlados demonstrou superar todas as outras soluções.
-- OCRopus solução Open Source que permite fácil avaliação e reutilização dos componentes de OCR por pesquisadores e empresas. É uma coleção de programas de análise de documentos, não um sistema OCR pronto para uso. Para aplicá-lo aos seus documentos, pode ser necessário fazer um pré processamento de imagem e, possivelmente, também treinar novos modelos.
-- Ocular funciona melhor emdocumentos impressos em uma impressora manual, incluindo aqueles escritos em vários idiomas. Ele opera usando a linha de comando.
-- SwiftOCR biblioteca simples e rápida escrita na linguagem Swift. Usa redes neurais para reconhecimento de imagem.
+Opções para OCR
+- EasyOCR 
+- OCRopus 
+- Ocular 
+- SwiftOCR
+  
+Opções de Sistemas de cores
+- RGB → imagem colorida normal (3 canais).
+- BGR → imagem colorida normal (3 canais, porém com a ordem invertida do RGB).
+- RGBA → igual ao RGB, mas com canal Alpha (transparência).
+- L → escala de cinza (1 canal).
+- CMYK → usado em impressão.
 
 ### Fontes:
 - https://pypi.org/project/pytesseract/ 
 - https://github.com/tesseract-ocr/tesseract
+- https://tesseract-ocr.github.io/tessdoc/tess4/TrainingTesseract-4.00.html
+- https://vprivalov.medium.com/tesseract-ocr-tips-custom-dictionary-to-improve-ocr-d2b9cd17850b
 - https://static.googleusercontent.com/media/research.google.com/pt-BR//pubs/archive/33418.pdf
 - https://medium.com/@balaajip/optical-character-recognition-99aba2dad314
-
-
- Mais sobre o funcionamento do Tesseract: 
-https://static.googleusercontent.com/media/research.google.com/pt-PT//pubs/archive/33418.pdf
- •
- https://github.com/tesseract-ocr/docs/blob/master/das_tutorial2016/6ModernizationEfforts.pdf
- Treinar seu próprio modelo para o Tesseract: 
-• Documentação oficial: 
-•
- •
- •
- https://tesseract-ocr.github.io/tessdoc/tess4/TrainingTesseract-4.00.html
- https://www.endpoint.com/blog/2018/07/09/training-tesseract-models-from-scratch
- https://pretius.com/how-to-prepare-training-files-for-tesseract-ocr-and-improve-characters-recognition/
- https://vovaprivalov.medium.com/tesseract-ocr-tips-custom-dictionary-to-improve-ocr-d2b9cd17850b
