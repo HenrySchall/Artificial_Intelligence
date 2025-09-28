@@ -66,6 +66,6 @@ texto = pytesseract.image_to_string(rgb, lang='por')
 print(texto) 
 
 # Se não funcionar, verifique se o idioma foi instalado corretamente:
-# No cmd, rode o comando: "C:/Program Files/Tesseract-OCR/tesseract.exe" --list-langs
+# No cmd, rode o comando: "C:\Program Files\Tesseract-OCR\tesseract.exe" --list-langs
 # Caso não tenha o idioma, baixe o arquivo .traineddata do idioma desejado (link: https://github.com/tesseract-ocr/tessdata)
 # e coloque na pasta "C:/Program Files/Tesseract-OCR/tessdata"
