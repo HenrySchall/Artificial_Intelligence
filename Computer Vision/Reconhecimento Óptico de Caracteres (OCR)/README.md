@@ -21,8 +21,23 @@ Notas da Versão
 - 3.ª  Versão: Expandiu drasticamente o suporte para incluir idiomas ideográficos (simbólicos) como japonês e chinês, bem como idiomas de escrita da direita para a esquerda, como árabe e hebraico
 - 4.ª  Versão (atual): Oferece suporte para mais de 100 idiomas, para caracteres e símbolos
 
+Opções para OCR
+- EasyOCR 
+- OCRopus 
+- Ocular 
+- SwiftOCR
+  
+Opções de Sistemas de cores
+- RGB → imagem colorida normal (3 canais).
+- BGR → imagem colorida normal (3 canais, porém com a ordem invertida do RGB).
+- RGBA → igual ao RGB, mas com canal Alpha (transparência).
+- L → escala de cinza (1 canal).
+- CMYK → usado em impressão.
+
 ### Fontes:
 - https://pypi.org/project/pytesseract/ 
 - https://github.com/tesseract-ocr/tesseract
+- https://tesseract-ocr.github.io/tessdoc/tess4/TrainingTesseract-4.00.html
+- https://vprivalov.medium.com/tesseract-ocr-tips-custom-dictionary-to-improve-ocr-d2b9cd17850b
 - https://static.googleusercontent.com/media/research.google.com/pt-BR//pubs/archive/33418.pdf
 - https://medium.com/@balaajip/optical-character-recognition-99aba2dad314
