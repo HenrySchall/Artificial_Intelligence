@@ -1,71 +1,6 @@
 # Generative AI
 
-https://supabase.com/
-
-### Repository Bibliographic References:
-- Situational Awareness: The Decade Ahead
-
-- Large Language Models are Zero-short Reasoners Contrastive Chin of Thought prompting, by Takeshi Kojima, Shixiang Shane Gu, Machel Reid, Yutaka Matsuo, Yusuke Iwasawa. Available: https://arxiv.org/abs/2205.11916
-
-- Guiding Large Language Models via Directional Stimulus Prompting, by Zekun Li, Baolin Peng, Pengcheng He, Michel Galley, Jianfeng Gao, Xifeng Yan. Available: https://arxiv.org/abs/2302.11520
-
-- Chain-of-Thought Prompting Elicits Reasoning in Large Language Models, by Zekun Li, Baolin Peng, Pengcheng He, Michel Galley, Jianfeng Gao, Xifeng Yan. Available: https://arxiv.org/abs/2201.11903
-
-- Self-Consistency Improves Chain of Thought Reasoning in Language Models, by Xuezhi Wang, Jason Wei, Dale Schuurmans, Quoc Le, Ed Chi, Sharan Narang, Aakanksha Chowdhery, Denny Zhou. Available: https://arxiv.org/abs/2203.11171
-
-- Deliberate Problem Solving with Large Language Models, by Shunyu Yao, Dian Yu, Jeffrey Zhao, Izhak Shafran, Thomas L. Griffiths, Yuan Cao, Karthik Narasimhan. Available: https://arxiv.org/abs/2305.10601
-
-- Generative Agents: Interactive Simulacra of Human Behavior, by Joon Sung Park, Joseph C. O'Brien, Carrie J. Cai, Meredith Ringel Morris, Percy Liang, Michael S. Bernstein. Available: https://arxiv.org/abs/2304.03442
-
-- Large Language Model Guided Tree-of-Thought, by Jieyi Long. Available: https://arxiv.org/abs/2305.08291
-
-- Skeleton of Thought: Augmenting Language Models with Variable-Depth Reasoning Ability, by Xuefei Ning, Zinan Lin, Zixuan Zhou, Zifu Wang, Huazhong Yang, Yu Wang. Available: https://arxiv.org/abs/2307.15337
-
--  Generated Knowledge Prompting for Commonsense Reasoning, by Jiacheng Liu, Alisa Liu, Ximing Lu, Sean Welleck, Peter West, Ronan Le Bras, Yejin Choi, Hannaneh Hajishirzi. Available: https://arxiv.org/abs/2110.08387
-
-- Maieutic Prompting: Logically Consistent Reasoning with Recursive Explanations, by Jaehun Jung, Lianhui Qin, Sean Welleck, Faeze Brahman, Chandra Bhagavatula, Ronan Le Bras, Yejin Choi. Available: https://arxiv.org/abs/2205.11822
-
-- Retrieval Augmented Generation for Knowledge-Intensive NLP Tasks, by Katja Filippova. Available: https://aclanthology.org/2020.findings-emnlp.76/
-
-- PAL: Program-aided Language Models. by Luyu Gao, Aman Madaan, Shuyan Zhou, Uri Alon, Pengfei Liu, Yiming Yang, Jamie Callan, Graham Neubig. Available: https://arxiv.org/abs/2211.10435
-
-- Synergizing Reasoning and Acting in Language Models, by Shunyu Yao, Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik Narasimhan, Yuan Cao. Available: https://arxiv.org/abs/2210.03629
-
-- Attention Is All You Need, by Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, Illia Polosukhin
-
-- https://brains.dev/2024/embeddings-medidas-de-distancia-e-similaridade/
-
-- https://developer.nvidia.com/blog/getting-started-with-large-language-models-for-enterprise-solutions/
-
-- https://www.evidentlyai.com/
-
-https://www.futurehouse.org/
-https://www.mgx.ae/en
-https://labs.google/fx/tools/whisk
-
-- Large Language Models are Zero-short Reasoners Contrastive Chin of Thought prompting, by Takeshi Kojima, Shixiang Shane Gu, Machel Reid, Yutaka Matsuo, Yusuke Iwasawa. 
-- Guiding Large Language Models via Directional Stimulus Prompting, by Zekun Li, Baolin Peng, Pengcheng He, Michel Galley, Jianfeng Gao, Xifeng Yan. 
-- Chain-of-Thought Prompting Elicits Reasoning in Large Language Models, by Zekun Li, Baolin Peng, Pengcheng He, Michel Galley, Jianfeng Gao, Xifeng Yan. 
-- Self-Consistency Improves Chain of Thought Reasoning in Language Models, by Xuezhi Wang, Jason Wei, Dale Schuurmans, Quoc Le, Ed Chi, Sharan Narang, Aakanksha Chowdhery, Denny Zhou. 
-- Deliberate Problem Solving with Large Language Models, by Shunyu Yao, Dian Yu, Jeffrey Zhao, Izhak Shafran, Thomas L. Griffiths, Yuan Cao, Karthik Narasimhan.
-- Generative Agents: Interactive Simulacra of Human Behavior, by Joon Sung Park, Joseph C. O'Brien, Carrie J. Cai, Meredith Ringel Morris, Percy Liang, Michael S. Bernstein.
-- Large Language Model Guided Tree-of-Thought, by Jieyi Long.
-- Skeleton of Thought: Augmenting Language Models with Variable-Depth Reasoning Ability, by Xuefei Ning, Zinan Lin, Zixuan Zhou, Zifu Wang, Huazhong Yang, Yu Wang.
-- Generated Knowledge Prompting for Commonsense Reasoning, by Jiacheng Liu, Alisa Liu, Ximing Lu, Sean Welleck, Peter West, Ronan Le Bras, Yejin Choi, Hannaneh Hajishirzi
-- Maieutic Prompting: Logically Consistent Reasoning with Recursive Explanations, by Jaehun Jung, Lianhui Qin, Sean Welleck, Faeze Brahman, Chandra Bhagavatula, Ronan Le Bras, Yejin Choi
-- Retrieval Augmented Generation for Knowledge-Intensive NLP Tasks, by Katja Filippova. 
-- PAL: Program-aided Language Models. by Luyu Gao, Aman Madaan, Shuyan Zhou, Uri Alon, Pengfei Liu, Yiming Yang, Jamie Callan, Graham Neubig.
-- Synergizing Reasoning and Acting in Language Models, by Shunyu Yao, Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik Narasimhan, Yuan Cao
-- Meta Prompting for AI Systems, by Yifan Zhang, Yang Yuan, Andrew Chi-Chih Yao.
-- ART: Automatic multi-step reasoning and tool-use for large language models, by Bhargavi Paranjape, Scott Lundberg, Sameer Singh, Hannaneh Hajishirzi, Luke Zettlemoyer, Marco Tulio Ribeiro.
-- Large Language Models Are Human-Level Prompt Engineers, by Yongchao Zhou, Andrei Ioan Muresanu, Ziwen Han, Keiran Paster, Silviu Pitis, Harris Chan, Jimmy Ba.
-- Active Prompting with Chain-of-Thought for Large Language Models, by Shizhe Diao, Pengcheng Wang, Yong Lin, Rui Pan, Xiang Liu, Tong Zhang.
-- Reflexion: Language Agents with Verbal Reinforcement Learning, by Noah Shinn, Federico Cassano, Edward Berman, Ashwin Gopinath, Karthik Narasimhan, Shunyu Yao.
-- Multimodal Chain-of-Thought Reasoning in Language Models, by Zhuosheng Zhang, Aston Zhang, Mu Li, Hai Zhao, George Karypis, Alex Smola
-- GraphPrompt: Unifying Pre-Training and Downstream Tasks for Graph Neural Networks, by Zemin Liu, Xingtong Yu, Yuan Fang, Xinming Zhang
-
-https://flowiseai.com/
-- - https://www.udemy.com/course/domine-llms-com-langchain/learn/lecture/45674073#overview
+- https://www.udemy.com/course/domine-llms-com-langchain/learn/lecture/45674073#overview
 - https://www.udemy.com/course/formacao-processamento-de-linguagem-natural-nlp/?couponCode=KEEPLEARNINGBR
 - https://medium.com/blog-do-zouza/rag-retrieval-augmented-generation-8238a20e381d
 - https://www.coursera.org/professional-certificates/ai-engineer 
@@ -79,75 +14,43 @@ https://flowiseai.com/
 - https://hub.asimov.academy/curso/deploy-com-crewai/
 - https://hub.asimov.academy/curso/criando-multi-agent-systems-com-crewai/
 - https://www.coursera.org/specializations/ai-for-business-wharton/paidmedia?placement=Instagram_Stories&campaign.id=120209465764710695&adset.id=120209465764670695&ad.id=120209468976110695
-
-https://base44.com/
-
-App Gemini
-Tenha ainda mais acesso ao 2.5 Pro, nosso modelo mais avançado. Ele vem com o recurso de pesquisa Deep Research e o Veo 3 Fast, modelo de geração de vídeos de alta qualidade com velocidade otimizada.
-Flow
-Crie cenas incríveis e histórias cinematográficas com a nossa ferramenta de produção de vídeo com IA integrada ao Veo 3 Fast.
-Whisk
-Limites maiores para transformar imagens em vídeos com o Veo 2
-NotebookLM
-Assistente de pesquisa e escrita, com 5x mais Resumos em Áudio, notebooks e outros benefícios
-Gemini no Gmail, Documentos, Vids e outros apps
-Acesso ao Gemini diretamente nos apps do Google
-Armazenamento
-2 TB de armazenamento total para o Fotos, o Drive e o Gmail
-
-https://academy.nebius.com/#projects
-https://www.udemy.com/course/modelcontextprotocol/?couponCode=LOCLZDOFFPBRCTRL
-https://www.udemy.com/course/google-adk-agent-development-kit-mac-windows-ubuntu/?couponCode=LOCLZDOFFPBRCTRL
-https://synced.medium.com/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai-71ee394285c6
-
-https://rockcontent.com/br/blog/bert/
-Pinecode.aj
-https://flowith.io/blank
-https://hub.asimov.academy/blog/autogen-agentes-autonomos-com-ia/
-
-https://youtube.com/playlist?list=PLYAGaVIlnsYYwZrQdUFFSb2dCpNWByG55
-
-https://www.youtube.com/watch?v=8juRvzZg_AI&list=WL&index=9
-https://www.youtube.com/watch?v=lAtA2nCTfF0&list=WL&index=10
-https://www.youtube.com/watch?v=dRVCO4zFb0k&list=WL&index=11
-https://www.youtube.com/watch?v=tsh0oSAdoBk&list=WL&index=16
-https://youtube.com/@wellpiresai?si=zmnf0M840qNTmGzJ
-https://askmarvin.ai/welcome
-
-
-https://www.zenml.io/
-
-https://weaviate.io/product
-
-https://mgx.dev/
-
-https://www.hackerrank.com/
-
-https://higgsfield.ai/
-
-https://perssua.com/pt
-
-https://openbb.co/products/workspace
-
-https://www.datacamp.com/pt/tracks/machine-learning-engineer
-
-https://deepmind.google/science/synthid/
-
-https://vercel.com/
-
-https://cloud.google.com/products/agentspace?hl=pt_br
-
-https://cohere.com/
-
-https://cluely.com/
-
-https://www.aino.world/
-
-Zendesk AI 
-
-XGBoost e LightGBM 
-DeepAR
-Prophet Time Series 
-Autoenconders
-Isolation Forest
-HDBSCAN
+- https://brains.dev/2024/embeddings-medidas-de-distancia-e-similaridade/
+- https://developer.nvidia.com/blog/getting-started-with-large-language-models-for-enterprise-solutions/
+- https://www.evidentlyai.com/
+- https://www.futurehouse.org/
+- https://www.mgx.ae/en
+- https://labs.google/fx/tools/whisk
+- https://flowiseai.com/
+- https://base44.com/
+- Whisk
+- NotebookLM
+- https://academy.nebius.com/#projects
+- https://www.udemy.com/course/modelcontextprotocol/?couponCode=LOCLZDOFFPBRCTRL
+- https://www.udemy.com/course/google-adk-agent-development-kit-mac-windows-ubuntu/?couponCode=LOCLZDOFFPBRCTRL
+- https://synced.medium.com/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai-71ee394285c6
+- https://rockcontent.com/br/blog/bert/
+- Pinecode.aj
+- https://flowith.io/blank
+- https://hub.asimov.academy/blog/autogen-agentes-autonomos-com-ia/
+- https://youtube.com/playlist?list=PLYAGaVIlnsYYwZrQdUFFSb2dCpNWByG55
+- https://www.youtube.com/watch?v=8juRvzZg_AI&list=WL&index=9
+- https://www.youtube.com/watch?v=lAtA2nCTfF0&list=WL&index=10
+- https://www.youtube.com/watch?v=dRVCO4zFb0k&list=WL&index=11
+- https://www.youtube.com/watch?v=tsh0oSAdoBk&list=WL&index=16
+- https://youtube.com/@wellpiresai?si=zmnf0M840qNTmGzJ
+- https://askmarvin.ai/welcome
+- https://www.zenml.io/
+- https://weaviate.io/product
+- https://mgx.dev/
+- https://www.hackerrank.com/
+- https://higgsfield.ai/
+- https://perssua.com/pt
+- https://openbb.co/products/workspace
+- https://www.datacamp.com/pt/tracks/machine-learning-engineer
+- https://deepmind.google/science/synthid/
+- https://vercel.com/
+- https://cloud.google.com/products/agentspace?hl=pt_br
+- https://cohere.com/
+- https://cluely.com/
+- https://www.aino.world/
+- Zendesk AI 
