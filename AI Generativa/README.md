@@ -1,56 +1,18 @@
 # Generative AI
 
-- https://www.udemy.com/course/domine-llms-com-langchain/learn/lecture/45674073#overview
-- https://www.udemy.com/course/formacao-processamento-de-linguagem-natural-nlp/?couponCode=KEEPLEARNINGBR
-- https://medium.com/blog-do-zouza/rag-retrieval-augmented-generation-8238a20e381d
-- https://www.coursera.org/professional-certificates/ai-engineer 
-- https://www.coursera.org/professional-certificates/ibm-generative-ai-engineering
-- https://www.coursera.org/learn/building-gen-ai-powered-applications
-- https://www.coursera.org/learn/fundamentals-of-ai-agents-using-rag-and-langchain
-- https://www.datacamp.com/tutorial/mcp-model-context-protocol 
-- https://www.udemy.com/course/langchain-desenvolva-agentes-e-aplicacoes-ia-com-llms/?couponCode=KEEPLEARNINGBR 
-- https://www.datacamp.com/tutorial/mcp-model-context-protocol 
+- RAG = https://medium.com/blog-do-zouza/rag-retrieval-augmented-generation-8238a20e381d
+- MCP = https://www.datacamp.com/tutorial/mcp-model-context-protocol 
 - https://hub.asimov.academy/curso/aplicacoes-de-ia-com-langchain/
-- https://hub.asimov.academy/curso/deploy-com-crewai/
-- https://hub.asimov.academy/curso/criando-multi-agent-systems-com-crewai/
 - https://www.coursera.org/specializations/ai-for-business-wharton/paidmedia?placement=Instagram_Stories&campaign.id=120209465764710695&adset.id=120209465764670695&ad.id=120209468976110695
-- https://brains.dev/2024/embeddings-medidas-de-distancia-e-similaridade/
-- https://developer.nvidia.com/blog/getting-started-with-large-language-models-for-enterprise-solutions/
 - https://www.evidentlyai.com/
-- https://www.futurehouse.org/
-- https://www.mgx.ae/en
-- https://labs.google/fx/tools/whisk
-- https://flowiseai.com/
-- https://base44.com/
-- Whisk
-- NotebookLM
+- https://asimov.academy/cursos/
+- flowiseAI vs N8N vs OpenAI Agentkit vs Google ADK vs flowith
 - https://academy.nebius.com/#projects
-- https://www.udemy.com/course/modelcontextprotocol/?couponCode=LOCLZDOFFPBRCTRL
-- https://www.udemy.com/course/google-adk-agent-development-kit-mac-windows-ubuntu/?couponCode=LOCLZDOFFPBRCTRL
-- https://synced.medium.com/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai-71ee394285c6
-- https://rockcontent.com/br/blog/bert/
-- Pinecode.aj
-- https://flowith.io/blank
-- https://hub.asimov.academy/blog/autogen-agentes-autonomos-com-ia/
-- https://youtube.com/playlist?list=PLYAGaVIlnsYYwZrQdUFFSb2dCpNWByG55
+- Pinecode
+- https://weaviate.io/platform
+- https://www.zenml.io/
 - https://www.youtube.com/watch?v=8juRvzZg_AI&list=WL&index=9
 - https://www.youtube.com/watch?v=lAtA2nCTfF0&list=WL&index=10
-- https://www.youtube.com/watch?v=dRVCO4zFb0k&list=WL&index=11
-- https://www.youtube.com/watch?v=tsh0oSAdoBk&list=WL&index=16
 - https://youtube.com/@wellpiresai?si=zmnf0M840qNTmGzJ
-- https://askmarvin.ai/welcome
-- https://www.zenml.io/
-- https://weaviate.io/product
-- https://mgx.dev/
-- https://www.hackerrank.com/
-- https://higgsfield.ai/
-- https://perssua.com/pt
-- https://openbb.co/products/workspace
 - https://www.datacamp.com/pt/tracks/machine-learning-engineer
-- https://deepmind.google/science/synthid/
-- https://vercel.com/
-- https://cloud.google.com/products/agentspace?hl=pt_br
-- https://cohere.com/
-- https://cluely.com/
-- https://www.aino.world/
-- Zendesk AI 
+- https://vercel.com/home
