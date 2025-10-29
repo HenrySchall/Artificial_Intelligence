@@ -23,39 +23,24 @@
 
 ### Modelos
 
-* Symbolic AI = Modelos que representam regras lógicas explícitas (baseados no raciocinio de manipulações simbólicas).
 * Machine Learning (ML) = Modelos de aprendizagem automatica (aprendeem sem serem explicitamente programados para executar tarefas específicas).
 * Deep Learning (DL) = Modelos baseados em estruturas de Redes Neurais de múltiplas camadas (estruturas semelhantes aos neurônios do cérebro humano).
-* Generative AI = Modelos projetados para criar novos conteúdos, com base em padrões aprendidos a partir de dados existentes.
+* Visão Computacional = 
+* AI Generativa = Modelos projetados para criar novos conteúdos, com base em padrões aprendidos a partir de dados existentes.
 
 ---
 ### Índice
 
-- [Symbolic AI](https://github.com/HenrySchall/Artificial_Intelligence/tree/main/Symbolic%20AI)
-    - [Gurobi]()
-    - [OR-Tools]()
-- [Machine Learning](https://github.com/HenrySchall/Artificial_Intelligence/tree/main/Machine%20Learning)
-    - [Aprendizado Supervisionado]()
-         - [Naive Bayes]()
-         - [SVM]()
-         - [Decision Trees]()
-         - [Random Forest]()
-    - [Aprendizado não Supervisionado]()
-    - [Aprendizado por Reforço]()
-- [Deep Learning](https://github.com/HenrySchall/Artificial_Intelligence/tree/main/Deep%20Learning)
+
+- [Machine Learning]()
+    - []()
+    - []() 
+- [Deep Learning]()
     - []()
     - []()
-- [Generative AI](https://github.com/HenrySchall/Artificial_Intelligence/tree/main/Level%203%20-%20GenAI)
+- [Visão Computacional]()
     - []()
     - []()
-
----
-### Referências Biográficas:
-- Aifolks.org (Majority of images and mind maps)
-- Perceptrons: An Introduction to Computational Geometry, by Marvin Minsky, Seymour A. Papert
-
-https://madewithml.com/
-
-Wan animate
-
-https://lumalabs.ai/
+- [AI Generativa]()
+    - []()
+    - []()
